@@ -3,6 +3,7 @@ package api
 import (
 	"net/http"
 
+	"github.com/99designs/gqlgen/handler"
 	"github.com/impactasaurus/soq-api/status"
 )
 
@@ -23,5 +24,11 @@ func NewV1() ([]RouteHandler, error) {
 	return []RouteHandler{{
 		Route:   "/v1/status",
 		Handler: v.statusHandler(),
+	}, {
+		Route:   "/v1/playground",
+		Handler: handler.Playground("GraphQL playground", "/v1/query"),
+	}, {
+		Route:   "/v1/query",
+		Handler: handler.GraphQL(NewExecutableSchema(Config{Resolvers: &Resolver{}})),
 	}}, nil
 }

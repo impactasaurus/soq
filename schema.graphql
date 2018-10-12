@@ -1,0 +1,121 @@
+"""Aggregation details the mathematical function used to aggregate questions"""
+enum Aggregation {
+    """Mean takes the average of the question values"""
+    MEAN
+    """Sum totals all the questions values"""
+    SUM
+}
+
+"""Link captures a URL with some textual context"""
+type Link {
+    """Name is the name of the link"""
+    name: String!
+    """Description is an optional longer text about the link"""
+    description: String
+    """URL is the link"""
+    url: String!
+}
+
+"""Point is a value and a label, used for scale questions"""
+type Point {
+    """Value is the number associated with the point"""
+    value: Float!
+    """Label is the text describing the point"""
+    label: String!
+}
+
+"""Band provides context to scores within a certain band of values"""
+type Band {
+    """Min is the value which describes the lower bound of the band (>=)"""
+    min: Float
+    """Max is the value which describes the upper bound of the band (<)"""
+    max: Float
+    """Label is a short description of the band"""
+    label: String!
+    """Description is a longer description of the band"""
+    description: String
+}
+
+"""Question is the basic fields required by questions"""
+interface Question {
+    """ID is the GUID of the question"""
+    id: String!
+    """Question is the question which is asked to beneficiaries"""
+    question: String!
+    """Description gives more information to the beneficiary"""
+    description: String
+    """Short is a short identifier of the question, commonly used on visualisations"""
+    short: String
+}
+
+"""LikertQuestion is a likert scale question"""
+type LikertQuestion implements Question {
+    id: String!
+    question: String!
+    description: String
+    short: String
+    """Scale details the likert scale's values and labels"""
+    scale: [Point]!
+}
+
+"""Scoring is an aggregation of questions into a score which can be tracked and evaluated"""
+type Scoring {
+    """ID is the GUID of the score"""
+    id: String!
+    """Name is the name of the scoring"""
+    name: String!
+    """Description provides more detail about the score"""
+    description: String
+    """Questions are the GUIDs of the questions which are included in this score"""
+    questions: [String]!
+    """Aggregation details how the questions are combined to form the score"""
+    aggregation: Aggregation!
+    """Bands put the score's value into context"""
+    bands: [Band]
+}
+
+"""Questionnaire is a collection of questions and scorings"""
+type Questionnaire {
+    """ID is the GUID of the questionnaire"""
+    id: String!
+    """Logo is a URL of the questionnaire's logo"""
+    logo: String
+    """Name is the name of the questionnaire"""
+    name: String!
+    """Description provides more information about the questionnaire"""
+    description: String
+    """Instructions are shown to users before they complete the questionnaire"""
+    instructions: String
+    """Links are a collection of links which detail more information about the questionnaire"""
+    links: [Link]
+    """Questions are the questions which are given to the beneficiary"""
+    questions: [Question]!
+    """Scorings are the scores which can be evaluated"""
+    scorings: [Scoring]
+}
+
+"""PageInfo details the current page and whether pages are available either side"""
+type PageInfo {
+    """hasNextPage is true when there are more records to fetch"""
+    hasNextPage: Boolean!
+    """page is the current page index"""
+    page: Int!
+    """limit is the max records on a page"""
+    limit: Int!
+}
+
+"""QuestionnaireList is a list of questionnaires along with page information"""
+type QuestionnaireList {
+    """questionnaires is the list of questionnaires"""
+    questionnaires: [Questionnaire]!
+    """pageInfo details the current page and whether there is more data"""
+    pageInfo: PageInfo!
+}
+
+"""Query details the methods used to gather data"""
+type Query {
+    """questionnaires gathers all the questionnaires in the system"""
+    questionnaires(page: Int, limit: Int): QuestionnaireList!
+    """questionnaire gathers a single questionnaire by ID"""
+    questionnaire(id: String!): Questionnaire!
+}
