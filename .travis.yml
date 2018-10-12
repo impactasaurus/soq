@@ -1,0 +1,24 @@
+language: go
+go:
+- 1.10.2
+before_install: go get -u github.com/golang/dep/cmd/dep
+install: dep ensure
+script: go test ./...
+before_deploy: go install github.com/impactasaurus/soq-api/cmd/lambda && mv ${GOPATH}/bin/lambda ${GOPATH}/bin/api.lambda
+deploy:
+  - provider: lambda
+    function_name: soq
+    region: eu-west-1
+    role: arn:aws:iam::408228046042:role/service-role/soq
+    runtime: go1.x
+    handler_name: lambda
+    module_name: api
+    timeout: 60
+    memory_size: 1024
+    access_key_id: AKIAIXZRM3HNITKXQZMQ
+    secret_access_key:
+      secure: bqXJKVlU98uEBj5MMRaFvH+0hw7YT/ZmsWKVlzNAwDt12GTSj1xnB7x607JbCgLx5WoBqDFUOV/btRalWN2xAOzVKyqCapuCl7mb2Jm/BwY7btbIr1Xk9Qsidk2Sx2GsQY++O6uBXjhOZa07TIgQRmq3+BV0WR10r5r7Tk8V4gZXH07jBxAZrOiLhbBaIj17AWEs8qllGuYYFAfznr1a8cXLyTAT5lJZxBC7L0hW7itw48XbE5AomA0liC9V37cxgeE2bJCJ0cRGraOh6nETn0T72xGN7duThkCl1RrsXXEiG57m3X+i5sF7cpfsU0KFEVQT+BerxzIPWlePghZG2ipxAK6U5tCiFKJzDvZ+Pdpn9oAXpBTdzoMi3zMqaLrcAsRGO+GsvbWAdD4En7lidcSv7zC1oFxUJqcHzlaYuX+euk3rnMQr5lBBncdaM/orQ1sGZS9k2oJtxVRyZNPjh8ZO7/9SCL2/GnLs9mu5agvp2CUCR7XiaJX4PgDx1j1Vlo5npMTtkvwgBkRg5v72Uswp3opE80px9bg0cHu3xyNMPOfZCs3X74KOXDW5N/CtiVZ5vl8UFFbejdnSS6D57xqLLGrKSVIaY1VFscbF4kQLhZZdMPxIEtWIlTkIJL1MimQHAt5owi8bb6/wZTpSymz5hnQCmnNOuuf7MMTug4Y=
+    zip: ${GOPATH}/bin/api.lambda
+    on:
+      repo: impactasaurus/soq-api
+      branch: master
