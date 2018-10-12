@@ -4,7 +4,11 @@ go:
 before_install: go get -u github.com/golang/dep/cmd/dep
 install: dep ensure
 script: go test ./...
-before_deploy: go install github.com/impactasaurus/soq-api/cmd/lambda && mv ${GOPATH}/bin/lambda ${GOPATH}/bin/api.lambda
+before_deploy:
+ - go install github.com/impactasaurus/soq-api/cmd/lambda
+ - mkdir ${GOPATH}/bin/soq
+ - mv ${GOPATH}/bin/lambda ${GOPATH}/bin/soq/api.lambda
+ - mv questionnaires ${GOPATH}/bin/soq/questionnaires
 deploy:
   - provider: lambda
     function_name: soq
@@ -18,7 +22,7 @@ deploy:
     access_key_id: AKIAIXZRM3HNITKXQZMQ
     secret_access_key:
       secure: nOR6QNV8rHQiMzMpTH6P/kHSLtPM4jWVtJ4WSsttKSsbi2jmu39ki5RmTZAIysfUG52Y+wvoJTZRJAdtWkJnI1kp0ru5zdDnrHzpVuUK8jQ1Vg8diN9PL4miyMU24T5gsMnRBSys615g7YgcHjyZBmWwRH0hn80h/IGuLBBfsEmm06MH1jsZE2Xr06uFKayHnAU17lxWA8ZrnK6f6Ql1Z3u/2hvlC+jlGprb6EjW9zW63V/rM8O1OvavnXt6vLomYjSB7BVq+mKfxffgtpQ91VsIwUCKAfKB7ZgiImyTAo+iTCuSy3ZqpvT1DdniZxoYOt5cMnDuIaO41/TsWq9WTwG6tZICeBHP/W7w/cXXZbxGrze77l225mfLKf9wa3mxkZrN7/3DG629cZGEW/cJ/zY+gaSe5FlrhBmjvlnBN4D9Xqhvtv7nNUMObwLd2m3i1xXbfT3mqAIJ5y5fux+H9I8dbfMTIcxZGdpGaCD8MeJTIxqOdZlXBS5P6gcUYGMpHEPfsh5Lw0EN8TDQidrqcHBrbToBFQccDsmKaAY0WvStRlyDcniFx/hwrASjnkkBecbUKHi1zPW/52ibjElXWUTzRdTpY7cYHpsb6oF1wNO0BD/Kld18hKCFoi46Jn0S4+OwkVfEgwBs9XwTG7s8h6Hqu0y9g9wuLtDi4rOTP4E=
-    zip: ${GOPATH}/bin/api.lambda
+    zip: ${GOPATH}/bin/soq
     on:
       repo: impactasaurus/soq-api
       branch: master

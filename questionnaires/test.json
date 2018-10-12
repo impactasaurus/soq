@@ -1,0 +1,34 @@
+{
+  "id": "test-q",
+  "name": "testing questionnaire",
+  "description": "this is here to test the API",
+  "links": [{
+    "name": "license",
+    "url": "https://www.something.com"
+  }],
+  "questions": [{
+    "id": "test-q",
+    "type": "likert",
+    "question": "how do you feel?",
+    "scale": [{
+      "value": 0,
+      "label": "bad"
+    }, {
+      "value": 1,
+      "label": "good"
+    }]
+  }],
+  "scorings": [{
+    "id": "test-s",
+    "name": "happy",
+    "questions": ["test-q"],
+    "aggregation": "mean",
+    "bands": [{
+      "min": 1,
+      "label": "happy"
+    }, {
+      "max": 1,
+      "label": "unhappy"
+    }]
+  }]
+}

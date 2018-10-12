@@ -7,15 +7,21 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/impactasaurus/soq-api/api"
+	"github.com/impactasaurus/soq-api/cache"
 	corsLib "github.com/rs/cors"
 )
 
 func MustSetup() Network {
-	c := MustGetConfiguration()
+	cfg := MustGetConfiguration()
 
-	v1Handlers, err := api.NewV1()
+	c, err := cache.New(cfg.Path.Questionnaires)
 	if err != nil {
-		log.Fatal(err, nil)
+		log.Fatal(err)
+	}
+
+	v1Handlers, err := api.NewV1(c)
+	if err != nil {
+		log.Fatal(err)
 	}
 
 	cors := corsLib.New(corsLib.Options{
@@ -30,5 +36,5 @@ func MustSetup() Network {
 	}
 	http.Handle("/", r)
 
-	return c.Network
+	return cfg.Network
 }
