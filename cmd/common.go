@@ -8,13 +8,19 @@ import (
 	"github.com/gorilla/mux"
 	"github.com/impactasaurus/soq-api/api"
 	"github.com/impactasaurus/soq-api/cache"
+	"github.com/impactasaurus/soq-api/questionnaires"
 	corsLib "github.com/rs/cors"
 )
 
 func MustSetup() Network {
 	cfg := MustGetConfiguration()
 
-	c, err := cache.New(cfg.Path.Questionnaires)
+	qq, err := questionnaires.LoadDirectory(cfg.Path.Questionnaires)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	c, err := cache.New(qq)
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -1,15 +1,9 @@
 package cache
 
 import (
-	"encoding/json"
 	"errors"
 
-	"os"
-	"path/filepath"
-
 	"sort"
-
-	"fmt"
 
 	soq "github.com/impactasaurus/soq-api"
 )
@@ -19,52 +13,20 @@ type Cache struct {
 	byName []*soq.Questionnaire
 }
 
-func loadQuestionnaire(path string) (soq.Questionnaire, error) {
-	f, err := os.Open(path)
-	if err != nil {
-		return soq.Questionnaire{}, err
+func New(qq []soq.Questionnaire) (*Cache, error) {
+	byName := make([]*soq.Questionnaire, len(qq))
+	byID := map[string]soq.Questionnaire{}
+	for idx := range qq {
+		byID[qq[idx].ID] = qq[idx]
+		byName[idx] = &qq[idx]
 	}
-	defer f.Close()
-
-	q := soq.Questionnaire{}
-	jsonParser := json.NewDecoder(f)
-	err = jsonParser.Decode(&q)
-	return q, err
-}
-
-func New(questionnaireDirectory string) (*Cache, error) {
-	files := make([]string, 0)
-	err := filepath.Walk(questionnaireDirectory, func(path string, info os.FileInfo, err error) error {
-		if filepath.Ext(path) == ".json" {
-			files = append(files, path)
-		}
-		return nil
+	sort.Slice(byName, func(i, j int) bool {
+		return byName[i].Name < byName[j].Name
 	})
-	if err != nil {
-		return nil, err
-	}
-	if len(files) == 0 {
-		return nil, fmt.Errorf("found no files at %s\n", questionnaireDirectory)
-	}
-	c := &Cache{
-		byID:   map[string]soq.Questionnaire{},
-		byName: make([]*soq.Questionnaire, len(files)),
-	}
-
-	for idx, path := range files {
-		fmt.Printf("loading %s...\n", path)
-		q, err := loadQuestionnaire(path)
-		if err != nil {
-			return nil, err
-		}
-		c.byName[idx] = &q
-		c.byID[q.ID] = q
-	}
-	sort.Slice(c.byName, func(i, j int) bool {
-		return c.byName[i].Name < c.byName[j].Name
-	})
-	fmt.Println("questionnaires loaded")
-	return c, nil
+	return &Cache{
+		byID:   byID,
+		byName: byName,
+	}, nil
 }
 
 func (c *Cache) Questionnaire(id string) (soq.Questionnaire, error) {
