@@ -1,0 +1,672 @@
+{
+  "id": "1da322ea-816c-4a7e-acb0-be1621b2270e",
+  "name": "SDQ - Self Rated 11-17",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2018-10-13T08:07:54Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "logo": "http://www.sdqinfo.com/Images/SDQLogo.jpg",
+  "description": "The Strengths and Difficulties Questionnaire (SDQ) is a brief emotional and behavioural screening questionnaire for children and young people. The tool can capture the perspective of children and young people, their parents and teachers. This particular variant is a self reported questionnaire aimed at individuals between 11 and 17 years of age.",
+  "links": [{
+    "name": "PDF Versions",
+    "url": "http://www.sdqinfo.com/py/sdqinfo/b0.py"
+  }, {
+    "name": "More information",
+    "url": "http://www.sdqinfo.com"
+  }],
+  "questions": [
+    {
+      "id": "656eef31-e313-4553-9c9e-4afbc859e1dc",
+      "question": "I try to be nice to other people. I care about their feelings",
+      "type": "likert",
+      "short": "Nice to others",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "bfbc7e9f-1605-4454-9bd4-884d9bf2fbd0",
+      "question": "I am restless, I cannot stay still for long",
+      "type": "likert",
+      "short": "Restless",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "ad8e79ce-c8b9-4c26-bc62-98a1a20f3cc6",
+      "text": "I get a lot of headaches, stomach-aches or sickness",
+      "type": "likert",
+      "short": "Illness",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "8a6d4a46-1a14-4fd8-8150-8e326ee85aa1",
+      "text": "I usually share with others (food, games, pens etc.)",
+      "type": "likert",
+      "short": "Share with others",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "cf76b9ed-b9d8-4878-a3e9-b88b44d8efa8",
+      "text": "I get very angry and often lose my temper",
+      "type": "likert",
+      "short": "Lose my temper",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "97d825ab-3a6e-466b-8566-890193b9908f",
+      "text": "I am usually on my own. I generally play alone or keep to myself",
+      "type": "likert",
+      "short": "Keep to myself",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "94f82e16-8553-4251-a89e-f701aaf9aa66",
+      "text": "I usually do as I am told",
+      "type": "likert",
+      "short": "Do as I am told",
+      "scale": [{
+        "value": 2,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 0,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "8b03a678-99c5-46cb-ad52-d8df65bba66c",
+      "text": "I worry a lot",
+      "type": "likert",
+      "short": "I worry",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "8d103493-6c56-4c53-8d4f-88fe8b64ced0",
+      "text": "I am helpful if someone is hurt, upset or feeling ill",
+      "type": "likert",
+      "short": "Helpful if someone is hurt",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "ea3a1e81-c895-454b-aa35-25080bf02d24",
+      "text": "I am constantly fidgeting or squirming",
+      "type": "likert",
+      "short": "Constantly fidgeting",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "20d5747c-b183-4778-869b-eb3c88179b19",
+      "text": "I have one good friend or more",
+      "type": "likert",
+      "short": "I have one good friend",
+      "scale": [{
+        "value": 2,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 0,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "5591a97f-a6cb-4991-9394-5224e6617dc2",
+      "text": "I fight a lot. I can make other people do what I want",
+      "type": "likert",
+      "short": "I fight a lot",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "71b63e3a-68fa-4a5a-a816-1b36f3fc5438",
+      "text": "I am often unhappy, down-hearted or tearful",
+      "type": "likert",
+      "short": "Often unhappy",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "d342fbf2-367c-4669-be54-7fbc43f77856",
+      "text": "Other people my age generally like me",
+      "type": "likert",
+      "short": "Peers like me",
+      "scale": [{
+        "value": 2,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 0,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "b66b22b0-93d9-41f7-bd33-241f5d6df6b3",
+      "text": "I am easily distracted, I find it difficult to concentrate",
+      "type": "likert",
+      "short": "Easily distracted",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "ac3d786e-809b-4a89-a2bd-6f3095de23bd",
+      "text": "I am nervous in new situations. I easily lose confidence",
+      "type": "likert",
+      "short": "Easily lose confidence",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "f9385858-1c10-4119-87a0-5183d03d2ff5",
+      "text": "I am kind to younger children",
+      "type": "likert",
+      "short": "Kind to younger children",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "4bc01c31-83e4-417b-9b32-cf437033a14f",
+      "text": "I am often accused of lying or cheating",
+      "type": "likert",
+      "short": "Accused of lying or cheating",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "755f20c5-9764-435a-b9f3-8188cff3c51a",
+      "text": "Other children or young people pick on me or bully me",
+      "type": "likert",
+      "short": "Others bully me",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "71778f52-3820-4261-9e45-e33e764394b0",
+      "text": "I often volunteer to help others (parents, teachers, children)",
+      "type": "likert",
+      "short": "Volunteer to help others",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "24d113c9-350e-416b-bc8d-baaa93ddeda6",
+      "text": "I think before I do things",
+      "type": "likert",
+      "short": "Think before doing",
+      "scale": [{
+        "value": 2,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 0,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "3e90f38b-4e71-47b7-ada5-b73e8bda426d",
+      "text": "I take things that are not mine from home, school or elsewhere",
+      "type": "likert",
+      "short": "Take things that are not mine",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "8bf64351-8115-4071-8b71-1a485fbc0492",
+      "text": "I get on better with adults than with people my own age",
+      "type": "likert",
+      "short": "Get on better with adults",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "f4ae73da-1b1a-407b-a93e-7b0e6aebe673",
+      "text": "I have many fears, I am easily scared",
+      "type": "likert",
+      "short": "I have many fears",
+      "scale": [{
+        "value": 0,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 2,
+        "label": "Certainly True"
+      }]
+    },
+    {
+      "id": "0caf950c-64fd-4fcc-80a2-87324960b470",
+      "text": "I finish the work I'm doing. My attention is good",
+      "type": "likert",
+      "short": "Attention is good",
+      "scale": [{
+        "value": 2,
+        "label": "Not True"
+      }, {
+        "value": 1,
+        "label": "Somewhat True"
+      }, {
+        "value": 0,
+        "label": "Certainly True"
+      }]
+    }
+  ],
+  "scorings": [{
+    "id": "5cfd54c8-7cfb-40ab-9b9b-baaa64b5c725",
+    "name": "Emotional problems scale",
+    "questions": [
+      "ad8e79ce-c8b9-4c26-bc62-98a1a20f3cc6",
+      "8b03a678-99c5-46cb-ad52-d8df65bba66c",
+      "71b63e3a-68fa-4a5a-a816-1b36f3fc5438",
+      "ac3d786e-809b-4a89-a2bd-6f3095de23bd",
+      "f4ae73da-1b1a-407b-a93e-7b0e6aebe673"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 0,
+        "maximum": 4,
+        "label": "Close to average"
+      },
+      {
+        "minimum": 5,
+        "maximum": 5,
+        "label": "Slightly raised"
+      },
+      {
+        "minimum": 6,
+        "maximum": 6,
+        "label": "High"
+      },
+      {
+        "minimum": 7,
+        "maximum": 10,
+        "label": "Very High"
+      }
+    ]
+  }, {
+    "id": "fe97e931-eb85-4f63-9ba7-e004f9d95cb5",
+    "name": "Conduct problems scale",
+    "questions": [
+      "cf76b9ed-b9d8-4878-a3e9-b88b44d8efa8",
+      "94f82e16-8553-4251-a89e-f701aaf9aa66",
+      "5591a97f-a6cb-4991-9394-5224e6617dc2",
+      "4bc01c31-83e4-417b-9b32-cf437033a14f",
+      "3e90f38b-4e71-47b7-ada5-b73e8bda426d"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 0,
+        "maximum": 3,
+        "label": "Close to average"
+      },
+      {
+        "minimum": 4,
+        "maximum": 4,
+        "label": "Slightly raised"
+      },
+      {
+        "minimum": 5,
+        "maximum": 5,
+        "label": "High"
+      },
+      {
+        "minimum": 6,
+        "maximum": 10,
+        "label": "Very High"
+      }
+    ]
+  }, {
+    "id": "51f261d2-255d-4c4a-b1ed-298bb08c1b24",
+    "name": "Hyperactivity scale",
+    "questions": [
+      "bfbc7e9f-1605-4454-9bd4-884d9bf2fbd0",
+      "ea3a1e81-c895-454b-aa35-25080bf02d24",
+      "b66b22b0-93d9-41f7-bd33-241f5d6df6b3",
+      "24d113c9-350e-416b-bc8d-baaa93ddeda6",
+      "0caf950c-64fd-4fcc-80a2-87324960b470"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 0,
+        "maximum": 5,
+        "label": "Close to average"
+      },
+      {
+        "minimum": 6,
+        "maximum": 6,
+        "label": "Slightly raised"
+      },
+      {
+        "minimum": 7,
+        "maximum": 7,
+        "label": "High"
+      },
+      {
+        "minimum": 8,
+        "maximum": 10,
+        "label": "Very High"
+      }
+    ]
+  }, {
+    "id": "5e6630dd-ec26-477a-9b46-e882a92ae93c",
+    "name": "Peer problems scale",
+    "questions": [
+      "97d825ab-3a6e-466b-8566-890193b9908f",
+      "20d5747c-b183-4778-869b-eb3c88179b19",
+      "d342fbf2-367c-4669-be54-7fbc43f77856",
+      "755f20c5-9764-435a-b9f3-8188cff3c51a",
+      "8bf64351-8115-4071-8b71-1a485fbc0492"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 0,
+        "maximum": 2,
+        "label": "Close to average"
+      },
+      {
+        "minimum": 3,
+        "maximum": 3,
+        "label": "Slightly raised"
+      },
+      {
+        "minimum": 4,
+        "maximum": 4,
+        "label": "High"
+      },
+      {
+        "minimum": 5,
+        "maximum": 10,
+        "label": "Very high"
+      }
+    ]
+  }, {
+    "id": "a341d607-7045-4249-ab88-3dd7608ecf4c",
+    "name": "Prosocial scale",
+    "questions": [
+      "656eef31-e313-4553-9c9e-4afbc859e1dc",
+      "8a6d4a46-1a14-4fd8-8150-8e326ee85aa1",
+      "8d103493-6c56-4c53-8d4f-88fe8b64ced0",
+      "f9385858-1c10-4119-87a0-5183d03d2ff5",
+      "71778f52-3820-4261-9e45-e33e764394b0"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 7,
+        "maximum": 10,
+        "label": "Close to average"
+      },
+      {
+        "minimum": 6,
+        "maximum": 6,
+        "label": "Slightly lowered"
+      },
+      {
+        "minimum": 5,
+        "maximum": 5,
+        "label": "Low"
+      },
+      {
+        "minimum": 0,
+        "maximum": 4,
+        "label": "Very low"
+      }
+    ]
+  }, {
+    "id": "0fd1d661-46d6-4e97-b3a4-9b8c43f7706c",
+    "name": "Total difficulties score",
+    "description": "This is generated by summing scores from all the scales except the prosocial scale.",
+    "questions": [
+      "97d825ab-3a6e-466b-8566-890193b9908f",
+      "20d5747c-b183-4778-869b-eb3c88179b19",
+      "d342fbf2-367c-4669-be54-7fbc43f77856",
+      "755f20c5-9764-435a-b9f3-8188cff3c51a",
+      "8bf64351-8115-4071-8b71-1a485fbc0492",
+      "bfbc7e9f-1605-4454-9bd4-884d9bf2fbd0",
+      "ea3a1e81-c895-454b-aa35-25080bf02d24",
+      "b66b22b0-93d9-41f7-bd33-241f5d6df6b3",
+      "24d113c9-350e-416b-bc8d-baaa93ddeda6",
+      "0caf950c-64fd-4fcc-80a2-87324960b470",
+      "cf76b9ed-b9d8-4878-a3e9-b88b44d8efa8",
+      "94f82e16-8553-4251-a89e-f701aaf9aa66",
+      "5591a97f-a6cb-4991-9394-5224e6617dc2",
+      "4bc01c31-83e4-417b-9b32-cf437033a14f",
+      "3e90f38b-4e71-47b7-ada5-b73e8bda426d",
+      "ad8e79ce-c8b9-4c26-bc62-98a1a20f3cc6",
+      "8b03a678-99c5-46cb-ad52-d8df65bba66c",
+      "71b63e3a-68fa-4a5a-a816-1b36f3fc5438",
+      "ac3d786e-809b-4a89-a2bd-6f3095de23bd",
+      "f4ae73da-1b1a-407b-a93e-7b0e6aebe673"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 0,
+        "maximum": 14,
+        "label": "Close to average"
+      },
+      {
+        "minimum": 15,
+        "maximum": 17,
+        "label": "Slightly raised"
+      },
+      {
+        "minimum": 18,
+        "maximum": 19,
+        "label": "High"
+      },
+      {
+        "minimum": 20,
+        "maximum": 40,
+        "label": "Very High"
+      }
+    ]
+  }, {
+    "id": "0fd1d661-46d6-4e97-b3a4-9b8c43f7706c",
+    "name": "'Externalising' score",
+    "description": "The externalising score ranges from 0 to 20 and is the sum of the conduct and hyperactivity scales.",
+    "questions": [
+      "cf76b9ed-b9d8-4878-a3e9-b88b44d8efa8",
+      "94f82e16-8553-4251-a89e-f701aaf9aa66",
+      "5591a97f-a6cb-4991-9394-5224e6617dc2",
+      "4bc01c31-83e4-417b-9b32-cf437033a14f",
+      "3e90f38b-4e71-47b7-ada5-b73e8bda426d",
+      "bfbc7e9f-1605-4454-9bd4-884d9bf2fbd0",
+      "ea3a1e81-c895-454b-aa35-25080bf02d24",
+      "b66b22b0-93d9-41f7-bd33-241f5d6df6b3",
+      "24d113c9-350e-416b-bc8d-baaa93ddeda6",
+      "0caf950c-64fd-4fcc-80a2-87324960b470"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "0fd1d661-46d6-4e97-b3a4-9b8c43f7706c",
+    "name": "'Internalising' score",
+    "description": "The internalising score ranges from 0 to 20 and is the sum of the emotional and peer problems scales.",
+    "questions": [
+      "97d825ab-3a6e-466b-8566-890193b9908f",
+      "20d5747c-b183-4778-869b-eb3c88179b19",
+      "d342fbf2-367c-4669-be54-7fbc43f77856",
+      "755f20c5-9764-435a-b9f3-8188cff3c51a",
+      "8bf64351-8115-4071-8b71-1a485fbc0492",
+      "ad8e79ce-c8b9-4c26-bc62-98a1a20f3cc6",
+      "8b03a678-99c5-46cb-ad52-d8df65bba66c",
+      "71b63e3a-68fa-4a5a-a816-1b36f3fc5438",
+      "ac3d786e-809b-4a89-a2bd-6f3095de23bd",
+      "f4ae73da-1b1a-407b-a93e-7b0e6aebe673"
+    ],
+    "aggregation": "sum"
+  }]
+}

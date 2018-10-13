@@ -35,7 +35,6 @@ func loadQuestionnaire(path string) (soq.Questionnaire, error) {
 func New(questionnaireDirectory string) (*Cache, error) {
 	files := make([]string, 0)
 	err := filepath.Walk(questionnaireDirectory, func(path string, info os.FileInfo, err error) error {
-		fmt.Println(path)
 		if filepath.Ext(path) == ".json" {
 			files = append(files, path)
 		}
@@ -64,6 +63,7 @@ func New(questionnaireDirectory string) (*Cache, error) {
 	sort.Slice(c.byName, func(i, j int) bool {
 		return c.byName[i].Name < c.byName[j].Name
 	})
+	fmt.Println("questionnaires loaded")
 	return c, nil
 }
 
@@ -88,11 +88,10 @@ func (c *Cache) Questionnaires(page, limit int) (soq.QuestionnaireList, error) {
 		}, nil
 	}
 	end := offset + limit
-	more := true
 	if end > len(c.byName) {
 		end = len(c.byName)
-		more = false
 	}
+	more := end != len(c.byName)
 	return soq.QuestionnaireList{
 		PageInfo: soq.PageInfo{
 			Limit:       limit,

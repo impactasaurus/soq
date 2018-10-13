@@ -46,6 +46,12 @@ type ComplexityRoot struct {
 		Description func(childComplexity int) int
 	}
 
+	Changes struct {
+		Version   func(childComplexity int) int
+		Changes   func(childComplexity int) int
+		Timestamp func(childComplexity int) int
+	}
+
 	LikertQuestion struct {
 		Id          func(childComplexity int) int
 		Question    func(childComplexity int) int
@@ -80,6 +86,8 @@ type ComplexityRoot struct {
 		Id           func(childComplexity int) int
 		Logo         func(childComplexity int) int
 		Name         func(childComplexity int) int
+		Version      func(childComplexity int) int
+		Changelog    func(childComplexity int) int
 		Description  func(childComplexity int) int
 		Instructions func(childComplexity int) int
 		Links        func(childComplexity int) int
@@ -242,6 +250,27 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 
 		return e.complexity.Band.Description(childComplexity), true
 
+	case "Changes.version":
+		if e.complexity.Changes.Version == nil {
+			break
+		}
+
+		return e.complexity.Changes.Version(childComplexity), true
+
+	case "Changes.changes":
+		if e.complexity.Changes.Changes == nil {
+			break
+		}
+
+		return e.complexity.Changes.Changes(childComplexity), true
+
+	case "Changes.timestamp":
+		if e.complexity.Changes.Timestamp == nil {
+			break
+		}
+
+		return e.complexity.Changes.Timestamp(childComplexity), true
+
 	case "LikertQuestion.id":
 		if e.complexity.LikertQuestion.Id == nil {
 			break
@@ -377,6 +406,20 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.Questionnaire.Name(childComplexity), true
+
+	case "Questionnaire.version":
+		if e.complexity.Questionnaire.Version == nil {
+			break
+		}
+
+		return e.complexity.Questionnaire.Version(childComplexity), true
+
+	case "Questionnaire.changelog":
+		if e.complexity.Questionnaire.Changelog == nil {
+			break
+		}
+
+		return e.complexity.Questionnaire.Changelog(childComplexity), true
 
 	case "Questionnaire.description":
 		if e.complexity.Questionnaire.Description == nil {
@@ -631,6 +674,124 @@ func (ec *executionContext) _Band_description(ctx context.Context, field graphql
 		return graphql.Null
 	}
 	return graphql.MarshalString(*res)
+}
+
+var changesImplementors = []string{"Changes"}
+
+// nolint: gocyclo, errcheck, gas, goconst
+func (ec *executionContext) _Changes(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Changes) graphql.Marshaler {
+	fields := graphql.CollectFields(ctx, sel, changesImplementors)
+
+	out := graphql.NewOrderedMap(len(fields))
+	invalid := false
+	for i, field := range fields {
+		out.Keys[i] = field.Alias
+
+		switch field.Name {
+		case "__typename":
+			out.Values[i] = graphql.MarshalString("Changes")
+		case "version":
+			out.Values[i] = ec._Changes_version(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				invalid = true
+			}
+		case "changes":
+			out.Values[i] = ec._Changes_changes(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				invalid = true
+			}
+		case "timestamp":
+			out.Values[i] = ec._Changes_timestamp(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				invalid = true
+			}
+		default:
+			panic("unknown field " + strconv.Quote(field.Name))
+		}
+	}
+
+	if invalid {
+		return graphql.Null
+	}
+	return out
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Changes_version(ctx context.Context, field graphql.CollectedField, obj *soq_api.Changes) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Changes",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Version, nil
+	})
+	if resTmp == nil {
+		if !ec.HasError(rctx) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.(string)
+	rctx.Result = res
+	return graphql.MarshalString(res)
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Changes_changes(ctx context.Context, field graphql.CollectedField, obj *soq_api.Changes) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Changes",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Changes, nil
+	})
+	if resTmp == nil {
+		if !ec.HasError(rctx) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.([]string)
+	rctx.Result = res
+
+	arr1 := make(graphql.Array, len(res))
+
+	for idx1 := range res {
+		arr1[idx1] = func() graphql.Marshaler {
+			return graphql.MarshalString(res[idx1])
+		}()
+	}
+
+	return arr1
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Changes_timestamp(ctx context.Context, field graphql.CollectedField, obj *soq_api.Changes) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Changes",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Timestamp, nil
+	})
+	if resTmp == nil {
+		if !ec.HasError(rctx) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.(string)
+	rctx.Result = res
+	return graphql.MarshalString(res)
 }
 
 var likertQuestionImplementors = []string{"LikertQuestion", "Question"}
@@ -1068,9 +1229,6 @@ func (ec *executionContext) _Point(ctx context.Context, sel ast.SelectionSet, ob
 			}
 		case "label":
 			out.Values[i] = ec._Point_label(ctx, field, obj)
-			if out.Values[i] == graphql.Null {
-				invalid = true
-			}
 		default:
 			panic("unknown field " + strconv.Quote(field.Name))
 		}
@@ -1118,14 +1276,15 @@ func (ec *executionContext) _Point_label(ctx context.Context, field graphql.Coll
 		return obj.Label, nil
 	})
 	if resTmp == nil {
-		if !ec.HasError(rctx) {
-			ec.Errorf(ctx, "must not be null")
-		}
 		return graphql.Null
 	}
-	res := resTmp.(string)
+	res := resTmp.(*string)
 	rctx.Result = res
-	return graphql.MarshalString(res)
+
+	if res == nil {
+		return graphql.Null
+	}
+	return graphql.MarshalString(*res)
 }
 
 var queryImplementors = []string{"Query"}
@@ -1322,6 +1481,16 @@ func (ec *executionContext) _Questionnaire(ctx context.Context, sel ast.Selectio
 			if out.Values[i] == graphql.Null {
 				invalid = true
 			}
+		case "version":
+			out.Values[i] = ec._Questionnaire_version(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				invalid = true
+			}
+		case "changelog":
+			out.Values[i] = ec._Questionnaire_changelog(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				invalid = true
+			}
 		case "description":
 			out.Values[i] = ec._Questionnaire_description(ctx, field, obj)
 		case "instructions":
@@ -1414,6 +1583,85 @@ func (ec *executionContext) _Questionnaire_name(ctx context.Context, field graph
 	res := resTmp.(string)
 	rctx.Result = res
 	return graphql.MarshalString(res)
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Questionnaire_version(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Questionnaire",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Version, nil
+	})
+	if resTmp == nil {
+		if !ec.HasError(rctx) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.(string)
+	rctx.Result = res
+	return graphql.MarshalString(res)
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Questionnaire_changelog(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Questionnaire",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Changelog, nil
+	})
+	if resTmp == nil {
+		if !ec.HasError(rctx) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.([]soq_api.Changes)
+	rctx.Result = res
+
+	arr1 := make(graphql.Array, len(res))
+	var wg sync.WaitGroup
+
+	isLen1 := len(res) == 1
+	if !isLen1 {
+		wg.Add(len(res))
+	}
+
+	for idx1 := range res {
+		idx1 := idx1
+		rctx := &graphql.ResolverContext{
+			Index:  &idx1,
+			Result: &res[idx1],
+		}
+		ctx := graphql.WithResolverContext(ctx, rctx)
+		f := func(idx1 int) {
+			if !isLen1 {
+				defer wg.Done()
+			}
+			arr1[idx1] = func() graphql.Marshaler {
+
+				return ec._Changes(ctx, field.Selections, &res[idx1])
+			}()
+		}
+		if isLen1 {
+			f(idx1)
+		} else {
+			go f(idx1)
+		}
+
+	}
+	wg.Wait()
+	return arr1
 }
 
 // nolint: vetshadow
@@ -3361,14 +3609,14 @@ type Point {
     """Value is the number associated with the point"""
     value: Float!
     """Label is the text describing the point"""
-    label: String!
+    label: String
 }
 
 """Band provides context to scores within a certain band of values"""
 type Band {
     """Min is the value which describes the lower bound of the band (>=)"""
     min: Float
-    """Max is the value which describes the upper bound of the band (<)"""
+    """Max is the value which describes the upper bound of the band (<=)"""
     max: Float
     """Label is a short description of the band"""
     label: String!
@@ -3394,7 +3642,7 @@ type LikertQuestion implements Question {
     question: String!
     description: String
     short: String
-    """Scale details the likert scale's values and labels"""
+    """Scale details the likert scale's values and labels. The order of the points matter, the start of the array is on the left, the end of the array is on the right."""
     scale: [Point]!
 }
 
@@ -3414,6 +3662,16 @@ type Scoring {
     bands: [Band]
 }
 
+"""Changes details the changes made in a given version"""
+type Changes {
+    """Version details what version of the questionnaire this relates to"""
+    version: String!
+    """Changes is a list of the changes made"""
+    changes: [String!]!
+    """Timestamp is the RFC3339 date and time of the change"""
+    timestamp: String!
+}
+
 """Questionnaire is a collection of questions and scorings"""
 type Questionnaire {
     """ID is the GUID of the questionnaire"""
@@ -3422,6 +3680,10 @@ type Questionnaire {
     logo: String
     """Name is the name of the questionnaire"""
     name: String!
+    """Version details the version of the questionnaire, it uses semver versioning"""
+    version: String!
+    """Changelog details the differences between versions"""
+    changelog: [Changes!]!
     """Description provides more information about the questionnaire"""
     description: String
     """Instructions are shown to users before they complete the questionnaire"""

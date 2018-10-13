@@ -16,6 +16,13 @@ type Band struct {
 	Description *string  `json:"description"`
 }
 
+// Changes details the changes made in a given version
+type Changes struct {
+	Version   string   `json:"version"`
+	Changes   []string `json:"changes"`
+	Timestamp string   `json:"timestamp"`
+}
+
 // LikertQuestion is a likert scale question
 type LikertQuestion struct {
 	ID          string   `json:"id"`
@@ -44,7 +51,7 @@ type PageInfo struct {
 // Point is a value and a label, used for scale questions
 type Point struct {
 	Value float64 `json:"value"`
-	Label string  `json:"label"`
+	Label *string `json:"label"`
 }
 
 // Question is the basic fields required by questions
@@ -57,6 +64,8 @@ type Questionnaire struct {
 	ID           string      `json:"id"`
 	Logo         *string     `json:"logo"`
 	Name         string      `json:"name"`
+	Version      string      `json:"version"`
+	Changelog    []Changes   `json:"changelog"`
 	Description  *string     `json:"description"`
 	Instructions *string     `json:"instructions"`
 	Links        []*Link     `json:"links"`

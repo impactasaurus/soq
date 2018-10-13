@@ -21,14 +21,14 @@ type Point {
     """Value is the number associated with the point"""
     value: Float!
     """Label is the text describing the point"""
-    label: String!
+    label: String
 }
 
 """Band provides context to scores within a certain band of values"""
 type Band {
     """Min is the value which describes the lower bound of the band (>=)"""
     min: Float
-    """Max is the value which describes the upper bound of the band (<)"""
+    """Max is the value which describes the upper bound of the band (<=)"""
     max: Float
     """Label is a short description of the band"""
     label: String!
@@ -54,7 +54,7 @@ type LikertQuestion implements Question {
     question: String!
     description: String
     short: String
-    """Scale details the likert scale's values and labels"""
+    """Scale details the likert scale's values and labels. The order of the points matter, the start of the array is on the left, the end of the array is on the right."""
     scale: [Point]!
 }
 
@@ -74,6 +74,16 @@ type Scoring {
     bands: [Band]
 }
 
+"""Changes details the changes made in a given version"""
+type Changes {
+    """Version details what version of the questionnaire this relates to"""
+    version: String!
+    """Changes is a list of the changes made"""
+    changes: [String!]!
+    """Timestamp is the RFC3339 date and time of the change"""
+    timestamp: String!
+}
+
 """Questionnaire is a collection of questions and scorings"""
 type Questionnaire {
     """ID is the GUID of the questionnaire"""
@@ -82,6 +92,10 @@ type Questionnaire {
     logo: String
     """Name is the name of the questionnaire"""
     name: String!
+    """Version details the version of the questionnaire, it uses semver versioning"""
+    version: String!
+    """Changelog details the differences between versions"""
+    changelog: [Changes!]!
     """Description provides more information about the questionnaire"""
     description: String
     """Instructions are shown to users before they complete the questionnaire"""
