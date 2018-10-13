@@ -15,8 +15,11 @@
     "name": "PDF Versions",
     "url": "http://www.sdqinfo.com/py/sdqinfo/b0.py"
   }, {
-    "name": "More information",
+    "name": "Website",
     "url": "http://www.sdqinfo.com"
+  }, {
+    "name": "Scoring details",
+    "url": "http://www.sdqinfo.com/py/sdqinfo/c0.py"
   }],
   "questions": [
     {
