@@ -1,0 +1,344 @@
+{
+  "id": "9aed3a62-5418-4835-ba95-5a92c32ef161",
+  "name": "Warwick-Edinburgh Mental Well-being Scale",
+  "short": "WEMWBS",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2018-10-13T08:40:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "description": "The Warwick-Edinburgh Mental Well-being scale was developed to enable the monitoring of mental wellbeing in the general population and the evaluation of projects, programmes and policies which aim to improve mental wellbeing.\nWEMWBS is a 14 item scale with 5 response categories, summed to provide a single score ranging from 14-70. The items are all worded positively and cover both feeling and functioning aspects of mental wellbeing",
+  "links": [{
+    "name": "Website",
+    "url": "https://warwick.ac.uk/fac/sci/med/research/platform/wemwbs/"
+  }, {
+    "name": "License",
+    "url": "https://warwick.ac.uk/fac/sci/med/research/platform/wemwbs/researchers/register/"
+  }, {
+    "name": "User Guide",
+    "url": "https://warwick.ac.uk/fac/sci/med/research/platform/wemwbs/researchers/userguide"
+  }, {
+    "name": "Interpretations of Scores",
+    "url": "https://warwick.ac.uk/fac/sci/med/research/platform/wemwbs/researchers/interpretations/"
+  }],
+  "instructions": "Please select the answer that best describes your experience of each over the last 2 weeks",
+  "questions": [{
+    "id": "80324762-5084-4a18-9038-be6cd17b791d",
+    "question": "I’ve been feeling optimistic about the future",
+    "type": "likert",
+    "short": "Feeling optimistic",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "f982f79d-c1c1-4d65-9558-f1476d57fbf6",
+    "question": "I’ve been feeling useful",
+    "type": "likert",
+    "short": "Feeling useful",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "d652571e-7bbf-4599-845a-a02d1ab4a1a9",
+    "question": "I’ve been feeling relaxed",
+    "type": "likert",
+    "short": "Feeling relaxed",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "e7c53257-a170-45a6-be52-f5e2b7ed3788",
+    "question": "I’ve been feeling interested in other people",
+    "type": "likert",
+    "short": "Interested in other people",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "35538654-37b7-445d-a1a0-6f99fda8174d",
+    "question": "I’ve had energy to spare",
+    "type": "likert",
+    "short": "Energy to spare",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "70988e38-5739-43f7-a23e-dbc54432866e",
+    "question": "I’ve been dealing with problems well",
+    "type": "likert",
+    "short": "Dealing with problems well",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "63aec3b3-28c9-463a-9fc0-328f407ff8c1",
+    "question": "I’ve been thinking clearly",
+    "type": "likert",
+    "short": "Thinking clearly",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "076be1b5-26ff-4315-b7b7-62f11ea8936b",
+    "question": "I’ve been feeling good about myself",
+    "type": "likert",
+    "short": "Feeling good about myself",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "0386bc61-5adb-4bd2-9d8f-6029e4130b89",
+    "question": "I’ve been feeling close to other people",
+    "type": "likert",
+    "short": "Feeling close to other people",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "5e355371-b43d-483f-849e-9d1a92139064",
+    "question": "I’ve been feeling confident",
+    "type": "likert",
+    "short": "Feeling confident",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "a7a54b9b-f8ed-4dbb-b168-ff2a557824cd",
+    "question": "I’ve been able to make up my own mind about things",
+    "type": "likert",
+    "short": "Able to make up my own mind",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "28cbf14a-b858-4b57-88ff-d33808eed85d",
+    "question": "I’ve been feeling loved",
+    "type": "likert",
+    "short": "Feeling loved",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "dbb61468-1f21-458a-8f11-a694f9a8565c",
+    "question": "I’ve been interested in new things",
+    "type": "likert",
+    "short": "Interested in new things",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }, {
+    "id": "1c81368e-7a30-4d56-a00a-09c0d46fdb8d",
+    "question": "I’ve been feeling cheerful",
+    "type": "likert",
+    "short": "Feeling cheerful",
+    "scale": [{
+      "value": 1,
+      "label": "None of the time"
+    }, {
+      "value": 2,
+      "label": "Rarely"
+    }, {
+      "value": 3,
+      "label": "Some of the time"
+    }, {
+      "value": 4,
+      "label": "Often"
+    }, {
+      "value": 5,
+      "label": "All of the time"
+    }]
+  }],
+  "scorings": [{
+    "id": "55a98210-69e6-4a01-9d7d-e13c40696b96",
+    "name": "Total",
+    "questions": [
+      "1c81368e-7a30-4d56-a00a-09c0d46fdb8d",
+      "dbb61468-1f21-458a-8f11-a694f9a8565c",
+      "28cbf14a-b858-4b57-88ff-d33808eed85d",
+      "a7a54b9b-f8ed-4dbb-b168-ff2a557824cd",
+      "5e355371-b43d-483f-849e-9d1a92139064",
+      "0386bc61-5adb-4bd2-9d8f-6029e4130b89",
+      "076be1b5-26ff-4315-b7b7-62f11ea8936b",
+      "63aec3b3-28c9-463a-9fc0-328f407ff8c1",
+      "70988e38-5739-43f7-a23e-dbc54432866e",
+      "35538654-37b7-445d-a1a0-6f99fda8174d",
+      "e7c53257-a170-45a6-be52-f5e2b7ed3788",
+      "d652571e-7bbf-4599-845a-a02d1ab4a1a9",
+      "f982f79d-c1c1-4d65-9558-f1476d57fbf6",
+      "80324762-5084-4a18-9038-be6cd17b791d"
+    ],
+    "aggregation": "sum"
+  }]
+}

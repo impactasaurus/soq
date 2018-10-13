@@ -86,6 +86,7 @@ type ComplexityRoot struct {
 		Id           func(childComplexity int) int
 		Logo         func(childComplexity int) int
 		Name         func(childComplexity int) int
+		Short        func(childComplexity int) int
 		Version      func(childComplexity int) int
 		Changelog    func(childComplexity int) int
 		Description  func(childComplexity int) int
@@ -406,6 +407,13 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.Questionnaire.Name(childComplexity), true
+
+	case "Questionnaire.short":
+		if e.complexity.Questionnaire.Short == nil {
+			break
+		}
+
+		return e.complexity.Questionnaire.Short(childComplexity), true
 
 	case "Questionnaire.version":
 		if e.complexity.Questionnaire.Version == nil {
@@ -1481,6 +1489,8 @@ func (ec *executionContext) _Questionnaire(ctx context.Context, sel ast.Selectio
 			if out.Values[i] == graphql.Null {
 				invalid = true
 			}
+		case "short":
+			out.Values[i] = ec._Questionnaire_short(ctx, field, obj)
 		case "version":
 			out.Values[i] = ec._Questionnaire_version(ctx, field, obj)
 			if out.Values[i] == graphql.Null {
@@ -1583,6 +1593,30 @@ func (ec *executionContext) _Questionnaire_name(ctx context.Context, field graph
 	res := resTmp.(string)
 	rctx.Result = res
 	return graphql.MarshalString(res)
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Questionnaire_short(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Questionnaire",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Short, nil
+	})
+	if resTmp == nil {
+		return graphql.Null
+	}
+	res := resTmp.(*string)
+	rctx.Result = res
+
+	if res == nil {
+		return graphql.Null
+	}
+	return graphql.MarshalString(*res)
 }
 
 // nolint: vetshadow
@@ -3680,6 +3714,8 @@ type Questionnaire {
     logo: String
     """Name is the name of the questionnaire"""
     name: String!
+    """Short is a short form of the questionnaire's name"""
+    short: String
     """Version details the version of the questionnaire, it uses semver versioning"""
     version: String!
     """Changelog details the differences between versions"""

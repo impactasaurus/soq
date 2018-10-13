@@ -92,6 +92,8 @@ type Questionnaire {
     logo: String
     """Name is the name of the questionnaire"""
     name: String!
+    """Short is a short form of the questionnaire's name"""
+    short: String
     """Version details the version of the questionnaire, it uses semver versioning"""
     version: String!
     """Changelog details the differences between versions"""
