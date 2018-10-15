@@ -1,3 +1,3 @@
-# Soft Outcome Questionnaires API
+# Soft Outcomes API
 
 Welcome
