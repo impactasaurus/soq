@@ -56,7 +56,7 @@
     },
     {
       "id": "ad8e79ce-c8b9-4c26-bc62-98a1a20f3cc6",
-      "text": "I get a lot of headaches, stomach-aches or sickness",
+      "question": "I get a lot of headaches, stomach-aches or sickness",
       "type": "likert",
       "short": "Illness",
       "scale": [{
@@ -72,7 +72,7 @@
     },
     {
       "id": "8a6d4a46-1a14-4fd8-8150-8e326ee85aa1",
-      "text": "I usually share with others (food, games, pens etc.)",
+      "question": "I usually share with others (food, games, pens etc.)",
       "type": "likert",
       "short": "Share with others",
       "scale": [{
@@ -88,7 +88,7 @@
     },
     {
       "id": "cf76b9ed-b9d8-4878-a3e9-b88b44d8efa8",
-      "text": "I get very angry and often lose my temper",
+      "question": "I get very angry and often lose my temper",
       "type": "likert",
       "short": "Lose my temper",
       "scale": [{
@@ -104,7 +104,7 @@
     },
     {
       "id": "97d825ab-3a6e-466b-8566-890193b9908f",
-      "text": "I am usually on my own. I generally play alone or keep to myself",
+      "question": "I am usually on my own. I generally play alone or keep to myself",
       "type": "likert",
       "short": "Keep to myself",
       "scale": [{
@@ -120,7 +120,7 @@
     },
     {
       "id": "94f82e16-8553-4251-a89e-f701aaf9aa66",
-      "text": "I usually do as I am told",
+      "question": "I usually do as I am told",
       "type": "likert",
       "short": "Do as I am told",
       "scale": [{
@@ -136,7 +136,7 @@
     },
     {
       "id": "8b03a678-99c5-46cb-ad52-d8df65bba66c",
-      "text": "I worry a lot",
+      "question": "I worry a lot",
       "type": "likert",
       "short": "I worry",
       "scale": [{
@@ -152,7 +152,7 @@
     },
     {
       "id": "8d103493-6c56-4c53-8d4f-88fe8b64ced0",
-      "text": "I am helpful if someone is hurt, upset or feeling ill",
+      "question": "I am helpful if someone is hurt, upset or feeling ill",
       "type": "likert",
       "short": "Helpful if someone is hurt",
       "scale": [{
@@ -168,7 +168,7 @@
     },
     {
       "id": "ea3a1e81-c895-454b-aa35-25080bf02d24",
-      "text": "I am constantly fidgeting or squirming",
+      "question": "I am constantly fidgeting or squirming",
       "type": "likert",
       "short": "Constantly fidgeting",
       "scale": [{
@@ -184,7 +184,7 @@
     },
     {
       "id": "20d5747c-b183-4778-869b-eb3c88179b19",
-      "text": "I have one good friend or more",
+      "question": "I have one good friend or more",
       "type": "likert",
       "short": "I have one good friend",
       "scale": [{
@@ -200,7 +200,7 @@
     },
     {
       "id": "5591a97f-a6cb-4991-9394-5224e6617dc2",
-      "text": "I fight a lot. I can make other people do what I want",
+      "question": "I fight a lot. I can make other people do what I want",
       "type": "likert",
       "short": "I fight a lot",
       "scale": [{
@@ -216,7 +216,7 @@
     },
     {
       "id": "71b63e3a-68fa-4a5a-a816-1b36f3fc5438",
-      "text": "I am often unhappy, down-hearted or tearful",
+      "question": "I am often unhappy, down-hearted or tearful",
       "type": "likert",
       "short": "Often unhappy",
       "scale": [{
@@ -232,7 +232,7 @@
     },
     {
       "id": "d342fbf2-367c-4669-be54-7fbc43f77856",
-      "text": "Other people my age generally like me",
+      "question": "Other people my age generally like me",
       "type": "likert",
       "short": "Peers like me",
       "scale": [{
@@ -248,7 +248,7 @@
     },
     {
       "id": "b66b22b0-93d9-41f7-bd33-241f5d6df6b3",
-      "text": "I am easily distracted, I find it difficult to concentrate",
+      "question": "I am easily distracted, I find it difficult to concentrate",
       "type": "likert",
       "short": "Easily distracted",
       "scale": [{
@@ -264,7 +264,7 @@
     },
     {
       "id": "ac3d786e-809b-4a89-a2bd-6f3095de23bd",
-      "text": "I am nervous in new situations. I easily lose confidence",
+      "question": "I am nervous in new situations. I easily lose confidence",
       "type": "likert",
       "short": "Easily lose confidence",
       "scale": [{
@@ -280,7 +280,7 @@
     },
     {
       "id": "f9385858-1c10-4119-87a0-5183d03d2ff5",
-      "text": "I am kind to younger children",
+      "question": "I am kind to younger children",
       "type": "likert",
       "short": "Kind to younger children",
       "scale": [{
@@ -296,7 +296,7 @@
     },
     {
       "id": "4bc01c31-83e4-417b-9b32-cf437033a14f",
-      "text": "I am often accused of lying or cheating",
+      "question": "I am often accused of lying or cheating",
       "type": "likert",
       "short": "Accused of lying or cheating",
       "scale": [{
@@ -312,7 +312,7 @@
     },
     {
       "id": "755f20c5-9764-435a-b9f3-8188cff3c51a",
-      "text": "Other children or young people pick on me or bully me",
+      "question": "Other children or young people pick on me or bully me",
       "type": "likert",
       "short": "Others bully me",
       "scale": [{
@@ -328,7 +328,7 @@
     },
     {
       "id": "71778f52-3820-4261-9e45-e33e764394b0",
-      "text": "I often volunteer to help others (parents, teachers, children)",
+      "question": "I often volunteer to help others (parents, teachers, children)",
       "type": "likert",
       "short": "Volunteer to help others",
       "scale": [{
@@ -344,7 +344,7 @@
     },
     {
       "id": "24d113c9-350e-416b-bc8d-baaa93ddeda6",
-      "text": "I think before I do things",
+      "question": "I think before I do things",
       "type": "likert",
       "short": "Think before doing",
       "scale": [{
@@ -360,7 +360,7 @@
     },
     {
       "id": "3e90f38b-4e71-47b7-ada5-b73e8bda426d",
-      "text": "I take things that are not mine from home, school or elsewhere",
+      "question": "I take things that are not mine from home, school or elsewhere",
       "type": "likert",
       "short": "Take things that are not mine",
       "scale": [{
@@ -376,7 +376,7 @@
     },
     {
       "id": "8bf64351-8115-4071-8b71-1a485fbc0492",
-      "text": "I get on better with adults than with people my own age",
+      "question": "I get on better with adults than with people my own age",
       "type": "likert",
       "short": "Get on better with adults",
       "scale": [{
@@ -392,7 +392,7 @@
     },
     {
       "id": "f4ae73da-1b1a-407b-a93e-7b0e6aebe673",
-      "text": "I have many fears, I am easily scared",
+      "question": "I have many fears, I am easily scared",
       "type": "likert",
       "short": "I have many fears",
       "scale": [{
@@ -408,7 +408,7 @@
     },
     {
       "id": "0caf950c-64fd-4fcc-80a2-87324960b470",
-      "text": "I finish the work I'm doing. My attention is good",
+      "question": "I finish the work I'm doing. My attention is good",
       "type": "likert",
       "short": "Attention is good",
       "scale": [{
