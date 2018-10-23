@@ -1,0 +1,289 @@
+{
+  "id": "1c41d51c-dc3e-40e3-a51f-2d37820e0653",
+  "name": "CORE 10",
+  "short": "CORE 10",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2018-10-23T16:46:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "description": "A short, 10 item version of the CORE-OM to be used as screening tool and outcome measure when the CORE-OM is considered too long for routine use. Items cover anxiety (2 items), depression (2 items), trauma (1 item), physical problems (1 item) functioning (3 items - day to day, close relationships, social relationships) and risk to self (1 item). The measure has 6 high intensity/severity and 4 low intensity/severity items.",
+  "links": [{
+    "name": "Website",
+    "url": "http://www.coreims.co.uk/index.html"
+  }, {
+    "name": "License",
+    "url": "http://www.coreims.co.uk/CORE_Copyright.html"
+  }, {
+    "name": "User Guide",
+    "url": "http://www.coreims.co.uk/Downloads_Forms.aspx"
+  }, {
+    "name": "PDF Versions",
+    "url": "http://www.coreims.co.uk/Downloads_Forms.aspx"
+  }],
+  "instructions": "Please read each statement and think how often you felt that way last week",
+  "questions": [{
+    "id": "e8ae7db1-09c6-4d88-92a0-a503821cafb5",
+    "question": "I have felt tense, anxious or nervous",
+    "type": "likert",
+    "short": "Felt tense, anxious or nervous",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "0d94dff6-08f9-457e-a5de-41a817e61c44",
+    "question": "I have felt I have someone to turn to for support when needed",
+    "type": "likert",
+    "short": "Felt I have support",
+    "scale": [{
+      "value": 4,
+      "label": "Not at all"
+    }, {
+      "value": 3,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 1,
+      "label": "Often"
+    }, {
+      "value": 0,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "be60ff24-ef11-43bb-aa06-e526463f294e",
+    "question": "I have felt able to cope when things go wrong",
+    "type": "likert",
+    "short": "Felt able to cope",
+    "scale": [{
+      "value": 4,
+      "label": "Not at all"
+    }, {
+      "value": 3,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 1,
+      "label": "Often"
+    }, {
+      "value": 0,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "7becf4f2-a179-4988-ae18-0ac1ff229c73",
+    "question": "Talking to people has felt too much for me",
+    "type": "likert",
+    "short": "Talking has felt too much",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "938ddf1e-4e6f-4a2a-aacf-e86a59d56565",
+    "question": "I have felt panic or terror",
+    "type": "likert",
+    "short": "Felt panic or terror",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "30342dc9-024d-415b-bf96-8486d26edd3a",
+    "question": "I made plans to end my life",
+    "type": "likert",
+    "short": "Planned to end my life",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "f9a4ae11-79c3-4118-9e37-063d2645f4c0",
+    "question": "I have had difficulty getting to sleep or staying asleep",
+    "type": "likert",
+    "short": "Difficult to sleep or stay asleep",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "d8face5b-64f6-42b3-a85a-687b7d42465e",
+    "question": "I have felt despairing or hopeless",
+    "type": "likert",
+    "short": "Felt despairing or hopeless",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "ef73e788-9af4-4b45-8e31-ccb49e71a4f8",
+    "question": "I have felt unhappy",
+    "type": "likert",
+    "short": "Felt unhappy",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }, {
+    "id": "b181672c-8453-45e9-b6c0-60ad377dde45",
+    "question": "Unwanted images or memories have been distressing me",
+    "type": "likert",
+    "short": "Unwanted images or memories",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1,
+      "label": "Only Occasionally"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Often"
+    }, {
+      "value": 4,
+      "label": "Most or all the time"
+    }]
+  }],
+  "scorings": [{
+    "id": "195ead55-6e59-41ee-bf15-b094df66915d",
+    "name": "Clinical Score",
+    "description": "Estimates the level of psychological distress and is an indication of mental health",
+    "questions": [
+      "e8ae7db1-09c6-4d88-92a0-a503821cafb5",
+      "0d94dff6-08f9-457e-a5de-41a817e61c44",
+      "be60ff24-ef11-43bb-aa06-e526463f294e",
+      "7becf4f2-a179-4988-ae18-0ac1ff229c73",
+      "938ddf1e-4e6f-4a2a-aacf-e86a59d56565",
+      "30342dc9-024d-415b-bf96-8486d26edd3a",
+      "f9a4ae11-79c3-4118-9e37-063d2645f4c0",
+      "d8face5b-64f6-42b3-a85a-687b7d42465e",
+      "ef73e788-9af4-4b45-8e31-ccb49e71a4f8",
+      "b181672c-8453-45e9-b6c0-60ad377dde45"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 0,
+        "maximum": 4,
+        "label": "Healthy"
+      },
+      {
+        "minimum": 5,
+        "maximum": 10,
+        "label": "Low Level"
+      },
+      {
+        "minimum": 11,
+        "maximum": 15,
+        "label": "Mild"
+      },
+      {
+        "minimum": 16,
+        "maximum": 20,
+        "label": "Moderate"
+      },
+      {
+        "minimum": 21,
+        "maximum": 25,
+        "label": "Moderate Severe"
+      },
+      {
+        "minimum": 26,
+        "maximum": 40,
+        "label": "Severe"
+      }
+    ]
+  }]
+}
