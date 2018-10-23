@@ -1,6 +1,6 @@
 {
   "id": "1c41d51c-dc3e-40e3-a51f-2d37820e0653",
-  "name": "CORE 10",
+  "name": "Clinical Outcomes in Routine Evaluation 10",
   "short": "CORE 10",
   "version": "1.0.0",
   "changelog": [{
@@ -10,6 +10,7 @@
       "initial version"
     ]
   }],
+  "attribution": "CORE Instruments by CORE System Trust is licensed under CC BY-ND 4.0",
   "description": "A short, 10 item version of the CORE-OM to be used as screening tool and outcome measure when the CORE-OM is considered too long for routine use. Items cover anxiety (2 items), depression (2 items), trauma (1 item), physical problems (1 item) functioning (3 items - day to day, close relationships, social relationships) and risk to self (1 item). The measure has 6 high intensity/severity and 4 low intensity/severity items.",
   "links": [{
     "name": "Website",

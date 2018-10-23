@@ -90,6 +90,7 @@ type ComplexityRoot struct {
 		Version      func(childComplexity int) int
 		Changelog    func(childComplexity int) int
 		Description  func(childComplexity int) int
+		Attribution  func(childComplexity int) int
 		Instructions func(childComplexity int) int
 		Links        func(childComplexity int) int
 		Questions    func(childComplexity int) int
@@ -435,6 +436,13 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.Questionnaire.Description(childComplexity), true
+
+	case "Questionnaire.attribution":
+		if e.complexity.Questionnaire.Attribution == nil {
+			break
+		}
+
+		return e.complexity.Questionnaire.Attribution(childComplexity), true
 
 	case "Questionnaire.instructions":
 		if e.complexity.Questionnaire.Instructions == nil {
@@ -1503,6 +1511,8 @@ func (ec *executionContext) _Questionnaire(ctx context.Context, sel ast.Selectio
 			}
 		case "description":
 			out.Values[i] = ec._Questionnaire_description(ctx, field, obj)
+		case "attribution":
+			out.Values[i] = ec._Questionnaire_attribution(ctx, field, obj)
 		case "instructions":
 			out.Values[i] = ec._Questionnaire_instructions(ctx, field, obj)
 		case "links":
@@ -1709,6 +1719,30 @@ func (ec *executionContext) _Questionnaire_description(ctx context.Context, fiel
 	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
 		ctx = rctx // use context from middleware stack in children
 		return obj.Description, nil
+	})
+	if resTmp == nil {
+		return graphql.Null
+	}
+	res := resTmp.(*string)
+	rctx.Result = res
+
+	if res == nil {
+		return graphql.Null
+	}
+	return graphql.MarshalString(*res)
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Questionnaire_attribution(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Questionnaire",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.Attribution, nil
 	})
 	if resTmp == nil {
 		return graphql.Null
@@ -3722,6 +3756,8 @@ type Questionnaire {
     changelog: [Changes!]!
     """Description provides more information about the questionnaire"""
     description: String
+    """Attribution must be shown when using this questionnaire"""
+    attribution: String
     """Instructions are shown to users before they complete the questionnaire"""
     instructions: String
     """Links are a collection of links which detail more information about the questionnaire"""

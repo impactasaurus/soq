@@ -20,6 +20,9 @@ func TestQuestionnaires(t *testing.T) {
 			if q.ID == "" {
 				t.Errorf("ID not specified")
 			}
+			if q.Attribution == nil {
+				t.Logf("should questionnaire %s have attribution?", q.Name)
+			}
 			testQuestions(t, q)
 		})
 	}

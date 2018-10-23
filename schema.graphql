@@ -100,6 +100,8 @@ type Questionnaire {
     changelog: [Changes!]!
     """Description provides more information about the questionnaire"""
     description: String
+    """Attribution must be shown when using this questionnaire"""
+    attribution: String
     """Instructions are shown to users before they complete the questionnaire"""
     instructions: String
     """Links are a collection of links which detail more information about the questionnaire"""
