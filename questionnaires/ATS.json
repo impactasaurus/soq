@@ -236,7 +236,7 @@
       "700e11e8-284e-4219-8c32-79edff5e1a75",
       "aebf82b4-fe4a-4c03-8f35-90caeee03115"
     ],
-    "aggregation": "sum"
+    "aggregation": "mean"
   }, {
     "id": "78055951-656b-4867-85ec-9683c8b4d155",
     "name": "Self-Criticism",
@@ -245,7 +245,7 @@
       "7b7b51d8-3250-4959-b6ec-b9bdc98f16c0",
       "2f3483d0-4241-4590-bb2b-0bb232b3c604"
     ],
-    "aggregation": "sum"
+    "aggregation": "mean"
   }, {
     "id": "29a1e536-0cda-42fe-8b4d-7f8731180d1b",
     "name": "Generalization",
@@ -255,6 +255,6 @@
       "57384207-b0c8-47be-a8d3-7ea1759e20d0",
       "5afb3621-d7a5-4934-904a-da57b11e3652"
     ],
-    "aggregation": "sum"
+    "aggregation": "mean"
   }]
 }
