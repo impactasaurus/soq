@@ -1,0 +1,260 @@
+{
+  "id": "5bb9aed1-490e-4eae-a594-40f741466342",
+  "name": "Attitudes Toward Self",
+  "short": "ATS",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2018-12-14T13:21:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "attribution": "Attitudes Toward Self by Carver, C. S.",
+  "description": "The Attitudes Toward Self (ATS) was designed to measure three potential self-regulatory vulnerabilities to depression: holding of overly high standards; the tendency to be self-critical at any failure to perform well; and the tendency to generalize from a single failure to the broader sense of self-worth.",
+  "links": [{
+    "name": "Website",
+    "url": "http://www.psy.miami.edu/faculty/ccarver/sclATS.html"
+  }],
+  "instructions": "Please be as honest as you can throughout, and try not to let your answer to one item influence your answers to other items. There are no correct or incorrect answers. You are simply to express your own personal feelings.",
+  "questions": [{
+    "id": "325c0f98-b822-4190-af33-3d577aacc48f",
+    "question": "Compared to other people, I expect a lot from myself",
+    "type": "likert",
+    "short": "I expect a lot from myself",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "5124b4e2-f854-4806-964e-f1ac4b78a1a9",
+    "question": "When even one thing goes wrong I begin to wonder if I can do well at anything at all",
+    "type": "likert",
+    "short": "I wonder if I can do well at anything",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "8998117c-701d-4e99-85e5-1dc11f4be0be",
+    "question": "I get angry with myself if my efforts don't lead to the results I wanted",
+    "type": "likert",
+    "short": "Angry if desired results are not achieved",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "700e11e8-284e-4219-8c32-79edff5e1a75",
+    "question": "When it comes to setting standards for my behavior, I aim higher than most people",
+    "type": "likert",
+    "short": "Behaviorally, I aim higher than most people",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "5199af28-b80a-42d3-b335-96b47887b942",
+    "question": "I hardly ever let unhappiness over one bad time influence my feelings about other parts of my life",
+    "type": "likert",
+    "short": "I don't let unhappiness influence other parts of my life",
+    "scale": [{
+      "value": 1,
+      "label": "I agree a lot"
+    }, {
+      "value": 2,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 4,
+      "label": "I disagree a little"
+    }, {
+      "value": 5,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "7b7b51d8-3250-4959-b6ec-b9bdc98f16c0",
+    "question": "When I don’t do as well as I hoped to, I often get upset with myself",
+    "type": "likert",
+    "short": "Upset when I don’t do as well as I hoped to",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "aebf82b4-fe4a-4c03-8f35-90caeee03115",
+    "question": "I set higher goals for myself than other people seem to",
+    "type": "likert",
+    "short": "I set higher goals for myself",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "57384207-b0c8-47be-a8d3-7ea1759e20d0",
+    "question": "If I notice one fault of mine, it makes me think about my other faults",
+    "type": "likert",
+    "short": "I think about my other faults",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "2f3483d0-4241-4590-bb2b-0bb232b3c604",
+    "question": "I get unhappy with anything less than what I expected of myself",
+    "type": "likert",
+    "short": "Unhappy with less than what I expected of myself",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }, {
+    "id": "5afb3621-d7a5-4934-904a-da57b11e3652",
+    "question": "A single failure can change me from feeling OK to seeing only the bad in myself",
+    "type": "likert",
+    "short": "Single failures lead to seeing only the bad in myself",
+    "scale": [{
+      "value": 5,
+      "label": "I agree a lot"
+    }, {
+      "value": 4,
+      "label": "I agree a little"
+    }, {
+      "value": 3,
+      "label": "I neither agree nor disagree"
+    }, {
+      "value": 2,
+      "label": "I disagree a little"
+    }, {
+      "value": 1,
+      "label": "I disagree a lot"
+    }]
+  }],
+  "scorings": [{
+    "id": "de67999b-c7cb-4bf1-9ac2-c43784014dd8",
+    "name": "High Standards",
+    "questions": [
+      "325c0f98-b822-4190-af33-3d577aacc48f",
+      "700e11e8-284e-4219-8c32-79edff5e1a75",
+      "aebf82b4-fe4a-4c03-8f35-90caeee03115"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "78055951-656b-4867-85ec-9683c8b4d155",
+    "name": "Self-Criticism",
+    "questions": [
+      "8998117c-701d-4e99-85e5-1dc11f4be0be",
+      "7b7b51d8-3250-4959-b6ec-b9bdc98f16c0",
+      "2f3483d0-4241-4590-bb2b-0bb232b3c604"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "29a1e536-0cda-42fe-8b4d-7f8731180d1b",
+    "name": "Generalization",
+    "questions": [
+      "5124b4e2-f854-4806-964e-f1ac4b78a1a9",
+      "5199af28-b80a-42d3-b335-96b47887b942",
+      "57384207-b0c8-47be-a8d3-7ea1759e20d0",
+      "5afb3621-d7a5-4934-904a-da57b11e3652"
+    ],
+    "aggregation": "sum"
+  }]
+}
