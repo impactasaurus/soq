@@ -68,6 +68,7 @@ type Questionnaire struct {
 	Version      string      `json:"version"`
 	Changelog    []Changes   `json:"changelog"`
 	Description  *string     `json:"description"`
+	License      string      `json:"license"`
 	Attribution  *string     `json:"attribution"`
 	Instructions *string     `json:"instructions"`
 	Links        []*Link     `json:"links"`
