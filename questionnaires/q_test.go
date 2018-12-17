@@ -23,6 +23,9 @@ func TestQuestionnaires(t *testing.T) {
 			if q.Attribution == nil {
 				t.Logf("should questionnaire %s have attribution?", q.Name)
 			}
+			if q.License == "" {
+				t.Errorf("questionnaire %s missing license information", q.Name)
+			}
 			testQuestions(t, q)
 		})
 	}

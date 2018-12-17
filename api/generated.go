@@ -90,6 +90,7 @@ type ComplexityRoot struct {
 		Version      func(childComplexity int) int
 		Changelog    func(childComplexity int) int
 		Description  func(childComplexity int) int
+		License      func(childComplexity int) int
 		Attribution  func(childComplexity int) int
 		Instructions func(childComplexity int) int
 		Links        func(childComplexity int) int
@@ -436,6 +437,13 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.Questionnaire.Description(childComplexity), true
+
+	case "Questionnaire.license":
+		if e.complexity.Questionnaire.License == nil {
+			break
+		}
+
+		return e.complexity.Questionnaire.License(childComplexity), true
 
 	case "Questionnaire.attribution":
 		if e.complexity.Questionnaire.Attribution == nil {
@@ -1511,6 +1519,11 @@ func (ec *executionContext) _Questionnaire(ctx context.Context, sel ast.Selectio
 			}
 		case "description":
 			out.Values[i] = ec._Questionnaire_description(ctx, field, obj)
+		case "license":
+			out.Values[i] = ec._Questionnaire_license(ctx, field, obj)
+			if out.Values[i] == graphql.Null {
+				invalid = true
+			}
 		case "attribution":
 			out.Values[i] = ec._Questionnaire_attribution(ctx, field, obj)
 		case "instructions":
@@ -1730,6 +1743,29 @@ func (ec *executionContext) _Questionnaire_description(ctx context.Context, fiel
 		return graphql.Null
 	}
 	return graphql.MarshalString(*res)
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Questionnaire_license(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+	rctx := &graphql.ResolverContext{
+		Object: "Questionnaire",
+		Args:   nil,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, obj, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return obj.License, nil
+	})
+	if resTmp == nil {
+		if !ec.HasError(rctx) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.(string)
+	rctx.Result = res
+	return graphql.MarshalString(res)
 }
 
 // nolint: vetshadow
@@ -3756,6 +3792,8 @@ type Questionnaire {
     changelog: [Changes!]!
     """Description provides more information about the questionnaire"""
     description: String
+    """License provides information about how the questionnaire can be used"""
+    license: String!
     """Attribution must be shown when using this questionnaire"""
     attribution: String
     """Instructions are shown to users before they complete the questionnaire"""

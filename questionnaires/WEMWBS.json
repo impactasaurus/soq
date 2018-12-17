@@ -11,10 +11,14 @@
     ]
   }],
   "attribution": "Warwick-Edinburgh Mental Well-being Scale (WEMWBS) © NHS Health Scotland, University of Warwick and University of Edinburgh, 2006, all rights reserved.",
+  "license": "Registration is required to use this scale, using the scale without registering is considered a breach of copyright. WEMWBS is available for use by standard license to not-for-profit organisations only. Enquiries from commercial organisations should be directed to Warwick University.",
   "description": "The Warwick-Edinburgh Mental Well-being scale was developed to enable the monitoring of mental wellbeing in the general population and the evaluation of projects, programmes and policies which aim to improve mental wellbeing.\nWEMWBS is a 14 item scale with 5 response categories, summed to provide a single score ranging from 14-70. The items are all worded positively and cover both feeling and functioning aspects of mental wellbeing",
   "links": [{
     "name": "Website",
     "url": "https://warwick.ac.uk/fac/sci/med/research/platform/wemwbs/"
+  }, {
+    "name": "Register",
+    "url": "https://warwick.ac.uk/fac/sci/med/research/platform/wemwbs/researchers/register/"
   }, {
     "name": "License",
     "url": "https://warwick.ac.uk/fac/sci/med/research/platform/wemwbs/researchers/register/"
