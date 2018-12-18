@@ -222,6 +222,6 @@
       "b990f42a-2ce0-45d5-9821-53d5a9a5656a",
       "d76baaf8-b584-40ef-8e74-89cf527291ac"
     ],
-    "aggregation": "mean"
+    "aggregation": "sum"
   }]
 }
