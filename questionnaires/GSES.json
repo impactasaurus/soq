@@ -1,0 +1,227 @@
+{
+  "id": "f4dd3278-5940-4464-bcb3-736594e62099",
+  "name": "General Self-Efficacy Scale",
+  "short": "GSES",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2018-12-18T20:49:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "attribution": "Schwarzer, R., & Jerusalem, M. (1995). Generalized Self-Efficacy scale. In J. Weinman, S. Wright, & M. Johnston, Measures in health psychology: A user’s portfolio. Causal and control beliefs (pp. 35-37). Windsor, England: NFER-NELSON.",
+  "license": "Permission is granted to use the General Self-Efficacy Scale for non-commercial research and development purposes. The scale may be shortened and/or modified to meet the particular requirements of the research context.",
+  "description": "The General Self-Efficacy Scale is a 10-item psychometric scale that is designed to assess optimistic self-beliefs to cope with a variety of difficult demands in life. In contrast to other scales that were designed to assess optimism, this one explicitly refers to personal agency, i.e., the belief that one's actions are responsible for successful outcomes.",
+  "links": [{
+    "name": "Website",
+    "url": "http://userpage.fu-berlin.de/~health/selfscal.htm"
+  }, {
+    "name": "FAQ",
+    "url": "http://userpage.fu-berlin.de/~health/faq_gse.pdf"
+  }, {
+    "name": "Translations",
+    "url": "http://userpage.fu-berlin.de/~health/selfscal.htm"
+  }, {
+    "name": "Reliability and validity",
+    "url": "http://userpage.fu-berlin.de/~health/self/selfeff_public.htm"
+  }],
+  "questions": [{
+    "id": "9be38bde-56cf-4991-875d-bee27454c65a",
+    "question": "I can always manage to solve difficult problems if I try hard enough",
+    "type": "likert",
+    "short": "Solve difficult problems",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "f196e749-57c0-4e7e-be2d-bbdc91afb9a8",
+    "question": "If someone opposes me, I can find the means and ways to get what I want",
+    "type": "likert",
+    "short": "Get what I want",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "2311fd7b-9153-43f5-b4b3-dfe5fe8f2191",
+    "question": "It is easy for me to stick to my aims and accomplish my goals",
+    "type": "likert",
+    "short": "Accomplish my goals",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "25bfd122-fe7d-4820-88de-f48cf54b9b99",
+    "question": "I am confident that I could deal efficiently with unexpected events",
+    "type": "likert",
+    "short": "Deal with unexpected events",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "0f380887-ea28-46ea-8651-cf2e84562154",
+    "question": "Thanks to my resourcefulness, I know how to handle unforeseen situations",
+    "type": "likert",
+    "short": "Handle unforeseen situations",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "71e4724b-fa21-428b-b82a-d0b67370557d",
+    "question": "I can solve most problems if I invest the necessary effort",
+    "type": "likert",
+    "short": "Can solve most problems",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "8136e591-de60-48a2-a050-3dc9edb20ea1",
+    "question": "I can remain calm when facing difficulties because I can rely on my coping abilities",
+    "type": "likert",
+    "short": "Remain calm when facing difficulties",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "94042db4-bf67-47c4-b4f2-77c16d9961e2",
+    "question": "When I am confronted with a problem, I can usually find several solutions",
+    "type": "likert",
+    "short": "Find several solutions to problems",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "b990f42a-2ce0-45d5-9821-53d5a9a5656a",
+    "question": "If I am in trouble, I can usually think of a solution",
+    "type": "likert",
+    "short": "Think of solutions when in trouble",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }, {
+    "id": "d76baaf8-b584-40ef-8e74-89cf527291ac",
+    "question": "I can usually handle whatever comes my way",
+    "type": "likert",
+    "short": "Handle whatever comes my way",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all true"
+    }, {
+      "value": 2,
+      "label": "Hardly true"
+    }, {
+      "value": 3,
+      "label": "Moderately true"
+    }, {
+      "value": 4,
+      "label": "Exactly true"
+    }]
+  }],
+  "scorings": [{
+    "id": "80c65224-553c-4e26-824c-64e99a8da182",
+    "name": "Self-Efficacy",
+    "questions": [
+      "9be38bde-56cf-4991-875d-bee27454c65a",
+      "f196e749-57c0-4e7e-be2d-bbdc91afb9a8",
+      "2311fd7b-9153-43f5-b4b3-dfe5fe8f2191",
+      "25bfd122-fe7d-4820-88de-f48cf54b9b99",
+      "0f380887-ea28-46ea-8651-cf2e84562154",
+      "71e4724b-fa21-428b-b82a-d0b67370557d",
+      "8136e591-de60-48a2-a050-3dc9edb20ea1",
+      "94042db4-bf67-47c4-b4f2-77c16d9961e2",
+      "b990f42a-2ce0-45d5-9821-53d5a9a5656a",
+      "d76baaf8-b584-40ef-8e74-89cf527291ac"
+    ],
+    "aggregation": "mean"
+  }]
+}
