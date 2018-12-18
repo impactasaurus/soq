@@ -1,0 +1,258 @@
+{
+  "id": "3637fdc2-185c-4e5b-b84a-941cedcef8f7",
+  "name": "Perceived Stress Scale 10",
+  "short": "PSS 10",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2018-12-18T14:04:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "attribution": "Cohen, S., & Williamson, G. (1988). Perceived stress in a probability sample of the United States. In S. Spacapan & S. Oskamp (Eds.), The social psychology of health: Claremont Symposium on applied social psychology. Newbury Park, CA: Sage.",
+  "license": "Permission for use is not necessary when use is for nonprofit academic research or nonprofit educational purposes. For other uses, please contact Dr. Sheldon Cohen (https://www.cmu.edu/dietrich/psychology/people/core-training-faculty/cohen-sheldon.html)",
+  "description": "Assesses the degree to which people perceive their lives as stressful. High levels of stress are associated with poor self-reported health, elevated blood pressure, depression, and susceptibility to infection. Subjects indicate how often they have found their lives unpredictable, uncontrollable, and overloaded in the last month.",
+  "links": [{
+    "name": "Website",
+    "url": "http://www.psy.cmu.edu/~scohen/"
+  }, {
+    "name": "Normative data",
+    "url": "http://www.psy.cmu.edu/~scohen/Whos_Stressed_JASP_2012.pdf"
+  }, {
+    "name": "Reliability and validity",
+    "url": "http://www.psy.cmu.edu/~scohen/globalmeas83.pdf"
+  }, {
+    "name": "Translations",
+    "url": "http://www.psy.cmu.edu/~scohen/"
+  }],
+  "instructions": "The questions in this scale ask you about your feelings and thoughts during the last month. In each case, please indicate how often you felt or thought a certain way.",
+  "questions": [{
+    "id": "7781c745-fed0-4870-86a9-65c4465a4525",
+    "question": "In the last month, how often have you been upset because of something that happened unexpectedly?",
+    "type": "likert",
+    "short": "Upset because of something unexpected",
+    "scale": [{
+      "value": 0,
+      "label": "Never"
+    }, {
+      "value": 1,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Fairly often"
+    }, {
+      "value": 4,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "dcd30dc6-f0e4-4ac8-b874-4fbbd1beb1be",
+    "question": "In the last month, how often have you felt that you were unable to control the important things in your life?",
+    "type": "likert",
+    "short": "Unable to control the important things",
+    "scale": [{
+      "value": 0,
+      "label": "Never"
+    }, {
+      "value": 1,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Fairly often"
+    }, {
+      "value": 4,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "7691af73-f1d6-456f-9c59-77406998e8ed",
+    "question": "In the last month, how often have you felt nervous and \"stressed\"?",
+    "type": "likert",
+    "short": "Felt nervous and stressed",
+    "scale": [{
+      "value": 0,
+      "label": "Never"
+    }, {
+      "value": 1,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Fairly often"
+    }, {
+      "value": 4,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "0097adba-a093-4c60-b184-1092aacbcd21",
+    "question": "In the last month, how often have you felt confident about your ability to handle your personal problems?",
+    "type": "likert",
+    "short": "Able to handle personal problems",
+    "scale": [{
+      "value": 4,
+      "label": "Never"
+    }, {
+      "value": 3,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 1,
+      "label": "Fairly often"
+    }, {
+      "value": 0,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "cc83b2d8-9fea-4424-85ba-57edfb9e5a6e",
+    "question": "In the last month, how often have you felt that things were going your way?",
+    "type": "likert",
+    "short": "Things were going your way",
+    "scale": [{
+      "value": 4,
+      "label": "Never"
+    }, {
+      "value": 3,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 1,
+      "label": "Fairly often"
+    }, {
+      "value": 0,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "f5cbe3b8-1916-403a-8c1f-bde8ec27d54d",
+    "question": "In the last month, how often have you found that you could not cope with all the things that you had to do?",
+    "type": "likert",
+    "short": "Could not cope with the things that had to be done",
+    "scale": [{
+      "value": 0,
+      "label": "Never"
+    }, {
+      "value": 1,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Fairly often"
+    }, {
+      "value": 4,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "d6df23c2-8f3d-4c55-a2f4-42fda55ffd15",
+    "question": "In the last month, how often have you been able to control irritations in your life?",
+    "type": "likert",
+    "short": "Able to control irritations",
+    "scale": [{
+      "value": 4,
+      "label": "Never"
+    }, {
+      "value": 3,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 1,
+      "label": "Fairly often"
+    }, {
+      "value": 0,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "33727e52-0bc5-442c-9ffe-258fea09a9aa",
+    "question": "In the last month, how often have you felt that you were on top of things?",
+    "type": "likert",
+    "short": "Felt on top of things",
+    "scale": [{
+      "value": 4,
+      "label": "Never"
+    }, {
+      "value": 3,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 1,
+      "label": "Fairly often"
+    }, {
+      "value": 0,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "ca7cd7f3-cbf9-414d-a44b-9ee5c86de019",
+    "question": "In the last month, how often have you been angered because of things that were outside of your control?",
+    "type": "likert",
+    "short": "Angry at things outside of control",
+    "scale": [{
+      "value": 0,
+      "label": "Never"
+    }, {
+      "value": 1,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Fairly often"
+    }, {
+      "value": 4,
+      "label": "Very often"
+    }]
+  }, {
+    "id": "2acbd9e2-a61a-423d-9fea-0bb7bf7f251b",
+    "question": "In the last month, how often have you felt difficulties were piling up so high that you could not overcome them?",
+    "type": "likert",
+    "short": "Could not overcome so many difficulties",
+    "scale": [{
+      "value": 0,
+      "label": "Never"
+    }, {
+      "value": 1,
+      "label": "Almost never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "Fairly often"
+    }, {
+      "value": 4,
+      "label": "Very often"
+    }]
+  }],
+  "scorings": [{
+    "id": "8b0071de-b097-4199-a170-5bca798de641",
+    "name": "Total Perceived Stress",
+    "questions": [
+      "7781c745-fed0-4870-86a9-65c4465a4525",
+      "dcd30dc6-f0e4-4ac8-b874-4fbbd1beb1be",
+      "7691af73-f1d6-456f-9c59-77406998e8ed",
+      "0097adba-a093-4c60-b184-1092aacbcd21",
+      "cc83b2d8-9fea-4424-85ba-57edfb9e5a6e",
+      "f5cbe3b8-1916-403a-8c1f-bde8ec27d54d",
+      "d6df23c2-8f3d-4c55-a2f4-42fda55ffd15",
+      "33727e52-0bc5-442c-9ffe-258fea09a9aa",
+      "ca7cd7f3-cbf9-414d-a44b-9ee5c86de019",
+      "2acbd9e2-a61a-423d-9fea-0bb7bf7f251b"
+    ],
+    "aggregation": "sum"
+  }]
+}
