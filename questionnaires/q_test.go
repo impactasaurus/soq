@@ -36,6 +36,7 @@ func testQuestions(t *testing.T, qs soq.Questionnaire) {
 		t.Errorf("no questions")
 	}
 	seen := map[string]bool{}
+	questions := map[string]bool{}
 	for _, q := range qs.Questions {
 		aq := *q
 		switch c := aq.(type) {
@@ -44,6 +45,10 @@ func testQuestions(t *testing.T, qs soq.Questionnaire) {
 				t.Errorf("duplicate question IDs: %s", c.ID)
 			}
 			seen[c.ID] = true
+			if _, ok := questions[c.Question]; ok {
+				t.Errorf("duplicate question: %s", c.Question)
+			}
+			seen[c.Question] = true
 		default:
 			t.Errorf("unknown question type")
 		}
