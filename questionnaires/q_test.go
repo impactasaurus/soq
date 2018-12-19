@@ -27,7 +27,43 @@ func TestQuestionnaires(t *testing.T) {
 				t.Errorf("questionnaire %s missing license information", q.Name)
 			}
 			testQuestions(t, q)
+			testScorings(t, q)
 		})
+	}
+}
+
+func testScorings(t *testing.T, qs soq.Questionnaire) {
+	for _, s := range qs.Scorings {
+		if len(s.Questions) == 0 {
+			t.Errorf("no questions in scoring %s", s.ID)
+		}
+		if s.Aggregation != "sum" && s.Aggregation != "mean" {
+			t.Errorf("unknown aggregation %s on scoring %s", s.Aggregation, s.ID)
+		}
+		if len(s.Bands) > 0 {
+			testBands(t, s)
+		}
+	}
+}
+
+func testBands(t *testing.T, s *soq.Scoring) {
+	seen := map[float64]bool{}
+	for _, b := range s.Bands {
+		if b.Min != nil && b.Max != nil && *b.Min < *b.Max {
+			t.Errorf("min is more than max for band %s of scoring %s", b.Label, s.ID)
+		}
+		if b.Min != nil {
+			if _, ok := seen[*b.Min]; ok {
+				t.Errorf("two bands feature value %f for scoring %s", *b.Min, s.ID)
+			}
+			seen[*b.Min] = true
+		}
+		if b.Max != nil {
+			if _, ok := seen[*b.Max]; ok {
+				t.Errorf("two bands feature value %f for scoring %s", *b.Min, s.ID)
+			}
+			seen[*b.Max] = true
+		}
 	}
 }
 

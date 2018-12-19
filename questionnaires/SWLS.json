@@ -1,0 +1,212 @@
+{
+  "id": "ae407a0f-6a1d-4329-9ef4-fbdec02b759e",
+  "name": "Satisfaction With Life Scale",
+  "short": "SWLS",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2018-12-19T13:48:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "attribution": "Diener, E., Emmons, R. A., Larsen, R. J., & Griffin, S. (1985). The Satisfaction with Life Scale. Journal of Personality Assessment, 49, 71-75.",
+  "license": "The scale is copyrighted but you are free to use it without permission or charge by all professionals (researchers and practitioners) as long as you give credit to the authors of the scale.",
+  "description": "The SWLS is a short 5-item instrument designed to measure global cognitive judgments of satisfaction with one's life. The scale usually requires only about one minute of a respondent's time.",
+  "links": [{
+    "name": "Website",
+    "url": "http://labs.psychology.illinois.edu/~ediener/SWLS.html"
+  }, {
+    "name": "Translations",
+    "url": "http://labs.psychology.illinois.edu/~ediener/SWLS.html"
+  }, {
+    "name": "Understanding Scores",
+    "url": "http://labs.psychology.illinois.edu/~ediener/Documents/Understanding%20SWLS%20Scores.pdf"
+  }],
+  "questions": [{
+    "id": "24611b78-d8dd-4914-8064-51b2bdf08bd4",
+    "question": "In most ways my life is close to my ideal",
+    "type": "likert",
+    "short": "Life is ideal",
+    "scale": [{
+      "value": 1,
+      "label": "Strongly disagree"
+    }, {
+      "value": 2,
+      "label": "Disagree"
+    }, {
+      "value": 3,
+      "label": "Slightly disagree"
+    }, {
+      "value": 4,
+      "label": "Neither agree nor disagree"
+    }, {
+      "value": 5,
+      "label": "Slightly agree"
+    }, {
+      "value": 6,
+      "label": "Agree"
+    }, {
+      "value": 7,
+      "label": "Strongly agree"
+    }]
+  }, {
+    "id": "0d4971da-d5d0-4628-a2db-d2f398fd7f55",
+    "question": "The conditions of my life are excellent",
+    "type": "likert",
+    "short": "Conditions are excellent",
+    "scale": [{
+      "value": 1,
+      "label": "Strongly disagree"
+    }, {
+      "value": 2,
+      "label": "Disagree"
+    }, {
+      "value": 3,
+      "label": "Slightly disagree"
+    }, {
+      "value": 4,
+      "label": "Neither agree nor disagree"
+    }, {
+      "value": 5,
+      "label": "Slightly agree"
+    }, {
+      "value": 6,
+      "label": "Agree"
+    }, {
+      "value": 7,
+      "label": "Strongly agree"
+    }]
+  }, {
+    "id": "e35b51f8-2744-4162-88e1-3f10c03d0c8f",
+    "question": "I am satisfied with my life",
+    "type": "likert",
+    "short": "Satisfied with my life",
+    "scale": [{
+      "value": 1,
+      "label": "Strongly disagree"
+    }, {
+      "value": 2,
+      "label": "Disagree"
+    }, {
+      "value": 3,
+      "label": "Slightly disagree"
+    }, {
+      "value": 4,
+      "label": "Neither agree nor disagree"
+    }, {
+      "value": 5,
+      "label": "Slightly agree"
+    }, {
+      "value": 6,
+      "label": "Agree"
+    }, {
+      "value": 7,
+      "label": "Strongly agree"
+    }]
+  }, {
+    "id": "080cc05f-b894-420d-b011-f1f90c96f620",
+    "question": "So far I have gotten the important things I want in life",
+    "type": "likert",
+    "short": "Gotten the things I want in life",
+    "scale": [{
+      "value": 1,
+      "label": "Strongly disagree"
+    }, {
+      "value": 2,
+      "label": "Disagree"
+    }, {
+      "value": 3,
+      "label": "Slightly disagree"
+    }, {
+      "value": 4,
+      "label": "Neither agree nor disagree"
+    }, {
+      "value": 5,
+      "label": "Slightly agree"
+    }, {
+      "value": 6,
+      "label": "Agree"
+    }, {
+      "value": 7,
+      "label": "Strongly agree"
+    }]
+  }, {
+    "id": "6701028c-8850-49a6-a138-08532b2f6ab4",
+    "question": "If I could live my life over, I would change almost nothing",
+    "type": "likert",
+    "short": "Would not change my life",
+    "scale": [{
+      "value": 1,
+      "label": "Strongly disagree"
+    }, {
+      "value": 2,
+      "label": "Disagree"
+    }, {
+      "value": 3,
+      "label": "Slightly disagree"
+    }, {
+      "value": 4,
+      "label": "Neither agree nor disagree"
+    }, {
+      "value": 5,
+      "label": "Slightly agree"
+    }, {
+      "value": 6,
+      "label": "Agree"
+    }, {
+      "value": 7,
+      "label": "Strongly agree"
+    }]
+  }],
+  "scorings": [{
+    "id": "9b3464bb-05cc-4c7a-af3c-38184128755c",
+    "name": "Life Satisfaction",
+    "questions": [
+      "24611b78-d8dd-4914-8064-51b2bdf08bd4",
+      "0d4971da-d5d0-4628-a2db-d2f398fd7f55",
+      "e35b51f8-2744-4162-88e1-3f10c03d0c8f",
+      "080cc05f-b894-420d-b011-f1f90c96f620",
+      "6701028c-8850-49a6-a138-08532b2f6ab4"
+    ],
+    "aggregation": "sum",
+    "bands": [
+      {
+        "minimum": 30,
+        "maximum": 35,
+        "label": "Very high score",
+        "description": "Respondents who score in this range love their lives and feel that things are going very well. Their lives are not perfect, but they feel that things are about as good as lives get. Furthermore, just because the person is satisfied does not mean she or he is complacent. In fact, growth and challenge might be part of the reason the respondent is satisfied. For most people in this high-scoring range, life is enjoyable, and the major domains of life are going well – work or school, family, friends, leisure, and personal development."
+      },
+      {
+        "minimum": 25,
+        "maximum": 29,
+        "label": "High score",
+        "description": "Individuals who score in this range like their lives and feel that things are going well. Of course their lives are not perfect, but they feel that things are mostly good. Furthermore, just because the person is satisfied does not mean she or he is complacent. In fact, growth and challenge might be part of the reason the respondent is satisfied. For most people in this high-scoring range, life is enjoyable, and the major domains of life are going well – work or school, family, friends, leisure, and personal development. The person may draw motivation from the areas of dissatisfaction."
+      },
+      {
+        "minimum": 20,
+        "maximum": 24,
+        "label": "Average score",
+        "description": "The average of life satisfaction in economically developed nations is in this range – the majority of people are generally satisfied, but have some areas where they very much would like some improvement. Some individuals score in this range because they are mostly satisfied with most areas of their lives but see the need for some improvement in each area. Other respondents score in this range because they are satisfied with most domains of their lives, but have one or two areas where they would like to see large improvements. A person scoring in this range is normal in that they have areas of their lives that need improvement. However, an individual in this range would usually like to move to a higher level by making some life changes."
+      },
+      {
+        "minimum": 15,
+        "maximum": 19,
+        "label": "Slightly below average",
+        "description": "People who score in this range usually have small but significant problems in several areas of their lives, or have many areas that are doing fine but one area that represents a substantial problem for them. If a person has moved temporarily into this level of life satisfaction from a higher level because of some recent event, things will usually improve over time and satisfaction will generally move back up. On the other hand, if a person is chronically slightly dissatisfied with many areas of life, some changes might be in order. Sometimes the person is simply expecting too much, and sometimes life changes are needed. Thus, although temporary dissatisfaction is common and normal, a chronic level of dissatisfaction across a number of areas of life calls for reflection. Some people can gain motivation from a small level of dissatisfaction, but often dissatisfaction across a number of life domains is a distraction, and unpleasant as well."
+      },
+      {
+        "minimum": 10,
+        "maximum": 14,
+        "label": "Dissatisfied",
+        "description": "People who score in this range are substantially dissatisfied with their lives. People in this range may have a number of domains that are not going well, or one or two domains that are going very badly. If life dissatisfaction is a response to a recent event such as bereavement, divorce, or a significant problem at work, the person will probably return over time to his or her former level of higher satisfaction. However, if low levels of life satisfaction have been chronic for the person, some changes are in order – both in attitudes and patterns of thinking, and probably in life activities as well. Low levels of life satisfaction in this range, if they persist, can indicate that things are going badly and life alterations are needed. Furthermore, a person with low life satisfaction in this range is sometimes not functioning well because their unhappiness serves as a distraction. Talking to a friend, member of the clergy, counselor, or other specialist can often help the person get moving in the right direction, although positive change will be up the person."
+      },
+      {
+        "minimum": 5,
+        "maximum": 9,
+        "label": "Extremely dissatisfied",
+        "description": "Individuals who score in this range are usually extremely unhappy with their current life. In some cases this is in reaction to some recent bad event such as widowhood or unemployment. In other cases, it is a response to a chronic problem such as alcoholism or addiction. In yet other cases the extreme dissatisfaction is a reaction due to something bad in life such as recently having lost a loved one. However, dissatisfaction at this level is often due to dissatisfaction in multiple areas of life. Whatever the reason for the low level of life satisfaction, it may be that the help of others are needed – a friend or family member, counseling with a member of the clergy, or help from a psychologist or other counselor. If the dissatisfaction is chronic, the person needs to change, and often others can help."
+      }
+    ]
+  }]
+}
