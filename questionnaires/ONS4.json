@@ -5,7 +5,7 @@
   "version": "1.0.0",
   "changelog": [{
     "version": "1.0.0",
-    "timestamp": "2019-02-16T23:04:00Z",
+    "timestamp": "2019-02-16T23:28:00Z",
     "changes": [
       "initial version"
     ]
@@ -116,28 +116,28 @@
     "type": "likert",
     "short": "Anxiety",
     "scale": [{
-      "value": 0,
+      "value": 10,
       "label": "Not at all anxious"
-    }, {
-      "value": 1
-    }, {
-      "value": 2
-    }, {
-      "value": 3
-    }, {
-      "value": 4
-    }, {
-      "value": 5
-    }, {
-      "value": 6
-    }, {
-      "value": 7
-    }, {
-      "value": 8
     }, {
       "value": 9
     }, {
-      "value": 10,
+      "value": 8
+    }, {
+      "value": 7
+    }, {
+      "value": 6
+    }, {
+      "value": 5
+    }, {
+      "value": 4
+    }, {
+      "value": 3
+    }, {
+      "value": 2
+    }, {
+      "value": 1
+    }, {
+      "value": 0,
       "label": "Completely anxious"
     }]
   }]
