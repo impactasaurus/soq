@@ -1,0 +1,144 @@
+{
+  "id": "eac0c7b4-c9af-4475-94b8-72c548ea9588",
+  "name": "ONS Subjective Wellbeing Questions",
+  "short": "ONS4",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2019-02-16T23:04:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "license": "Questions can be used free of charge",
+  "description": "This questionnaire features four questions, which capture three types of well-being: evaluative, eudemonic and affective experience. These questions ask people to evaluate how satisfied they are with their life overall, asking whether they feel they have meaning and purpose in their life, and asks about their emotions during a particular period.",
+  "links": [{
+    "name": "Website",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/methodologies/personalwellbeingsurveyuserguide"
+  }, {
+    "name": "FAQ",
+    "url": "https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/methodologies/personalwellbeingfrequentlyaskedquestions"
+  }],
+  "instructions": "We would like to ask you four questions about your feelings on aspects of your life. There are no right or wrong answers.",
+  "questions": [{
+    "id": "8e32e029-125f-48a0-9d02-defa2c1dcbc7",
+    "question": "Overall, how satisfied are you with your life nowadays?",
+    "type": "likert",
+    "short": "Life Satisfaction",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1
+    }, {
+      "value": 2
+    }, {
+      "value": 3
+    }, {
+      "value": 4
+    }, {
+      "value": 5
+    }, {
+      "value": 6
+    }, {
+      "value": 7
+    }, {
+      "value": 8
+    }, {
+      "value": 9
+    }, {
+      "value": 10,
+      "label": "Completely"
+    }]
+  }, {
+    "id": "a6666c0f-b09c-407b-ad48-181fbcaf2fdd",
+    "question": "Overall, to what extent do you feel that the things you do in your life are worthwhile?",
+    "type": "likert",
+    "short": "Worthwhile",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1
+    }, {
+      "value": 2
+    }, {
+      "value": 3
+    }, {
+      "value": 4
+    }, {
+      "value": 5
+    }, {
+      "value": 6
+    }, {
+      "value": 7
+    }, {
+      "value": 8
+    }, {
+      "value": 9
+    }, {
+      "value": 10,
+      "label": "Completely"
+    }]
+  }, {
+    "id": "e6a10c6c-7060-47b8-9d2f-2aeef8e97c08",
+    "question": "Overall, how happy did you feel yesterday?",
+    "type": "likert",
+    "short": "Happiness",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all"
+    }, {
+      "value": 1
+    }, {
+      "value": 2
+    }, {
+      "value": 3
+    }, {
+      "value": 4
+    }, {
+      "value": 5
+    }, {
+      "value": 6
+    }, {
+      "value": 7
+    }, {
+      "value": 8
+    }, {
+      "value": 9
+    }, {
+      "value": 10,
+      "label": "Completely"
+    }]
+  }, {
+    "id": "a88b1e4e-4aa0-415e-888b-1015eb5adec9",
+    "question": "Overall, how anxious did you feel yesterday?",
+    "type": "likert",
+    "short": "Anxiety",
+    "scale": [{
+      "value": 0,
+      "label": "Not at all anxious"
+    }, {
+      "value": 1
+    }, {
+      "value": 2
+    }, {
+      "value": 3
+    }, {
+      "value": 4
+    }, {
+      "value": 5
+    }, {
+      "value": 6
+    }, {
+      "value": 7
+    }, {
+      "value": 8
+    }, {
+      "value": 9
+    }, {
+      "value": 10,
+      "label": "Completely anxious"
+    }]
+  }]
+}
