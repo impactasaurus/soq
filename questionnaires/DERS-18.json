@@ -1,0 +1,439 @@
+{
+  "id": "97f8242e-605b-4a35-8246-8a09e77cd1f1",
+  "name": "Difficulties in Emotion Regulation Scale 18",
+  "short": "DERS-18",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2019-03-02T20:53:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "attribution": "Victor, S. E., & Klonsky, E. D. (2016). Validation of a brief version of the Difficulties in Emotion Regulation Scale (DERS-18) in five samples. Journal of Psychopathology and Behavioral Assessment, in press.",
+  "license": "Questions can be used free of charge",
+  "description": "The DERS-18 is a self-report questionnaire designed to assess multiple aspects of emotion dysregulation. The measure yields scores on six scales: Awareness, Clarity, Goals, Impulse, Nonacceptance and Strategies.",
+  "links": [{
+    "name": "Reference",
+    "url": "https://www2.psych.ubc.ca/~klonsky/publications/DERS18.pdf"
+  }, {
+    "name": "Original DERS",
+    "url": "http://www.psychwiki.com/dms/other/labgroup/Measu235sdgse5234234resWeek2/Danika2/gratz2004.pdf"
+  }],
+  "questions": [{
+    "id": "7149ca6d-a647-4ef4-83e8-b9592bf910ff",
+    "question": "I pay attention to how I feel",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Almost Never"
+    }, {
+      "value": 4,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 2,
+      "label": "Most of the Time"
+    }, {
+      "value": 1,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "c39b437a-a6ac-447f-b2b4-2094a6596d0e",
+    "question": "I have no idea how I am feeling",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "9fca52f3-4e68-44f3-929b-f0b6a421c4ef",
+    "question": "I have difficulty making sense out of my feelings",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "9c394e94-cbbc-4a86-b554-68a56c0cc324",
+    "question": "I am attentive to my feelings",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Almost Never"
+    }, {
+      "value": 4,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 2,
+      "label": "Most of the Time"
+    }, {
+      "value": 1,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "11524642-109c-499e-8427-cfd92901e3ba",
+    "question": "I am confused about how I feel",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "8c26ab16-0f7d-4574-8781-e4a0e4c54265",
+    "question": "When I’m upset, I acknowledge my emotions",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Almost Never"
+    }, {
+      "value": 4,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 2,
+      "label": "Most of the Time"
+    }, {
+      "value": 1,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "5f2d8ecb-15ba-4e8e-b086-29a86769e13f",
+    "question": "When I’m upset, I become embarrassed for feeling that way",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "7bbd4b0d-6cc0-4628-a91c-68708a0679e5",
+    "question": "When I’m upset, I have difficulty getting work done",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "f867dcaa-db04-42ee-960e-c085dac14f59",
+    "question": "When I’m upset, I become out of control",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "e3bfcd28-9f33-41ab-b921-545aa5f41395",
+    "question": "When I'm upset, I believe that I will remain that way for a long time",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "27be8cf5-6961-43f3-a8a3-81ef5bcf2d9c",
+    "question": "When I'm upset, I believe that I'll end up feeling very depressed",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "842845aa-18ab-4df4-8fc4-721df31c7a2a",
+    "question": "When I'm upset, I have difficulty focusing on other things",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "968d55a3-c12d-4560-a1bd-eed0c5ecc16b",
+    "question": "When I'm upset, I feel ashamed with myself for feeling that way",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "81597643-a668-4588-bbbf-395b1f52f793",
+    "question": "When I'm upset, I feel guilty for feeling that way",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "d6cbabe2-b4ec-49b6-bb3b-2e165cbffc43",
+    "question": "When I'm upset, I have difficulty concentrating",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "2be7cfa4-a217-45aa-a546-ff9456d58019",
+    "question": "When I'm upset, I have difficulty controlling my behaviors",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "60a8f9d3-bd46-4d1c-b433-6d762be32244",
+    "question": "When I'm upset, I believe that wallowing in it is all I can do",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }, {
+    "id": "52834ce7-6033-43db-b375-9221c486395f",
+    "question": "When I'm upset, I lose control over my behaviors",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Almost Never"
+    }, {
+      "value": 2,
+      "label": "Sometimes"
+    }, {
+      "value": 3,
+      "label": "About Half the Time"
+    }, {
+      "value": 4,
+      "label": "Most of the Time"
+    }, {
+      "value": 5,
+      "label": "Almost Always"
+    }]
+  }],
+  "scorings": [{
+    "id": "d08304b1-e2e3-4379-b77b-d2479707aafc",
+    "name": "Awareness",
+    "questions": [
+      "7149ca6d-a647-4ef4-83e8-b9592bf910ff",
+      "9c394e94-cbbc-4a86-b554-68a56c0cc324",
+      "8c26ab16-0f7d-4574-8781-e4a0e4c54265"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "5ccbe5ab-d5f5-49fc-ba2c-cc6246d39acf",
+    "name": "Clarity",
+    "questions": [
+      "c39b437a-a6ac-447f-b2b4-2094a6596d0e",
+      "9fca52f3-4e68-44f3-929b-f0b6a421c4ef",
+      "11524642-109c-499e-8427-cfd92901e3ba"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "8e454488-6748-499f-889d-d3b20ef2f521",
+    "name": "Goals",
+    "questions": [
+      "7bbd4b0d-6cc0-4628-a91c-68708a0679e5",
+      "842845aa-18ab-4df4-8fc4-721df31c7a2a",
+      "d6cbabe2-b4ec-49b6-bb3b-2e165cbffc43"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "6087e780-aab9-470e-89a0-99239ccf777c",
+    "name": "Impulse",
+    "questions": [
+      "f867dcaa-db04-42ee-960e-c085dac14f59",
+      "2be7cfa4-a217-45aa-a546-ff9456d58019",
+      "52834ce7-6033-43db-b375-9221c486395f"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "3aadac8c-0451-428e-8cab-18f12889ff0c",
+    "name": "Nonacceptance",
+    "questions": [
+      "5f2d8ecb-15ba-4e8e-b086-29a86769e13f",
+      "968d55a3-c12d-4560-a1bd-eed0c5ecc16b",
+      "81597643-a668-4588-bbbf-395b1f52f793"
+    ],
+    "aggregation": "sum"
+  }, {
+    "id": "1bd19bf8-c74b-46cf-ac85-e7d4efafc6ea",
+    "name": "Strategies",
+    "questions": [
+      "e3bfcd28-9f33-41ab-b921-545aa5f41395",
+      "27be8cf5-6961-43f3-a8a3-81ef5bcf2d9c",
+      "60a8f9d3-bd46-4d1c-b433-6d762be32244"
+    ],
+    "aggregation": "sum"
+  }]
+}
