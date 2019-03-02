@@ -3,6 +3,8 @@ package questionnaires_test
 import (
 	"testing"
 
+	"net/http"
+
 	soq "github.com/impactasaurus/soq-api"
 	"github.com/impactasaurus/soq-api/questionnaires"
 )
@@ -28,12 +30,18 @@ func TestQuestionnaires(t *testing.T) {
 			}
 			testQuestions(t, q)
 			testScorings(t, q)
+			testLinks(t, q)
 		})
 	}
 }
 
 func testScorings(t *testing.T, qs soq.Questionnaire) {
+	seen := map[string]bool{}
 	for _, s := range qs.Scorings {
+		if _, ok := seen[s.ID]; ok {
+			t.Errorf("duplicate scoring ID %s", s.ID)
+		}
+		seen[s.ID] = true
 		if len(s.Questions) == 0 {
 			t.Errorf("no questions in scoring %s", s.ID)
 		}
@@ -87,6 +95,19 @@ func testQuestions(t *testing.T, qs soq.Questionnaire) {
 			seen[c.Question] = true
 		default:
 			t.Errorf("unknown question type")
+		}
+	}
+}
+
+func testLinks(t *testing.T, qs soq.Questionnaire) {
+	for _, l := range qs.Links {
+		resp, err := http.Get(l.URL)
+		if err != nil {
+			t.Errorf("error encountered confirming link %s: %s", l.URL, err.Error())
+		}
+		resp.Body.Close()
+		if resp.StatusCode < 200 || resp.StatusCode >= 300 {
+			t.Errorf("unexpected status code confirming link %s: %d", l.URL, resp.StatusCode)
 		}
 	}
 }
