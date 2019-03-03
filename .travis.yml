@@ -5,7 +5,7 @@ before_install: go get -u github.com/golang/dep/cmd/dep
 install: dep ensure
 script: go test -v ./...
 before_deploy:
- - go install github.com/impactasaurus/soq-api/cmd/lambda
+ - go install github.com/impactasaurus/soq/cmd/lambda
  - mkdir ${GOPATH}/bin/soq
  - mv ${GOPATH}/bin/lambda ${GOPATH}/bin/soq/api.lambda
  - mv questionnaires ${GOPATH}/bin/soq/questionnaires
