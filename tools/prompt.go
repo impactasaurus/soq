@@ -14,7 +14,7 @@ func mustRun(p promptui.Prompt) string {
 		log.Fatalf("Creating questionnaire failed: %s", err.Error())
 	}
 
-	return strings.Trim(s)
+	return strings.TrimSpace(s)
 }
 
 func mustRunI(p promptui.Prompt) int {
