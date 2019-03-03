@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/99designs/gqlgen/handler"
-	soq "github.com/impactasaurus/soq-api"
-	"github.com/impactasaurus/soq-api/status"
+	"github.com/impactasaurus/soq"
+	"github.com/impactasaurus/soq/status"
 )
 
 type v1 struct {
