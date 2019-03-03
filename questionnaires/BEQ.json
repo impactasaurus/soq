@@ -1,0 +1,562 @@
+{
+  "id": "d8821aaf-387c-4e16-9c72-0fb14b428868",
+  "name": "Berkeley Expressivity Questionnaire",
+  "short": "BEQ",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-03-03T22:46:37Z"
+    }
+  ],
+  "attribution": "Gross, J.J., & John, O.P. (1997). Revealing feelings: Facets of emotional expressivity in self-reports, peer ratings, and behavior. Journal of Personality and Social Psychology, 72, 435-448.",
+  "description": "The Berkeley Expressivity Questionnaire assesses three facets of emotional expressivity: negative expressivity, positive expressivity, and impulse strength",
+  "license": "The BEQ paper does not state anything about the use of the scale by others.",
+  "links": [{
+    "name": "PDF Version",
+    "url": "https://www.ocf.berkeley.edu/~johnlab/pdfs/BEQ-16.pdf"
+  }, {
+    "name": "Reference",
+    "url": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.688.3566&rep=rep1&type=pdf"
+  }],
+  "questions": [
+    {
+      "id": "393457bd-cd18-4a79-9bd3-df48c04ab1e8",
+      "question": "Whenever I feel positive emotions, people can easily see exactly what I am feeling",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "d7cb5472-3fcf-4eb2-8198-1cce1329c43c",
+      "question": "I sometimes cry during sad movies",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "6db81582-3121-4543-bc1c-801ee6e43ff0",
+      "question": "People often do not know what I am feeling",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 7,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 1,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "e4e688bb-801f-4ba1-b7bd-8104fe0c3a51",
+      "question": "I laugh out loud when someone tells me a joke that I think is funny",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "0c9f25d1-053d-42d1-9008-4553b6ad79ef",
+      "question": "It is difficult for me to hide my fear",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "f56953b5-af42-490e-a099-82c825949721",
+      "question": "When I'm happy, my feelings show",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "959bfa37-bcdc-449a-b567-55bb9b3523a5",
+      "question": "My body reacts very strongly to emotional situations",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "281f7815-0962-4b45-81a8-0cf0799e1cca",
+      "question": "I've learned it is better to suppress my anger than to show it",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 7,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 1,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "b79097a1-f514-4bdd-b432-54090c1bd242",
+      "question": "No matter how nervous or upset I am, I tend to keep a calm exterior",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 7,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 1,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "dd1e936d-0977-4a58-af4b-4a0a58611f19",
+      "question": "I am an emotionally expressive person",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "095986e2-8dbb-46c8-8a97-a6d764e96a6e",
+      "question": "I have strong emotions",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "2991c271-dd5b-4ff0-aee6-ff5496b14832",
+      "question": "I am sometimes unable to hide my feelings, even though I would like to",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "1469b9ef-22fd-4b03-a79d-7220ed5a6ab2",
+      "question": "Whenever I feel negative emotions, people can easily see exactly what I am feeling",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "e60e3b82-d8c8-4793-81be-7eacb35283bc",
+      "question": "There have been times when I have not been able to stop crying even though I tried to stop",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "36374900-c117-40ee-ac53-dea1e6eb4c5e",
+      "question": "I experience my emotions very strongly",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "6bfef6f7-728c-4c64-90d7-684317372820",
+      "question": "What I'm feeling is written all over my face",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2
+        },
+        {
+          "value": 3
+        },
+        {
+          "value": 4,
+          "label": "Neutral"
+        },
+        {
+          "value": 5
+        },
+        {
+          "value": 6
+        },
+        {
+          "value": 7,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "c71d11a8-2a0a-4cf8-912a-863cb52169c4",
+      "name": "Negative Expressivity",
+      "questions": [
+        "6db81582-3121-4543-bc1c-801ee6e43ff0",
+        "0c9f25d1-053d-42d1-9008-4553b6ad79ef",
+        "281f7815-0962-4b45-81a8-0cf0799e1cca",
+        "b79097a1-f514-4bdd-b432-54090c1bd242",
+        "1469b9ef-22fd-4b03-a79d-7220ed5a6ab2",
+        "6bfef6f7-728c-4c64-90d7-684317372820"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "675be5e0-f2f1-47c0-8c84-06ef489cae73",
+      "name": "Positive Emotionality",
+      "questions": [
+        "393457bd-cd18-4a79-9bd3-df48c04ab1e8",
+        "e4e688bb-801f-4ba1-b7bd-8104fe0c3a51",
+        "f56953b5-af42-490e-a099-82c825949721",
+        "dd1e936d-0977-4a58-af4b-4a0a58611f19"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "b25b0d30-74a1-4357-ab7a-cb21d71812ad",
+      "name": "Impulse Strength",
+      "questions": [
+        "d7cb5472-3fcf-4eb2-8198-1cce1329c43c",
+        "959bfa37-bcdc-449a-b567-55bb9b3523a5",
+        "095986e2-8dbb-46c8-8a97-a6d764e96a6e",
+        "2991c271-dd5b-4ff0-aee6-ff5496b14832",
+        "e60e3b82-d8c8-4793-81be-7eacb35283bc",
+        "36374900-c117-40ee-ac53-dea1e6eb4c5e"
+      ],
+      "aggregation": "mean"
+    }
+  ]
+}
