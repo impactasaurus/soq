@@ -1,0 +1,487 @@
+{
+  "id": "2d0384f0-c10e-4090-be7e-7dda41ddeeab",
+  "name": "State Self Esteem Scale",
+  "short": "SSES",
+  "version": "1.0.0",
+  "changelog": [{
+    "version": "1.0.0",
+    "timestamp": "2019-03-03T14:06:00Z",
+    "changes": [
+      "initial version"
+    ]
+  }],
+  "attribution": "Heatherton, T.F. and Polivy, J. Development and Validation of a Scale for Measuring State Self-Esteem. Journal of Personality and Social Psychology, 60, 895-910.",
+  "license": "The SSES paper does not state anything about the use of the scale by others.",
+  "description": "A 20-item scale that measures a participant’s self-esteem at a given point in time. The 20 items are subdivided into 3 components of self-esteem: performance self-esteem, social self-esteem and appearance self-esteem.",
+  "links": [{
+    "name": "Reference",
+    "url": "https://pdfs.semanticscholar.org/67a8/73afb64ec6cf067f408b117ee600f0a80b08.pdf"
+  }],
+  "instructions": "This is a questionnaire designed to measure what you are thinking at this moment. There is of course, no right answer for any statement. The best answer is what you feel is true of yourself at the moment. Again, answer these questions as they are true for you RIGHT NOW",
+  "questions": [{
+    "id": "404a2334-f77c-446f-a14a-c542f578b2ac",
+    "question": "I feel confident about my abilities",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all"
+    }, {
+      "value": 2,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 4,
+      "label": "Very much"
+    }, {
+      "value": 5,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "9c25fa6f-3bf8-4007-90f6-e2aa6b4afb95",
+    "question": "I am worried about whether I am regarded as a success or failure",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "cdc44877-3c5b-4b91-93a0-29c0a4a80984",
+    "question": "I feel satisfied with the way my body looks right now",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all"
+    }, {
+      "value": 2,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 4,
+      "label": "Very much"
+    }, {
+      "value": 5,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "a4f2e7bf-0024-45d0-9777-51a5a62c1b49",
+    "question": "I feel frustrated or rattled about my performance",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "0deb29af-6eac-4b2c-9749-73c6b1f2606d",
+    "question": "I feel that I am having trouble understanding things that I read",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "b4319c4d-0fc5-4944-8bf9-482dbc0fc814",
+    "question": "I feel that others respect and admire me",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all"
+    }, {
+      "value": 2,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 4,
+      "label": "Very much"
+    }, {
+      "value": 5,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "89534a5d-206a-4391-b908-026614a46c08",
+    "question": "I am dissatisfied with my weight",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "079a9eb3-6329-4c47-acdb-ce442c977b93",
+    "question": "I feel self-conscious",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "68474f3d-5032-42b9-98a4-109d40510360",
+    "question": "I feel as smart as others",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all"
+    }, {
+      "value": 2,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 4,
+      "label": "Very much"
+    }, {
+      "value": 5,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "759540ec-259e-40a5-8a5d-f3066921d379",
+    "question": "I feel displeased with myself",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "8d567cb7-4819-4259-948c-ecbcd015ee42",
+    "question": "I feel good about myself",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all"
+    }, {
+      "value": 2,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 4,
+      "label": "Very much"
+    }, {
+      "value": 5,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "49918046-620a-41b6-a130-d7bc80c550f9",
+    "question": "I am pleased with my appearance right now",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all"
+    }, {
+      "value": 2,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 4,
+      "label": "Very much"
+    }, {
+      "value": 5,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "633a189d-e845-43a1-bc80-df188e833500",
+    "question": "I am worried about what other people think of me",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "65c229d0-222f-4553-80b9-43f1a273cd0c",
+    "question": "I feel confident that I understand things",
+    "type": "likert",
+    "scale": [{
+      "value": 1,
+      "label": "Not at all"
+    }, {
+      "value": 2,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 4,
+      "label": "Very much"
+    }, {
+      "value": 5,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "68464d22-b0a2-4d9e-b552-e837262c6e08",
+    "question": "I feel inferior to others at this moment",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "cdcdc77b-fcb9-4a42-817e-733dff922743",
+    "question": "I feel unattractive",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "4e13219d-949b-4c6a-ba51-4229f5c9389f",
+    "question": "I feel concerned about the impression I am making",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "4e3ac8bb-1feb-41a8-b6ff-28541588cc57",
+    "question": "I feel that I have less scholastic ability right now than others",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "ad3ab3d6-ff8c-403b-a765-fda8c0c7bcd0",
+    "question": "I feel like I'm not doing well",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }, {
+    "id": "1eeec1a2-688f-4c01-a7d4-ba45ef98daf7",
+    "question": "I am worried about looking foolish",
+    "type": "likert",
+    "scale": [{
+      "value": 5,
+      "label": "Not at all"
+    }, {
+      "value": 4,
+      "label": "A little bit"
+    }, {
+      "value": 3,
+      "label": "Somewhat"
+    }, {
+      "value": 2,
+      "label": "Very much"
+    }, {
+      "value": 1,
+      "label": "Extremely"
+    }]
+  }],
+  "scorings": [{
+    "id": "58e4a2f4-b28b-4dc2-8c59-045109313578",
+    "name": "Performance",
+    "questions": [
+      "404a2334-f77c-446f-a14a-c542f578b2ac",
+      "a4f2e7bf-0024-45d0-9777-51a5a62c1b49",
+      "0deb29af-6eac-4b2c-9749-73c6b1f2606d",
+      "68474f3d-5032-42b9-98a4-109d40510360",
+      "65c229d0-222f-4553-80b9-43f1a273cd0c",
+      "4e3ac8bb-1feb-41a8-b6ff-28541588cc57",
+      "ad3ab3d6-ff8c-403b-a765-fda8c0c7bcd0"
+    ],
+    "aggregation": "mean"
+  }, {
+    "id": "110ef978-2b09-4120-9a90-22d4ab2e94f9",
+    "name": "Social",
+    "questions": [
+      "9c25fa6f-3bf8-4007-90f6-e2aa6b4afb95",
+      "079a9eb3-6329-4c47-acdb-ce442c977b93",
+      "759540ec-259e-40a5-8a5d-f3066921d379",
+      "633a189d-e845-43a1-bc80-df188e833500",
+      "68464d22-b0a2-4d9e-b552-e837262c6e08",
+      "4e13219d-949b-4c6a-ba51-4229f5c9389f",
+      "1eeec1a2-688f-4c01-a7d4-ba45ef98daf7"
+    ],
+    "aggregation": "mean"
+  }, {
+    "id": "5d339237-1ea9-4a87-b6c6-90a38063d8c1",
+    "name": "Appearance",
+    "questions": [
+      "cdc44877-3c5b-4b91-93a0-29c0a4a80984",
+      "b4319c4d-0fc5-4944-8bf9-482dbc0fc814",
+      "89534a5d-206a-4391-b908-026614a46c08",
+      "8d567cb7-4819-4259-948c-ecbcd015ee42",
+      "49918046-620a-41b6-a130-d7bc80c550f9",
+      "cdcdc77b-fcb9-4a42-817e-733dff922743"
+    ],
+    "aggregation": "mean"
+  }, {
+    "id": "a2006476-f0ea-45d3-b202-e4bee36d6f1d",
+    "name": "Total",
+    "questions": [
+      "404a2334-f77c-446f-a14a-c542f578b2ac",
+      "a4f2e7bf-0024-45d0-9777-51a5a62c1b49",
+      "0deb29af-6eac-4b2c-9749-73c6b1f2606d",
+      "68474f3d-5032-42b9-98a4-109d40510360",
+      "65c229d0-222f-4553-80b9-43f1a273cd0c",
+      "4e3ac8bb-1feb-41a8-b6ff-28541588cc57",
+      "ad3ab3d6-ff8c-403b-a765-fda8c0c7bcd0",
+      "cdc44877-3c5b-4b91-93a0-29c0a4a80984",
+      "b4319c4d-0fc5-4944-8bf9-482dbc0fc814",
+      "89534a5d-206a-4391-b908-026614a46c08",
+      "8d567cb7-4819-4259-948c-ecbcd015ee42",
+      "49918046-620a-41b6-a130-d7bc80c550f9",
+      "cdcdc77b-fcb9-4a42-817e-733dff922743",
+      "9c25fa6f-3bf8-4007-90f6-e2aa6b4afb95",
+      "079a9eb3-6329-4c47-acdb-ce442c977b93",
+      "759540ec-259e-40a5-8a5d-f3066921d379",
+      "633a189d-e845-43a1-bc80-df188e833500",
+      "68464d22-b0a2-4d9e-b552-e837262c6e08",
+      "4e13219d-949b-4c6a-ba51-4229f5c9389f",
+      "1eeec1a2-688f-4c01-a7d4-ba45ef98daf7"
+    ],
+    "aggregation": "sum"
+  }]
+}

@@ -103,7 +103,7 @@ func testLinks(t *testing.T, qs soq.Questionnaire) {
 	for _, l := range qs.Links {
 		resp, err := http.Get(l.URL)
 		if err != nil {
-			t.Errorf("error encountered confirming link %s: %s", l.URL, err.Error())
+			t.Fatalf("error encountered confirming link %s: %s", l.URL, err.Error())
 		}
 		resp.Body.Close()
 		if resp.StatusCode < 200 || resp.StatusCode >= 300 {
