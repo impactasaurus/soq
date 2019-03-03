@@ -6,7 +6,7 @@ import (
 
 	"strconv"
 
-	"github.com/impactasaurus/soq-api/cmd"
+	"github.com/impactasaurus/soq/cmd"
 )
 
 func main() {

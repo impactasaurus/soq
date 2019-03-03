@@ -5,8 +5,8 @@ import (
 
 	"net/http"
 
-	soq "github.com/impactasaurus/soq-api"
-	"github.com/impactasaurus/soq-api/questionnaires"
+	"github.com/impactasaurus/soq"
+	"github.com/impactasaurus/soq/questionnaires"
 )
 
 func TestQuestionnaires(t *testing.T) {

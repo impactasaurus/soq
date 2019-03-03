@@ -5,7 +5,7 @@ package api
 import (
 	"context"
 
-	soq "github.com/impactasaurus/soq-api"
+	"github.com/impactasaurus/soq"
 )
 
 type resolver struct {

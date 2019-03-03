@@ -6,9 +6,9 @@ import (
 	"log"
 
 	"github.com/gorilla/mux"
-	"github.com/impactasaurus/soq-api/api"
-	"github.com/impactasaurus/soq-api/cache"
-	"github.com/impactasaurus/soq-api/questionnaires"
+	"github.com/impactasaurus/soq/api"
+	"github.com/impactasaurus/soq/cache"
+	"github.com/impactasaurus/soq/questionnaires"
 	corsLib "github.com/rs/cors"
 )
 

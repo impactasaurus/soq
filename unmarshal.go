@@ -1,4 +1,4 @@
-package soq_api
+package soq
 
 import (
 	"encoding/json"

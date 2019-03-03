@@ -11,7 +11,7 @@ import (
 
 	graphql "github.com/99designs/gqlgen/graphql"
 	introspection "github.com/99designs/gqlgen/graphql/introspection"
-	soq_api "github.com/impactasaurus/soq-api"
+	soq "github.com/impactasaurus/soq"
 	gqlparser "github.com/vektah/gqlparser"
 	ast "github.com/vektah/gqlparser/ast"
 )
@@ -114,8 +114,8 @@ type ComplexityRoot struct {
 }
 
 type QueryResolver interface {
-	Questionnaires(ctx context.Context, page *int, limit *int) (soq_api.QuestionnaireList, error)
-	Questionnaire(ctx context.Context, id string) (soq_api.Questionnaire, error)
+	Questionnaires(ctx context.Context, page *int, limit *int) (soq.QuestionnaireList, error)
+	Questionnaire(ctx context.Context, id string) (soq.Questionnaire, error)
 }
 
 func field_Query_questionnaires_args(rawArgs map[string]interface{}) (map[string]interface{}, error) {
@@ -572,7 +572,7 @@ type executionContext struct {
 var bandImplementors = []string{"Band"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _Band(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Band) graphql.Marshaler {
+func (ec *executionContext) _Band(ctx context.Context, sel ast.SelectionSet, obj *soq.Band) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, bandImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -606,7 +606,7 @@ func (ec *executionContext) _Band(ctx context.Context, sel ast.SelectionSet, obj
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Band_min(ctx context.Context, field graphql.CollectedField, obj *soq_api.Band) graphql.Marshaler {
+func (ec *executionContext) _Band_min(ctx context.Context, field graphql.CollectedField, obj *soq.Band) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Band",
 		Args:   nil,
@@ -630,7 +630,7 @@ func (ec *executionContext) _Band_min(ctx context.Context, field graphql.Collect
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Band_max(ctx context.Context, field graphql.CollectedField, obj *soq_api.Band) graphql.Marshaler {
+func (ec *executionContext) _Band_max(ctx context.Context, field graphql.CollectedField, obj *soq.Band) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Band",
 		Args:   nil,
@@ -654,7 +654,7 @@ func (ec *executionContext) _Band_max(ctx context.Context, field graphql.Collect
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Band_label(ctx context.Context, field graphql.CollectedField, obj *soq_api.Band) graphql.Marshaler {
+func (ec *executionContext) _Band_label(ctx context.Context, field graphql.CollectedField, obj *soq.Band) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Band",
 		Args:   nil,
@@ -677,7 +677,7 @@ func (ec *executionContext) _Band_label(ctx context.Context, field graphql.Colle
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Band_description(ctx context.Context, field graphql.CollectedField, obj *soq_api.Band) graphql.Marshaler {
+func (ec *executionContext) _Band_description(ctx context.Context, field graphql.CollectedField, obj *soq.Band) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Band",
 		Args:   nil,
@@ -703,7 +703,7 @@ func (ec *executionContext) _Band_description(ctx context.Context, field graphql
 var changesImplementors = []string{"Changes"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _Changes(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Changes) graphql.Marshaler {
+func (ec *executionContext) _Changes(ctx context.Context, sel ast.SelectionSet, obj *soq.Changes) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, changesImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -741,7 +741,7 @@ func (ec *executionContext) _Changes(ctx context.Context, sel ast.SelectionSet, 
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Changes_version(ctx context.Context, field graphql.CollectedField, obj *soq_api.Changes) graphql.Marshaler {
+func (ec *executionContext) _Changes_version(ctx context.Context, field graphql.CollectedField, obj *soq.Changes) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Changes",
 		Args:   nil,
@@ -764,7 +764,7 @@ func (ec *executionContext) _Changes_version(ctx context.Context, field graphql.
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Changes_changes(ctx context.Context, field graphql.CollectedField, obj *soq_api.Changes) graphql.Marshaler {
+func (ec *executionContext) _Changes_changes(ctx context.Context, field graphql.CollectedField, obj *soq.Changes) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Changes",
 		Args:   nil,
@@ -796,7 +796,7 @@ func (ec *executionContext) _Changes_changes(ctx context.Context, field graphql.
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Changes_timestamp(ctx context.Context, field graphql.CollectedField, obj *soq_api.Changes) graphql.Marshaler {
+func (ec *executionContext) _Changes_timestamp(ctx context.Context, field graphql.CollectedField, obj *soq.Changes) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Changes",
 		Args:   nil,
@@ -821,7 +821,7 @@ func (ec *executionContext) _Changes_timestamp(ctx context.Context, field graphq
 var likertQuestionImplementors = []string{"LikertQuestion", "Question"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _LikertQuestion(ctx context.Context, sel ast.SelectionSet, obj *soq_api.LikertQuestion) graphql.Marshaler {
+func (ec *executionContext) _LikertQuestion(ctx context.Context, sel ast.SelectionSet, obj *soq.LikertQuestion) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, likertQuestionImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -863,7 +863,7 @@ func (ec *executionContext) _LikertQuestion(ctx context.Context, sel ast.Selecti
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _LikertQuestion_id(ctx context.Context, field graphql.CollectedField, obj *soq_api.LikertQuestion) graphql.Marshaler {
+func (ec *executionContext) _LikertQuestion_id(ctx context.Context, field graphql.CollectedField, obj *soq.LikertQuestion) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "LikertQuestion",
 		Args:   nil,
@@ -886,7 +886,7 @@ func (ec *executionContext) _LikertQuestion_id(ctx context.Context, field graphq
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _LikertQuestion_question(ctx context.Context, field graphql.CollectedField, obj *soq_api.LikertQuestion) graphql.Marshaler {
+func (ec *executionContext) _LikertQuestion_question(ctx context.Context, field graphql.CollectedField, obj *soq.LikertQuestion) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "LikertQuestion",
 		Args:   nil,
@@ -909,7 +909,7 @@ func (ec *executionContext) _LikertQuestion_question(ctx context.Context, field 
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _LikertQuestion_description(ctx context.Context, field graphql.CollectedField, obj *soq_api.LikertQuestion) graphql.Marshaler {
+func (ec *executionContext) _LikertQuestion_description(ctx context.Context, field graphql.CollectedField, obj *soq.LikertQuestion) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "LikertQuestion",
 		Args:   nil,
@@ -933,7 +933,7 @@ func (ec *executionContext) _LikertQuestion_description(ctx context.Context, fie
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _LikertQuestion_short(ctx context.Context, field graphql.CollectedField, obj *soq_api.LikertQuestion) graphql.Marshaler {
+func (ec *executionContext) _LikertQuestion_short(ctx context.Context, field graphql.CollectedField, obj *soq.LikertQuestion) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "LikertQuestion",
 		Args:   nil,
@@ -957,7 +957,7 @@ func (ec *executionContext) _LikertQuestion_short(ctx context.Context, field gra
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _LikertQuestion_scale(ctx context.Context, field graphql.CollectedField, obj *soq_api.LikertQuestion) graphql.Marshaler {
+func (ec *executionContext) _LikertQuestion_scale(ctx context.Context, field graphql.CollectedField, obj *soq.LikertQuestion) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "LikertQuestion",
 		Args:   nil,
@@ -974,7 +974,7 @@ func (ec *executionContext) _LikertQuestion_scale(ctx context.Context, field gra
 		}
 		return graphql.Null
 	}
-	res := resTmp.([]*soq_api.Point)
+	res := resTmp.([]*soq.Point)
 	rctx.Result = res
 
 	arr1 := make(graphql.Array, len(res))
@@ -1019,7 +1019,7 @@ func (ec *executionContext) _LikertQuestion_scale(ctx context.Context, field gra
 var linkImplementors = []string{"Link"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _Link(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Link) graphql.Marshaler {
+func (ec *executionContext) _Link(ctx context.Context, sel ast.SelectionSet, obj *soq.Link) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, linkImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -1054,7 +1054,7 @@ func (ec *executionContext) _Link(ctx context.Context, sel ast.SelectionSet, obj
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Link_name(ctx context.Context, field graphql.CollectedField, obj *soq_api.Link) graphql.Marshaler {
+func (ec *executionContext) _Link_name(ctx context.Context, field graphql.CollectedField, obj *soq.Link) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Link",
 		Args:   nil,
@@ -1077,7 +1077,7 @@ func (ec *executionContext) _Link_name(ctx context.Context, field graphql.Collec
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Link_description(ctx context.Context, field graphql.CollectedField, obj *soq_api.Link) graphql.Marshaler {
+func (ec *executionContext) _Link_description(ctx context.Context, field graphql.CollectedField, obj *soq.Link) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Link",
 		Args:   nil,
@@ -1101,7 +1101,7 @@ func (ec *executionContext) _Link_description(ctx context.Context, field graphql
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Link_url(ctx context.Context, field graphql.CollectedField, obj *soq_api.Link) graphql.Marshaler {
+func (ec *executionContext) _Link_url(ctx context.Context, field graphql.CollectedField, obj *soq.Link) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Link",
 		Args:   nil,
@@ -1126,7 +1126,7 @@ func (ec *executionContext) _Link_url(ctx context.Context, field graphql.Collect
 var pageInfoImplementors = []string{"PageInfo"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _PageInfo(ctx context.Context, sel ast.SelectionSet, obj *soq_api.PageInfo) graphql.Marshaler {
+func (ec *executionContext) _PageInfo(ctx context.Context, sel ast.SelectionSet, obj *soq.PageInfo) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, pageInfoImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -1164,7 +1164,7 @@ func (ec *executionContext) _PageInfo(ctx context.Context, sel ast.SelectionSet,
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _PageInfo_hasNextPage(ctx context.Context, field graphql.CollectedField, obj *soq_api.PageInfo) graphql.Marshaler {
+func (ec *executionContext) _PageInfo_hasNextPage(ctx context.Context, field graphql.CollectedField, obj *soq.PageInfo) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "PageInfo",
 		Args:   nil,
@@ -1187,7 +1187,7 @@ func (ec *executionContext) _PageInfo_hasNextPage(ctx context.Context, field gra
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _PageInfo_page(ctx context.Context, field graphql.CollectedField, obj *soq_api.PageInfo) graphql.Marshaler {
+func (ec *executionContext) _PageInfo_page(ctx context.Context, field graphql.CollectedField, obj *soq.PageInfo) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "PageInfo",
 		Args:   nil,
@@ -1210,7 +1210,7 @@ func (ec *executionContext) _PageInfo_page(ctx context.Context, field graphql.Co
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _PageInfo_limit(ctx context.Context, field graphql.CollectedField, obj *soq_api.PageInfo) graphql.Marshaler {
+func (ec *executionContext) _PageInfo_limit(ctx context.Context, field graphql.CollectedField, obj *soq.PageInfo) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "PageInfo",
 		Args:   nil,
@@ -1235,7 +1235,7 @@ func (ec *executionContext) _PageInfo_limit(ctx context.Context, field graphql.C
 var pointImplementors = []string{"Point"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _Point(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Point) graphql.Marshaler {
+func (ec *executionContext) _Point(ctx context.Context, sel ast.SelectionSet, obj *soq.Point) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, pointImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -1265,7 +1265,7 @@ func (ec *executionContext) _Point(ctx context.Context, sel ast.SelectionSet, ob
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Point_value(ctx context.Context, field graphql.CollectedField, obj *soq_api.Point) graphql.Marshaler {
+func (ec *executionContext) _Point_value(ctx context.Context, field graphql.CollectedField, obj *soq.Point) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Point",
 		Args:   nil,
@@ -1288,7 +1288,7 @@ func (ec *executionContext) _Point_value(ctx context.Context, field graphql.Coll
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Point_label(ctx context.Context, field graphql.CollectedField, obj *soq_api.Point) graphql.Marshaler {
+func (ec *executionContext) _Point_label(ctx context.Context, field graphql.CollectedField, obj *soq.Point) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Point",
 		Args:   nil,
@@ -1387,7 +1387,7 @@ func (ec *executionContext) _Query_questionnaires(ctx context.Context, field gra
 		}
 		return graphql.Null
 	}
-	res := resTmp.(soq_api.QuestionnaireList)
+	res := resTmp.(soq.QuestionnaireList)
 	rctx.Result = res
 
 	return ec._QuestionnaireList(ctx, field.Selections, &res)
@@ -1417,7 +1417,7 @@ func (ec *executionContext) _Query_questionnaire(ctx context.Context, field grap
 		}
 		return graphql.Null
 	}
-	res := resTmp.(soq_api.Questionnaire)
+	res := resTmp.(soq.Questionnaire)
 	rctx.Result = res
 
 	return ec._Questionnaire(ctx, field.Selections, &res)
@@ -1482,7 +1482,7 @@ func (ec *executionContext) _Query___schema(ctx context.Context, field graphql.C
 var questionnaireImplementors = []string{"Questionnaire"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _Questionnaire(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire(ctx context.Context, sel ast.SelectionSet, obj *soq.Questionnaire) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, questionnaireImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -1549,7 +1549,7 @@ func (ec *executionContext) _Questionnaire(ctx context.Context, sel ast.Selectio
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_id(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_id(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1572,7 +1572,7 @@ func (ec *executionContext) _Questionnaire_id(ctx context.Context, field graphql
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_logo(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_logo(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1596,7 +1596,7 @@ func (ec *executionContext) _Questionnaire_logo(ctx context.Context, field graph
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_name(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_name(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1619,7 +1619,7 @@ func (ec *executionContext) _Questionnaire_name(ctx context.Context, field graph
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_short(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_short(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1643,7 +1643,7 @@ func (ec *executionContext) _Questionnaire_short(ctx context.Context, field grap
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_version(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_version(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1666,7 +1666,7 @@ func (ec *executionContext) _Questionnaire_version(ctx context.Context, field gr
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_changelog(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_changelog(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1683,7 +1683,7 @@ func (ec *executionContext) _Questionnaire_changelog(ctx context.Context, field 
 		}
 		return graphql.Null
 	}
-	res := resTmp.([]soq_api.Changes)
+	res := resTmp.([]soq.Changes)
 	rctx.Result = res
 
 	arr1 := make(graphql.Array, len(res))
@@ -1722,7 +1722,7 @@ func (ec *executionContext) _Questionnaire_changelog(ctx context.Context, field 
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_description(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_description(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1746,7 +1746,7 @@ func (ec *executionContext) _Questionnaire_description(ctx context.Context, fiel
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_license(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_license(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1769,7 +1769,7 @@ func (ec *executionContext) _Questionnaire_license(ctx context.Context, field gr
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_attribution(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_attribution(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1793,7 +1793,7 @@ func (ec *executionContext) _Questionnaire_attribution(ctx context.Context, fiel
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_instructions(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_instructions(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1817,7 +1817,7 @@ func (ec *executionContext) _Questionnaire_instructions(ctx context.Context, fie
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_links(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_links(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1831,7 +1831,7 @@ func (ec *executionContext) _Questionnaire_links(ctx context.Context, field grap
 	if resTmp == nil {
 		return graphql.Null
 	}
-	res := resTmp.([]*soq_api.Link)
+	res := resTmp.([]*soq.Link)
 	rctx.Result = res
 
 	arr1 := make(graphql.Array, len(res))
@@ -1874,7 +1874,7 @@ func (ec *executionContext) _Questionnaire_links(ctx context.Context, field grap
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_questions(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_questions(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1891,7 +1891,7 @@ func (ec *executionContext) _Questionnaire_questions(ctx context.Context, field 
 		}
 		return graphql.Null
 	}
-	res := resTmp.([]*soq_api.Question)
+	res := resTmp.([]*soq.Question)
 	rctx.Result = res
 
 	arr1 := make(graphql.Array, len(res))
@@ -1934,7 +1934,7 @@ func (ec *executionContext) _Questionnaire_questions(ctx context.Context, field 
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Questionnaire_scorings(ctx context.Context, field graphql.CollectedField, obj *soq_api.Questionnaire) graphql.Marshaler {
+func (ec *executionContext) _Questionnaire_scorings(ctx context.Context, field graphql.CollectedField, obj *soq.Questionnaire) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Questionnaire",
 		Args:   nil,
@@ -1948,7 +1948,7 @@ func (ec *executionContext) _Questionnaire_scorings(ctx context.Context, field g
 	if resTmp == nil {
 		return graphql.Null
 	}
-	res := resTmp.([]*soq_api.Scoring)
+	res := resTmp.([]*soq.Scoring)
 	rctx.Result = res
 
 	arr1 := make(graphql.Array, len(res))
@@ -1993,7 +1993,7 @@ func (ec *executionContext) _Questionnaire_scorings(ctx context.Context, field g
 var questionnaireListImplementors = []string{"QuestionnaireList"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _QuestionnaireList(ctx context.Context, sel ast.SelectionSet, obj *soq_api.QuestionnaireList) graphql.Marshaler {
+func (ec *executionContext) _QuestionnaireList(ctx context.Context, sel ast.SelectionSet, obj *soq.QuestionnaireList) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, questionnaireListImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -2026,7 +2026,7 @@ func (ec *executionContext) _QuestionnaireList(ctx context.Context, sel ast.Sele
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _QuestionnaireList_questionnaires(ctx context.Context, field graphql.CollectedField, obj *soq_api.QuestionnaireList) graphql.Marshaler {
+func (ec *executionContext) _QuestionnaireList_questionnaires(ctx context.Context, field graphql.CollectedField, obj *soq.QuestionnaireList) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "QuestionnaireList",
 		Args:   nil,
@@ -2043,7 +2043,7 @@ func (ec *executionContext) _QuestionnaireList_questionnaires(ctx context.Contex
 		}
 		return graphql.Null
 	}
-	res := resTmp.([]*soq_api.Questionnaire)
+	res := resTmp.([]*soq.Questionnaire)
 	rctx.Result = res
 
 	arr1 := make(graphql.Array, len(res))
@@ -2086,7 +2086,7 @@ func (ec *executionContext) _QuestionnaireList_questionnaires(ctx context.Contex
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _QuestionnaireList_pageInfo(ctx context.Context, field graphql.CollectedField, obj *soq_api.QuestionnaireList) graphql.Marshaler {
+func (ec *executionContext) _QuestionnaireList_pageInfo(ctx context.Context, field graphql.CollectedField, obj *soq.QuestionnaireList) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "QuestionnaireList",
 		Args:   nil,
@@ -2103,7 +2103,7 @@ func (ec *executionContext) _QuestionnaireList_pageInfo(ctx context.Context, fie
 		}
 		return graphql.Null
 	}
-	res := resTmp.(soq_api.PageInfo)
+	res := resTmp.(soq.PageInfo)
 	rctx.Result = res
 
 	return ec._PageInfo(ctx, field.Selections, &res)
@@ -2112,7 +2112,7 @@ func (ec *executionContext) _QuestionnaireList_pageInfo(ctx context.Context, fie
 var scoringImplementors = []string{"Scoring"}
 
 // nolint: gocyclo, errcheck, gas, goconst
-func (ec *executionContext) _Scoring(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Scoring) graphql.Marshaler {
+func (ec *executionContext) _Scoring(ctx context.Context, sel ast.SelectionSet, obj *soq.Scoring) graphql.Marshaler {
 	fields := graphql.CollectFields(ctx, sel, scoringImplementors)
 
 	out := graphql.NewOrderedMap(len(fields))
@@ -2159,7 +2159,7 @@ func (ec *executionContext) _Scoring(ctx context.Context, sel ast.SelectionSet, 
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Scoring_id(ctx context.Context, field graphql.CollectedField, obj *soq_api.Scoring) graphql.Marshaler {
+func (ec *executionContext) _Scoring_id(ctx context.Context, field graphql.CollectedField, obj *soq.Scoring) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Scoring",
 		Args:   nil,
@@ -2182,7 +2182,7 @@ func (ec *executionContext) _Scoring_id(ctx context.Context, field graphql.Colle
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Scoring_name(ctx context.Context, field graphql.CollectedField, obj *soq_api.Scoring) graphql.Marshaler {
+func (ec *executionContext) _Scoring_name(ctx context.Context, field graphql.CollectedField, obj *soq.Scoring) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Scoring",
 		Args:   nil,
@@ -2205,7 +2205,7 @@ func (ec *executionContext) _Scoring_name(ctx context.Context, field graphql.Col
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Scoring_description(ctx context.Context, field graphql.CollectedField, obj *soq_api.Scoring) graphql.Marshaler {
+func (ec *executionContext) _Scoring_description(ctx context.Context, field graphql.CollectedField, obj *soq.Scoring) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Scoring",
 		Args:   nil,
@@ -2229,7 +2229,7 @@ func (ec *executionContext) _Scoring_description(ctx context.Context, field grap
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Scoring_questions(ctx context.Context, field graphql.CollectedField, obj *soq_api.Scoring) graphql.Marshaler {
+func (ec *executionContext) _Scoring_questions(ctx context.Context, field graphql.CollectedField, obj *soq.Scoring) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Scoring",
 		Args:   nil,
@@ -2265,7 +2265,7 @@ func (ec *executionContext) _Scoring_questions(ctx context.Context, field graphq
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Scoring_aggregation(ctx context.Context, field graphql.CollectedField, obj *soq_api.Scoring) graphql.Marshaler {
+func (ec *executionContext) _Scoring_aggregation(ctx context.Context, field graphql.CollectedField, obj *soq.Scoring) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Scoring",
 		Args:   nil,
@@ -2282,13 +2282,13 @@ func (ec *executionContext) _Scoring_aggregation(ctx context.Context, field grap
 		}
 		return graphql.Null
 	}
-	res := resTmp.(soq_api.Aggregation)
+	res := resTmp.(soq.Aggregation)
 	rctx.Result = res
 	return res
 }
 
 // nolint: vetshadow
-func (ec *executionContext) _Scoring_bands(ctx context.Context, field graphql.CollectedField, obj *soq_api.Scoring) graphql.Marshaler {
+func (ec *executionContext) _Scoring_bands(ctx context.Context, field graphql.CollectedField, obj *soq.Scoring) graphql.Marshaler {
 	rctx := &graphql.ResolverContext{
 		Object: "Scoring",
 		Args:   nil,
@@ -2302,7 +2302,7 @@ func (ec *executionContext) _Scoring_bands(ctx context.Context, field graphql.Co
 	if resTmp == nil {
 		return graphql.Null
 	}
-	res := resTmp.([]*soq_api.Band)
+	res := resTmp.([]*soq.Band)
 	rctx.Result = res
 
 	arr1 := make(graphql.Array, len(res))
@@ -3653,13 +3653,13 @@ func (ec *executionContext) ___Type_ofType(ctx context.Context, field graphql.Co
 	return ec.___Type(ctx, field.Selections, res)
 }
 
-func (ec *executionContext) _Question(ctx context.Context, sel ast.SelectionSet, obj *soq_api.Question) graphql.Marshaler {
+func (ec *executionContext) _Question(ctx context.Context, sel ast.SelectionSet, obj *soq.Question) graphql.Marshaler {
 	switch obj := (*obj).(type) {
 	case nil:
 		return graphql.Null
-	case soq_api.LikertQuestion:
+	case soq.LikertQuestion:
 		return ec._LikertQuestion(ctx, sel, &obj)
-	case *soq_api.LikertQuestion:
+	case *soq.LikertQuestion:
 		return ec._LikertQuestion(ctx, sel, obj)
 	default:
 		panic(fmt.Errorf("unexpected type %T", obj))

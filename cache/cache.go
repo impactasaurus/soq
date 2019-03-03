@@ -2,10 +2,9 @@ package cache
 
 import (
 	"errors"
-
 	"sort"
 
-	soq "github.com/impactasaurus/soq-api"
+	"github.com/impactasaurus/soq"
 )
 
 type Cache struct {

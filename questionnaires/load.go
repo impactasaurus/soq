@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"path/filepath"
 
-	soq "github.com/impactasaurus/soq-api"
+	"github.com/impactasaurus/soq"
 )
 
 func Load(path string) (soq.Questionnaire, error) {
