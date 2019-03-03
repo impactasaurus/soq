@@ -9,9 +9,15 @@
     "changes": [
       "initial version"
     ]
+  }, {
+    "version": "1.0.1",
+    "timestamp": "2019-03-03T14:04:00Z",
+    "changes": [
+      "updating license information to reflect the lack of information available"
+    ]
   }],
   "attribution": "Victor, S. E., & Klonsky, E. D. (2016). Validation of a brief version of the Difficulties in Emotion Regulation Scale (DERS-18) in five samples. Journal of Psychopathology and Behavioral Assessment, in press.",
-  "license": "Questions can be used free of charge",
+  "license": "The DERS-18 paper does not state anything about the use of the scale by others.",
   "description": "The DERS-18 is a self-report questionnaire designed to assess multiple aspects of emotion dysregulation. The measure yields scores on six scales: Awareness, Clarity, Goals, Impulse, Nonacceptance and Strategies.",
   "links": [{
     "name": "Reference",
