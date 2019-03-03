@@ -25,7 +25,7 @@
   "questions": [
     {
       "id": "393457bd-cd18-4a79-9bd3-df48c04ab1e8",
-      "question": "Whenever I feel positive emotions, people can easily see exactly what I am",
+      "question": "Whenever I feel positive emotions, people can easily see exactly what I am feeling",
       "type": "likert",
       "scale": [
         {
@@ -397,7 +397,7 @@
     },
     {
       "id": "1469b9ef-22fd-4b03-a79d-7220ed5a6ab2",
-      "question": "Whenever I feel negative emotions, people can easily see exactly what I am",
+      "question": "Whenever I feel negative emotions, people can easily see exactly what I am feeling",
       "type": "likert",
       "scale": [
         {
@@ -428,7 +428,7 @@
     },
     {
       "id": "e60e3b82-d8c8-4793-81be-7eacb35283bc",
-      "question": "There have been times when I have not been able to stop crying even though I",
+      "question": "There have been times when I have not been able to stop crying even though I tried to stop",
       "type": "likert",
       "scale": [
         {
