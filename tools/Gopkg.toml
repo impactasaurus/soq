@@ -1,0 +1,6 @@
+ignored = ["github.com/impactasaurus/soq"]
+
+[prune]
+  go-tests = true
+  unused-packages = true
+
