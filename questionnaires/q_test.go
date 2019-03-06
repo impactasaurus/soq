@@ -5,6 +5,8 @@ import (
 
 	"net/http"
 
+	"time"
+
 	"github.com/impactasaurus/soq"
 	"github.com/impactasaurus/soq/questionnaires"
 )
@@ -27,6 +29,23 @@ func TestQuestionnaires(t *testing.T) {
 			}
 			if q.License == "" {
 				t.Errorf("questionnaire %s missing license information", q.Name)
+			}
+			if q.Version == "" {
+				t.Errorf("questionnaire %s missing a version", q.Name)
+			}
+			mostRecentVersion := 0
+			for idx, v := range q.Changelog {
+				vt, err := time.Parse(time.RFC3339, v.Timestamp)
+				if err != nil {
+					t.Errorf("questionnaire %s version %s has invalid timestamp %s", q.Name, v.Version, v.Timestamp)
+				}
+				mt, _ := time.Parse(time.RFC3339, q.Changelog[mostRecentVersion].Timestamp)
+				if vt.After(mt) {
+					mostRecentVersion = idx
+				}
+			}
+			if q.Version != q.Changelog[mostRecentVersion].Version {
+				t.Errorf("questionnaire %s's version (%s) does not match most recent changelog version %s", q.Name, q.Version, q.Changelog[mostRecentVersion].Version)
 			}
 			testQuestions(t, q)
 			testScorings(t, q)
