@@ -125,7 +125,7 @@ func testLinks(t *testing.T, qs soq.Questionnaire) {
 			t.Fatalf("error encountered confirming link %s: %s", l.URL, err.Error())
 		}
 		resp.Body.Close()
-		if resp.StatusCode < 200 || resp.StatusCode >= 300 {
+		if (resp.StatusCode < 200 || resp.StatusCode >= 300) && resp.StatusCode != 416 {
 			t.Errorf("unexpected status code confirming link %s: %d", l.URL, resp.StatusCode)
 		}
 	}
