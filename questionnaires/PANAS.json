@@ -1,0 +1,604 @@
+{
+  "id": "d5213bbf-3e45-4c0c-84f7-486d10df1b0d",
+  "logo": null,
+  "name": "Positive and Negative Affect Schedule",
+  "short": "PANAS",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-03-06T20:41:01Z"
+    }
+  ],
+  "description": "Self-report questionnaire that consists of two 10-item scales to measure mood - both positive and negative. The measure has been used mainly as a research tool in group studies, but can be utilized within clinical and non-clinical populations as well.",
+  "license": "The PANAS paper does not state anything about the use of the scale by others.",
+  "attribution": "Watson, David; Clark, Lee A.; Tellegen, Auke (1988). \"Development and validation of brief measures of positive and negative affect: The PANAS scales\". Journal of Personality and Social Psychology. 54 (6): 1063–1070.",
+  "instructions": "This scale consists of a number of words that describe different feelings and emotions. Indicate to what extent you have felt this way during the past week",
+  "links": [{
+    "name": "Reference",
+    "url": "https://psycnet.apa.org/record/1988-31508-001"
+  }],
+  "questions": [
+    {
+      "id": "99e2b2a2-7c2a-4fad-b897-c9c95624b327",
+      "question": "Interested",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "63ec75d3-c95d-4199-aad5-28bea092ce7f",
+      "question": "Distressed",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "809bd2dc-2566-4c7c-bb03-3fde1a8d347c",
+      "question": "Excited",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "413a68cf-6859-48b3-9296-283f6a8fbb81",
+      "question": "Upset",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "1c6f29f8-12cc-48d4-b3c6-3a75bdf672d3",
+      "question": "Strong",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "13f60305-3b9c-4dd7-af03-b0450bef50b9",
+      "question": "Guilty",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "c63aaf2c-303e-4a06-ba98-25d9c5140457",
+      "question": "Scared",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "d81e7b2a-c42e-48cc-acb7-c27422e2fce3",
+      "question": "Hostile",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "78c5c3b8-0127-4160-bce7-fad679e00f48",
+      "question": "Enthusiastic",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "ce916b7e-f719-44f3-acc9-73955ec1ea2a",
+      "question": "Proud",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "5ab62803-e6c5-4df7-a34f-bb02c5b0a368",
+      "question": "Irritable",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "8e566f8c-5d56-4c64-abad-a93994aead19",
+      "question": "Alert",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "ae2c922a-6b53-4dd8-a119-19c1694af245",
+      "question": "Ashamed",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "6e01d7ad-5731-4062-93ca-b1692f8b8514",
+      "question": "Inspired",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "47b7ddf8-3944-4fcd-a7e4-0270c153106e",
+      "question": "Nervous",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "bd3d2cd1-a0be-4c0d-9ff3-dc12036ccc24",
+      "question": "Determined",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "bd352773-f2bc-458f-ad77-a350a42646ea",
+      "question": "Attentive",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "f15a2e19-3b33-49c6-b36d-3eb2b1251b78",
+      "question": "Jittery",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "5d1f8ab0-033a-4aef-9079-f44079f3988a",
+      "question": "Active",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    },
+    {
+      "id": "31faa58c-5c20-432b-95c6-70085586ed8a",
+      "question": "Afraid",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Very slightly or not at all"
+        },
+        {
+          "value": 2,
+          "label": "A little"
+        },
+        {
+          "value": 3,
+          "label": "Moderately"
+        },
+        {
+          "value": 4,
+          "label": "Quite a bit"
+        },
+        {
+          "value": 5,
+          "label": "Extremely"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "7cc63617-9a90-499b-ab20-b481d8ad087f",
+      "name": "Positive Affect Score",
+      "description": "Positive Affect (PA) reflects the extent to which a person feels enthusiastic, active, and alert. High PA is a state of high energy, full concentration, and pleasurable engagement, whereas low PA is characterized by sadness and lethargy",
+      "questions": [
+        "99e2b2a2-7c2a-4fad-b897-c9c95624b327",
+        "809bd2dc-2566-4c7c-bb03-3fde1a8d347c",
+        "1c6f29f8-12cc-48d4-b3c6-3a75bdf672d3",
+        "78c5c3b8-0127-4160-bce7-fad679e00f48",
+        "ce916b7e-f719-44f3-acc9-73955ec1ea2a",
+        "8e566f8c-5d56-4c64-abad-a93994aead19",
+        "6e01d7ad-5731-4062-93ca-b1692f8b8514",
+        "bd3d2cd1-a0be-4c0d-9ff3-dc12036ccc24",
+        "bd352773-f2bc-458f-ad77-a350a42646ea",
+        "5d1f8ab0-033a-4aef-9079-f44079f3988a"
+      ],
+      "aggregation": "sum"
+    },
+    {
+      "id": "4e45441a-af53-408c-98aa-f8507b25cf0a",
+      "name": "Negative Affect Score",
+      "description": "Negative Affect (NA) is a general dimension of subjective distress and unpleasurable engagement that subsumes a variety of aversive mood states, including anger, contempt, disgust, guilt, fear, and nervousness, with low NA being a state of calmness and serenity.",
+      "questions": [
+        "63ec75d3-c95d-4199-aad5-28bea092ce7f",
+        "413a68cf-6859-48b3-9296-283f6a8fbb81",
+        "13f60305-3b9c-4dd7-af03-b0450bef50b9",
+        "c63aaf2c-303e-4a06-ba98-25d9c5140457",
+        "d81e7b2a-c42e-48cc-acb7-c27422e2fce3",
+        "5ab62803-e6c5-4df7-a34f-bb02c5b0a368",
+        "ae2c922a-6b53-4dd8-a119-19c1694af245",
+        "47b7ddf8-3944-4fcd-a7e4-0270c153106e",
+        "f15a2e19-3b33-49c6-b36d-3eb2b1251b78",
+        "31faa58c-5c20-432b-95c6-70085586ed8a"
+      ],
+      "aggregation": "sum"
+    }
+  ]
+}
