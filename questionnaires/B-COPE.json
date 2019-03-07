@@ -1,0 +1,863 @@
+{
+  "id": "22861e00-b881-424d-85be-5157be571491",
+  "logo": null,
+  "name": "Brief COPE Inventory",
+  "short": "B-COPE",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-03-07T20:31:09Z"
+    }
+  ],
+  "description": "The Brief COPE Inventory was developed to assess a broad range of coping responses. The inventory includes some responses that are expected to be dysfunctional, as well as some that are expected to be functional.",
+  "license": "Made available for use in research and teaching applications. All are available without charge and without any need for permission.",
+  "attribution": "Carver, C. S.  (1997).  You want to measure coping but your protocol’s too long:  Consider the Brief COPE. International Journal of Behavioral Medicine, 4, 92-100.",
+  "instructions": "There are many ways to try to deal with problems, these items ask what you've been doing to cope. Each item says something about a particular way of coping, to what extent you've been doing what the item says. Don't answer on the basis of whether it seems to be working or not — just whether or not you're doing it. Try to rate each item separately in your mind from the others. Make your answers as true FOR YOU as you can.",
+  "links": [{
+    "name": "Website",
+    "url": "http://local.psy.miami.edu/faculty/ccarver/sclBrCOPE.html"
+  }, {
+    "name": "License",
+    "url": "http://local.psy.miami.edu/faculty/ccarver/CCscales.html"
+  }, {
+    "name": "Reference",
+    "url": "https://miami.pure.elsevier.com/en/publications/you-want-to-measure-coping-but-your-protocol-too-long-consider-th"
+  }, {
+    "name": "Original COPE",
+    "url": "http://local.psy.miami.edu/faculty/ccarver/sclCOPEF.html"
+  }],
+  "questions": [
+    {
+      "id": "6b70046b-75dc-40d5-bbc4-3d74463bd2d0",
+      "question": "I've been turning to work or other activities to take my mind off things",
+      "type": "likert",
+      "short": "Turning to other activities",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "1cbaf4bd-a3e4-4a6f-8e7e-f54417aa38a8",
+      "question": "I've been concentrating my efforts on doing something about the situation I'm in",
+      "type": "likert",
+      "short": "Doing something about the situation I'm in",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "8ce54656-8efd-4e79-9f3e-24a90b6c467f",
+      "question": "I've been saying to myself \"this isn't real.\"",
+      "type": "likert",
+      "short": "\"This isn't real\"",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "cbbdadb8-66c4-4a6d-8b2c-c246f59ef397",
+      "question": "I've been using alcohol or other drugs to make myself feel better",
+      "type": "likert",
+      "short": "Substances to make myself feel better",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "42972264-5f3e-4b84-ac77-008560d20858",
+      "question": "I've been getting emotional support from others",
+      "type": "likert",
+      "short": "Emotional support from others",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "bbad0521-017a-4d5c-867c-e344d60fe136",
+      "question": "I've been giving up trying to deal with it",
+      "type": "likert",
+      "short": "Giving up trying to deal with it",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "5a127e3b-4fdd-4776-9f4f-c67838497ad9",
+      "question": "I've been taking action to try to make the situation better",
+      "type": "likert",
+      "short": "Trying to make the situation better",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "b02a1d6f-8da8-41a6-a6c3-d18d5e8818a0",
+      "question": "I've been refusing to believe that it has happened",
+      "type": "likert",
+      "short": "Refusing to believe",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "23e30edf-7352-4a03-ab13-c9732ff7c4bc",
+      "question": "I've been saying things to let my unpleasant feelings escape",
+      "type": "likert",
+      "short": "Saying things to let feelings escape",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "5e0643a1-dfe1-44b1-89c7-73c5571fb8e3",
+      "question": "I’ve been getting help and advice from other people",
+      "type": "likert",
+      "short": "Help and advice from other people",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "328ef43b-918c-4d02-a519-4809bf2daede",
+      "question": "I've been using alcohol or other drugs to help me get through it",
+      "type": "likert",
+      "short": "Substances to help me get through it",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "54dc15da-4c62-4c4c-a283-2b6806464707",
+      "question": "I've been trying to see it in a different light, to make it seem more positive",
+      "type": "likert",
+      "short": "See it in a different light",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "872fa69b-3f62-479f-b90a-69eaacab87ea",
+      "question": "I’ve been criticizing myself",
+      "type": "likert",
+      "short": "Criticizing myself",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "0af35d1f-0a0c-482c-b7d7-07a7a32e69d9",
+      "question": "I've been trying to come up with a strategy about what to do",
+      "type": "likert",
+      "short": "Come up with a strategy",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "d825febd-22df-4e80-b50d-ff6e218f26de",
+      "question": "I've been getting comfort and understanding from someone",
+      "type": "likert",
+      "short": "Comfort and understanding from someone",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "9709b820-a981-4fee-ae50-6e097fde9dac",
+      "question": "I've been giving up the attempt to cope",
+      "type": "likert",
+      "short": "Giving up the attempt to cope",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "a32b9eb6-92ec-471a-93ef-df34d059d14f",
+      "question": "I've been looking for something good in what is happening",
+      "type": "likert",
+      "short": "Looking for something good",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "eaf812c2-aec1-44dc-8c11-b25288c220f9",
+      "question": "I've been making jokes about it",
+      "type": "likert",
+      "short": "Making jokes",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "dd86c319-d884-4ec3-abfa-fd6b279a6835",
+      "question": "I've been doing something to think about it less, such as going to movies, watching TV, reading, daydreaming, sleeping, or shopping",
+      "type": "likert",
+      "short": "Doing something to think about it less",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "3e73fc5c-62cf-4f22-8c58-2b48ce39e4bf",
+      "question": "I've been accepting the reality of the fact that it has happened",
+      "type": "likert",
+      "short": "Accepting the reality",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "d3a3eded-bf47-4d98-916a-3728802577d3",
+      "question": "I've been expressing my negative feelings",
+      "type": "likert",
+      "short": "Expressing my negative feelings",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "3f608f69-fb60-4533-9da4-c2afba9636b0",
+      "question": "I've been trying to find comfort in my religion or spiritual beliefs",
+      "type": "likert",
+      "short": "Comfort in my religion",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "8e6295bb-6e80-4729-8c26-dab18dd8ea5b",
+      "question": "I’ve been trying to get advice or help from other people about what to do",
+      "type": "likert",
+      "short": "Advice from others about what to do",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "870c4829-4259-447e-bdcd-44a235cb1900",
+      "question": "I've been learning to live with it",
+      "type": "likert",
+      "short": "Learning to live with it",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "58511286-56ba-4e30-85de-20889f74dd5c",
+      "question": "I've been thinking hard about what steps to take",
+      "type": "likert",
+      "short": "Steps to take",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "63fa8203-456d-4abc-8453-18111b9db5fd",
+      "question": "I’ve been blaming myself for things that happened",
+      "type": "likert",
+      "short": "Blaming myself",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "aef90590-2bf3-4a09-a5ca-1deed81516e7",
+      "question": "I've been praying or meditating",
+      "type": "likert",
+      "short": "Praying or meditating",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    },
+    {
+      "id": "ac546656-0090-4137-b0d5-6c9f431ea8b9",
+      "question": "I've been making fun of the situation",
+      "type": "likert",
+      "short": "Making fun of the situation",
+      "scale": [
+        {
+          "value": 1,
+          "label": "I haven't been doing this at all"
+        },
+        {
+          "value": 2,
+          "label": "I've been doing this a little bit"
+        },
+        {
+          "value": 3,
+          "label": "I've been doing this a medium amount"
+        },
+        {
+          "value": 4,
+          "label": "I've been doing this a lot"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "8549817e-7d1d-4346-9fd7-0b89f9672c6d",
+      "name": "Self-distraction",
+      "description": null,
+      "questions": [
+        "6b70046b-75dc-40d5-bbc4-3d74463bd2d0",
+        "dd86c319-d884-4ec3-abfa-fd6b279a6835"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "ec9bc5c8-97a3-4a48-9a32-8de34db81edc",
+      "name": "Active coping",
+      "description": null,
+      "questions": [
+        "1cbaf4bd-a3e4-4a6f-8e7e-f54417aa38a8",
+        "5a127e3b-4fdd-4776-9f4f-c67838497ad9"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "a31e53f4-b6de-4b9d-b2f9-e06b3177a555",
+      "name": "Denial",
+      "description": null,
+      "questions": [
+        "8ce54656-8efd-4e79-9f3e-24a90b6c467f",
+        "b02a1d6f-8da8-41a6-a6c3-d18d5e8818a0"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "dfcd3f1d-f835-4d49-a26d-7023130d2f37",
+      "name": "Substance use",
+      "description": null,
+      "questions": [
+        "cbbdadb8-66c4-4a6d-8b2c-c246f59ef397",
+        "328ef43b-918c-4d02-a519-4809bf2daede"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "6426994d-d201-485a-8714-55f4b86e926c",
+      "name": "Use of emotional support",
+      "description": null,
+      "questions": [
+        "42972264-5f3e-4b84-ac77-008560d20858",
+        "d825febd-22df-4e80-b50d-ff6e218f26de"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "7d4bab67-21ca-4b4c-8d98-34a3dc2b5d1b",
+      "name": "Use of instrumental support",
+      "description": null,
+      "questions": [
+        "5e0643a1-dfe1-44b1-89c7-73c5571fb8e3",
+        "8e6295bb-6e80-4729-8c26-dab18dd8ea5b"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "bfae3c27-7a2e-468b-b973-d690b7e23356",
+      "name": "Behavioral disengagement",
+      "description": null,
+      "questions": [
+        "bbad0521-017a-4d5c-867c-e344d60fe136",
+        "9709b820-a981-4fee-ae50-6e097fde9dac"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "2f9f6cfd-62a5-4604-8ffe-83f5199535cb",
+      "name": "Venting",
+      "description": null,
+      "questions": [
+        "23e30edf-7352-4a03-ab13-c9732ff7c4bc",
+        "d3a3eded-bf47-4d98-916a-3728802577d3"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "eb0cf691-f2de-4de3-9d8f-6d2fd80bc03a",
+      "name": "Positive reframing",
+      "description": null,
+      "questions": [
+        "54dc15da-4c62-4c4c-a283-2b6806464707",
+        "a32b9eb6-92ec-471a-93ef-df34d059d14f"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "87fa8bf9-eddc-44ed-9de3-ebd16500269f",
+      "name": "Planning",
+      "description": null,
+      "questions": [
+        "0af35d1f-0a0c-482c-b7d7-07a7a32e69d9",
+        "58511286-56ba-4e30-85de-20889f74dd5c"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "94862610-a221-4ce4-9064-457b80b00b6e",
+      "name": "Humor",
+      "description": null,
+      "questions": [
+        "eaf812c2-aec1-44dc-8c11-b25288c220f9",
+        "ac546656-0090-4137-b0d5-6c9f431ea8b9"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "11299666-69bd-4088-ac5e-dc7da8110d2d",
+      "name": "Acceptance",
+      "description": null,
+      "questions": [
+        "3e73fc5c-62cf-4f22-8c58-2b48ce39e4bf",
+        "870c4829-4259-447e-bdcd-44a235cb1900"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "edb0c58a-a211-44e8-8cde-9ebc383550e8",
+      "name": "Religion",
+      "description": null,
+      "questions": [
+        "3f608f69-fb60-4533-9da4-c2afba9636b0",
+        "aef90590-2bf3-4a09-a5ca-1deed81516e7"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    },
+    {
+      "id": "54cf3539-4af0-49c6-bb9d-2f92d57474ca",
+      "name": "Self-blame",
+      "description": null,
+      "questions": [
+        "872fa69b-3f62-479f-b90a-69eaacab87ea",
+        "63fa8203-456d-4abc-8453-18111b9db5fd"
+      ],
+      "aggregation": "sum",
+      "bands": null
+    }
+  ]
+}
