@@ -1,0 +1,237 @@
+{
+  "id": "4d8342c5-e686-4d3b-bbe5-f91c955297e5",
+  "logo": null,
+  "name": "Generalized Anxiety Disorder 7",
+  "short": "GAD-7",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-03-09T21:07:00Z"
+    }
+  ],
+  "description": "Generalized Anxiety Disorder 7 (GAD-7) is a self-reported questionnaire for screening and severity measuring of generalized anxiety disorder (GAD). GAD-7 has seven items, which measure severity of various signs of GAD.",
+  "license": "No permission required to reproduce, translate, display or distribute",
+  "attribution": "Developed by Drs. Robert L. Spitzer, Janet B.W. Williams, Kurt Kroenke and colleagues, with an educational grant from Pfizer Inc.",
+  "instructions": "Over the last two weeks, how often have you been bothered by the following problems?",
+  "links": [{
+    "name": "Website",
+    "url": "https://www.phqscreeners.com"
+  }, {
+    "name": "Reference",
+    "url": "https://pdfs.semanticscholar.org/0b91/cbc718a0849176a43625dd346100588b54fb.pdf"
+  }, {
+    "name": "User Guide",
+    "url": "https://www.phqscreeners.com/sites/g/files/g10016261/f/201412/instructions.pdf"
+  }, {
+    "name": "PDF Versions",
+    "url": "https://www.phqscreeners.com/select-screener/41"
+  }, {
+    "name": "Translations",
+    "url": "https://www.phqscreeners.com/select-screener/41"
+  }],
+  "questions": [
+    {
+      "id": "8711ea25-b217-415e-8960-53b2b4135070",
+      "question": "Feeling nervous, anxious or on edge",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "00c805b5-6879-4fa1-a0aa-ceaafda9645d",
+      "question": "Not being able to stop or control worrying",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "33d3a0b6-e133-4557-8677-07aaf2b343ba",
+      "question": "Worrying too much about different things",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "1c95089a-5256-4c55-a777-4572611b0392",
+      "question": "Trouble relaxing",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "a7cc88db-5e42-4108-bf33-e2b63f851ec9",
+      "question": "Being so restless that it is hard to sit still",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "cfda97eb-cec8-46e6-8d81-90b61d40d5a9",
+      "question": "Becoming easily annoyed or irritable",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    },
+    {
+      "id": "fd418d41-2fb8-4b57-8fb9-8e7ac1995101",
+      "question": "Feeling afraid as if something awful might happen",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Not at all"
+        },
+        {
+          "value": 1,
+          "label": "Several days"
+        },
+        {
+          "value": 2,
+          "label": "More than half the days"
+        },
+        {
+          "value": 3,
+          "label": "Nearly every day"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "6b8d0002-78c6-4c2a-8016-5751d2f0452a",
+      "name": "Total",
+      "questions": [
+        "8711ea25-b217-415e-8960-53b2b4135070",
+        "00c805b5-6879-4fa1-a0aa-ceaafda9645d",
+        "33d3a0b6-e133-4557-8677-07aaf2b343ba",
+        "1c95089a-5256-4c55-a777-4572611b0392",
+        "a7cc88db-5e42-4108-bf33-e2b63f851ec9",
+        "cfda97eb-cec8-46e6-8d81-90b61d40d5a9",
+        "fd418d41-2fb8-4b57-8fb9-8e7ac1995101"
+      ],
+      "aggregation": "sum",
+      "bands": [
+        {
+          "minimum": 0,
+          "maximum": 4,
+          "label": "Minimal anxiety"
+        },
+        {
+          "minimum": 5,
+          "maximum": 9,
+          "label": "Mild anxiety"
+        },
+        {
+          "minimum": 10,
+          "maximum": 14,
+          "label": "Moderate anxiety"
+        },
+        {
+          "minimum": 15,
+          "maximum": 21,
+          "label": "Severe anxiety"
+        }
+      ]
+    }
+  ]
+}
