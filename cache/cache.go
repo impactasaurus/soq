@@ -62,3 +62,11 @@ func (c *Cache) Questionnaires(page, limit int) (soq.QuestionnaireList, error) {
 		Questionnaires: c.byName[offset:end],
 	}, nil
 }
+
+func (c *Cache) QuestionnaireIDs() []string {
+	out := make([]string, 0, len(c.byID))
+	for k := range c.byID {
+		out = append(out, k)
+	}
+	return out
+}

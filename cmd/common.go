@@ -9,6 +9,7 @@ import (
 	"github.com/impactasaurus/soq/api"
 	"github.com/impactasaurus/soq/cache"
 	"github.com/impactasaurus/soq/questionnaires"
+	"github.com/impactasaurus/soq/search"
 	corsLib "github.com/rs/cors"
 )
 
@@ -25,7 +26,15 @@ func MustSetup() Network {
 		log.Fatal(err)
 	}
 
-	v1Handlers, err := api.NewV1(c)
+	se, err := search.New(c)
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	v1Handlers, err := api.NewV1(struct {
+		*cache.Cache
+		*search.Engine
+	}{c, se})
 	if err != nil {
 		log.Fatal(err)
 	}

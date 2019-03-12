@@ -80,6 +80,7 @@ type ComplexityRoot struct {
 	Query struct {
 		Questionnaires func(childComplexity int, page *int, limit *int) int
 		Questionnaire  func(childComplexity int, id string) int
+		Search         func(childComplexity int, query string, page *int, limit *int) int
 	}
 
 	Questionnaire struct {
@@ -116,6 +117,7 @@ type ComplexityRoot struct {
 type QueryResolver interface {
 	Questionnaires(ctx context.Context, page *int, limit *int) (soq.QuestionnaireList, error)
 	Questionnaire(ctx context.Context, id string) (soq.Questionnaire, error)
+	Search(ctx context.Context, query string, page *int, limit *int) (soq.QuestionnaireList, error)
 }
 
 func field_Query_questionnaires_args(rawArgs map[string]interface{}) (map[string]interface{}, error) {
@@ -163,6 +165,49 @@ func field_Query_questionnaire_args(rawArgs map[string]interface{}) (map[string]
 		}
 	}
 	args["id"] = arg0
+	return args, nil
+
+}
+
+func field_Query_search_args(rawArgs map[string]interface{}) (map[string]interface{}, error) {
+	args := map[string]interface{}{}
+	var arg0 string
+	if tmp, ok := rawArgs["query"]; ok {
+		var err error
+		arg0, err = graphql.UnmarshalString(tmp)
+		if err != nil {
+			return nil, err
+		}
+	}
+	args["query"] = arg0
+	var arg1 *int
+	if tmp, ok := rawArgs["page"]; ok {
+		var err error
+		var ptr1 int
+		if tmp != nil {
+			ptr1, err = graphql.UnmarshalInt(tmp)
+			arg1 = &ptr1
+		}
+
+		if err != nil {
+			return nil, err
+		}
+	}
+	args["page"] = arg1
+	var arg2 *int
+	if tmp, ok := rawArgs["limit"]; ok {
+		var err error
+		var ptr1 int
+		if tmp != nil {
+			ptr1, err = graphql.UnmarshalInt(tmp)
+			arg2 = &ptr1
+		}
+
+		if err != nil {
+			return nil, err
+		}
+	}
+	args["limit"] = arg2
 	return args, nil
 
 }
@@ -388,6 +433,18 @@ func (e *executableSchema) Complexity(typeName, field string, childComplexity in
 		}
 
 		return e.complexity.Query.Questionnaire(childComplexity, args["id"].(string)), true
+
+	case "Query.search":
+		if e.complexity.Query.Search == nil {
+			break
+		}
+
+		args, err := field_Query_search_args(rawArgs)
+		if err != nil {
+			return 0, false
+		}
+
+		return e.complexity.Query.Search(childComplexity, args["query"].(string), args["page"].(*int), args["limit"].(*int)), true
 
 	case "Questionnaire.id":
 		if e.complexity.Questionnaire.Id == nil {
@@ -1348,6 +1405,15 @@ func (ec *executionContext) _Query(ctx context.Context, sel ast.SelectionSet) gr
 				}
 				wg.Done()
 			}(i, field)
+		case "search":
+			wg.Add(1)
+			go func(i int, field graphql.CollectedField) {
+				out.Values[i] = ec._Query_search(ctx, field)
+				if out.Values[i] == graphql.Null {
+					invalid = true
+				}
+				wg.Done()
+			}(i, field)
 		case "__type":
 			out.Values[i] = ec._Query___type(ctx, field)
 		case "__schema":
@@ -1421,6 +1487,36 @@ func (ec *executionContext) _Query_questionnaire(ctx context.Context, field grap
 	rctx.Result = res
 
 	return ec._Questionnaire(ctx, field.Selections, &res)
+}
+
+// nolint: vetshadow
+func (ec *executionContext) _Query_search(ctx context.Context, field graphql.CollectedField) graphql.Marshaler {
+	rawArgs := field.ArgumentMap(ec.Variables)
+	args, err := field_Query_search_args(rawArgs)
+	if err != nil {
+		ec.Error(ctx, err)
+		return graphql.Null
+	}
+	rctx := &graphql.ResolverContext{
+		Object: "Query",
+		Args:   args,
+		Field:  field,
+	}
+	ctx = graphql.WithResolverContext(ctx, rctx)
+	resTmp := ec.FieldMiddleware(ctx, nil, func(rctx context.Context) (interface{}, error) {
+		ctx = rctx // use context from middleware stack in children
+		return ec.resolvers.Query().Search(rctx, args["query"].(string), args["page"].(*int), args["limit"].(*int))
+	})
+	if resTmp == nil {
+		if !ec.HasError(rctx) {
+			ec.Errorf(ctx, "must not be null")
+		}
+		return graphql.Null
+	}
+	res := resTmp.(soq.QuestionnaireList)
+	rctx.Result = res
+
+	return ec._QuestionnaireList(ctx, field.Selections, &res)
 }
 
 // nolint: vetshadow
@@ -3830,5 +3926,7 @@ type Query {
     questionnaires(page: Int, limit: Int): QuestionnaireList!
     """questionnaire gathers a single questionnaire by ID"""
     questionnaire(id: String!): Questionnaire!
+    """search returns an ordered list of questionnaires based on a search term"""
+    search(query: String!, page: Int, limit: Int): QuestionnaireList!
 }`},
 )
