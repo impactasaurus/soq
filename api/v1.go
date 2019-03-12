@@ -20,6 +20,7 @@ type RouteHandler struct {
 type QuestionnaireFetcher interface {
 	Questionnaire(id string) (soq.Questionnaire, error)
 	Questionnaires(page, limit int) (soq.QuestionnaireList, error)
+	Search(query string, page, limit int) (soq.QuestionnaireList, error)
 }
 
 // NewV1 returns a set of RouteHandler which serve V1 of the API

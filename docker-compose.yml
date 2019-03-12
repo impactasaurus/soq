@@ -1,6 +1,6 @@
 soq:
   build: .
   ports:
-    - "8083:80"
+    - "8084:80"
   environment:
     - PATH_QUESTIONNAIRES=/questionnaires

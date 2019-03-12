@@ -138,4 +138,6 @@ type Query {
     questionnaires(page: Int, limit: Int): QuestionnaireList!
     """questionnaire gathers a single questionnaire by ID"""
     questionnaire(id: String!): Questionnaire!
+    """search returns an ordered list of questionnaires based on a search term"""
+    search(query: String!, page: Int, limit: Int): QuestionnaireList!
 }
