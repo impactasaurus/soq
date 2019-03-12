@@ -1,0 +1,9 @@
+vendor/*
+.dockerignore
+.gitignore
+.travis.yml
+*.md
+*.coverprofile
+docker-compose*
+Dockerfile*
+makefile
