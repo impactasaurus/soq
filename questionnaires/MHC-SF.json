@@ -1,0 +1,511 @@
+{
+  "id": "5fdd8db7-0cf0-44e3-98d7-6be14873a67f",
+  "logo": null,
+  "name": "Mental Health Continuum Short Form",
+  "short": "MHC-SF",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-03-13T06:35:46Z"
+    }
+  ],
+  "description": "The MHC-SF is a 14 item scale measuring emotional well-being. It covers 3 dimensions of well-being: emotional, social and psychological.",
+  "license": "Although copyrighted, the MHC-SF may be used as long as proper credit is given. Permission is not needed to use the measure.",
+  "attribution": "Keyes, Corey L. M. 2002. \"The Mental Health Continuum:  From Languishing to Flourishing in Life.\"  Journal of Health and Social Behavior. 43: 207-222.",
+  "instructions": "During the PAST MONTH, how often did you feel...",
+  "links": [{
+    "name": "Reference",
+    "url": "http://www.midus.wisc.edu/findings/pdfs/56.pdf"
+  }, {
+    "name": "License",
+    "url": "https://www.aacu.org/sites/default/files/MHC-SFEnglish.pdf"
+  }],
+  "questions": [
+    {
+      "id": "0cf90428-6397-48c6-9ab0-b59c5082a793",
+      "question": "happy",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "ca071620-ff07-4afa-bca0-698b59d584d3",
+      "question": "interested in life",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "008c452f-b4a5-42ce-834c-309d7d01ef2d",
+      "question": "satisfied with life",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "dad48f1c-ab14-41b7-b61c-d47644814622",
+      "question": "that you had something important to contribute to society",
+      "type": "likert",
+      "short": "something to contribute to society",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "9894f55e-3916-4fe7-bed8-bf53f0b393a3",
+      "question": "that you belonged to a community (like a social group, or your neighborhood)",
+      "type": "likert",
+      "short": "belonged to a community",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "3356b0a1-e3f5-4f71-9ad0-87e085416f4f",
+      "question": "that our society is a good place, or is becoming a better place, for all people",
+      "type": "likert",
+      "short": "society is a good place",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "a1a629eb-45dd-4d4c-9b58-aa0a2fda921e",
+      "question": "that people are basically good",
+      "type": "likert",
+      "short": "people are basically good",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "70f45685-be52-4a76-a54c-8f16973828ca",
+      "question": "that the way our society works makes sense to you",
+      "type": "likert",
+      "short": "the way our society works makes sense",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "ac437519-98bb-4605-ab04-0b4c4d77d42b",
+      "question": "that you liked most parts of your personality",
+      "type": "likert",
+      "short": "liked most parts of your personality",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "a3dc9e22-61d6-4da8-b7d5-a1f7caf7152f",
+      "question": "good at managing the responsibilities of your daily life",
+      "type": "likert",
+      "short": "good at managing daily life",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "86e4c493-0919-4099-a421-4aa8443eb981",
+      "question": "that you had warm and trusting relationships with others",
+      "type": "likert",
+      "short": "trusting relationships with others",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "65c4cf6b-de41-4391-a6b5-042d3ffcf275",
+      "question": "that you had experiences that challenged you to grow and become a better person",
+      "type": "likert",
+      "short": "experiences that challenged you",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "568ccfc9-b0d1-479d-b025-1f574ecc6327",
+      "question": "confident to think or express your own ideas and opinions",
+      "type": "likert",
+      "short": "express your own ideas",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    },
+    {
+      "id": "8ed0e6ca-cf6c-491a-b85e-077e8361a028",
+      "question": "that your life has a sense of direction or meaning to it",
+      "type": "likert",
+      "short": "life has meaning",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Never"
+        },
+        {
+          "value": 1,
+          "label": "Once or Twice"
+        },
+        {
+          "value": 2,
+          "label": "About once a week"
+        },
+        {
+          "value": 3,
+          "label": "About 2 or 3 times a week"
+        },
+        {
+          "value": 4,
+          "label": "Almost every day"
+        },
+        {
+          "value": 5,
+          "label": "Every day"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "d1b394af-9b6e-4379-aadd-3d6031794c8c",
+      "name": "Emotional well-being",
+      "questions": [
+        "0cf90428-6397-48c6-9ab0-b59c5082a793",
+        "ca071620-ff07-4afa-bca0-698b59d584d3",
+        "008c452f-b4a5-42ce-834c-309d7d01ef2d"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "5920874a-4013-404e-9cbe-776c876ef939",
+      "name": "Social well-being",
+      "questions": [
+        "dad48f1c-ab14-41b7-b61c-d47644814622",
+        "9894f55e-3916-4fe7-bed8-bf53f0b393a3",
+        "3356b0a1-e3f5-4f71-9ad0-87e085416f4f",
+        "a1a629eb-45dd-4d4c-9b58-aa0a2fda921e",
+        "70f45685-be52-4a76-a54c-8f16973828ca"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "322d05b4-b10b-4192-9563-a3b6e374879b",
+      "name": "Psychological well-being",
+      "questions": [
+        "ac437519-98bb-4605-ab04-0b4c4d77d42b",
+        "a3dc9e22-61d6-4da8-b7d5-a1f7caf7152f",
+        "86e4c493-0919-4099-a421-4aa8443eb981",
+        "65c4cf6b-de41-4391-a6b5-042d3ffcf275",
+        "568ccfc9-b0d1-479d-b025-1f574ecc6327",
+        "8ed0e6ca-cf6c-491a-b85e-077e8361a028"
+      ],
+      "aggregation": "mean"
+    }
+  ]
+}
