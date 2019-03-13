@@ -1,0 +1,211 @@
+{
+  "id": "fe8b27f8-f989-46dc-9f28-14a12d6397a4",
+  "name": "Life Engagement Test",
+  "short": "LET",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-03-13T16:08:41Z"
+    }
+  ],
+  "description": "The Life Engagement Test is designed to measure purpose in life, defined as the degree to which a person engages in activities that are meaningful to them.",
+  "license": "The LET paper does not state anything about the use of the scale by others.",
+  "attribution": "Scheier, M. F., Wrosch, C., Baum, A., Cohen, S., Martire, L. M., Matthews, K. A., Schulz, R., & Zdaniuk, B. (2006). The Life Engagement Test: Assessing purpose in life. Journal of Behavioral Medicine, 29, 291-298.",
+  "instructions": "Be as honest as you can throughout, and try not to let your response to one question influence your response to other questions. There are no right or wrong answers",
+  "links": [{
+    "name": "Reference",
+    "url": "http://www.psy.cmu.edu/~scohen/Life_Engagement_Test.pdf"
+  }, {
+    "name": "PDF Version",
+    "url": "http://www.psy.cmu.edu/faculty/scheier/scales/LET_Scale.pdf"
+  }],
+  "questions": [
+    {
+      "id": "f8de6e28-fe78-4fcb-8b05-7994025b2235",
+      "question": "There is not enough purpose in my life",
+      "type": "likert",
+      "short": "Not enough purpose",
+      "scale": [
+        {
+          "value": 5,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 4,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "e6574455-183d-4851-a1fa-f13da0df3678",
+      "question": "To me, the things I do are worthwhile",
+      "type": "likert",
+      "short": "Things I do are worthwhile",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "78b4f1c9-e849-4087-9dea-939c699eedd4",
+      "question": "Most of what I do seems trivial and unimportant to me",
+      "type": "likert",
+      "short": "What I do seems trivial",
+      "scale": [
+        {
+          "value": 5,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 4,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "00a77b20-7e87-4dc1-bad0-843f3c71a4ba",
+      "question": "I value my activities a lot",
+      "type": "likert",
+      "short": "I value my activities",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "df6e0e2a-9eb9-49b2-b3ca-b70b2240c50e",
+      "question": "I don't care very much about the things I do",
+      "type": "likert",
+      "short": "I don't care about the things I do",
+      "scale": [
+        {
+          "value": 5,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 4,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly agree"
+        }
+      ]
+    },
+    {
+      "id": "d5cc8550-995d-4360-b477-62e00a485b1b",
+      "question": "I have lots of reasons for living",
+      "type": "likert",
+      "short": "Lots of reasons for living",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly disagree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Neutral"
+        },
+        {
+          "value": 4,
+          "label": "Agree"
+        },
+        {
+          "value": 5,
+          "label": "Strongly agree"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "e7a1e4cd-684b-4a69-b83c-ef0a41d8f447",
+      "name": "Total",
+      "questions": [
+        "f8de6e28-fe78-4fcb-8b05-7994025b2235",
+        "e6574455-183d-4851-a1fa-f13da0df3678",
+        "78b4f1c9-e849-4087-9dea-939c699eedd4",
+        "00a77b20-7e87-4dc1-bad0-843f3c71a4ba",
+        "df6e0e2a-9eb9-49b2-b3ca-b70b2240c50e",
+        "d5cc8550-995d-4360-b477-62e00a485b1b"
+      ],
+      "aggregation": "sum"
+    }
+  ]
+}
