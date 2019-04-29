@@ -1,0 +1,878 @@
+{
+  "id": "83946861-a415-4b5d-b2cf-3bffcdb9c776",
+  "logo": null,
+  "name": "Buss-Perry Aggression Questionnaire",
+  "short": "BPAQ",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-04-29T19:47:38+01:00"
+    }
+  ],
+  "description": "The Buss-Perry Aggression Questionnaire (BPAQ) is a popular measure of aggression in adults. The BPAQ has 29 items, subdivided in four factors: physical aggression, verbal aggression, anger and hostility.",
+  "license": "No permission is needed if the questionnaire is used for research purposes.",
+  "attribution": "Buss, A.H. and Perry, M.P. (1992). The Aggression Questionnaire. Journal of Personality and Social Psychology, 63, 452-459.",
+  "instructions": "For each of the following 29 statements, rate how characteristic this is of you.",
+  "links": [{
+    "name": "PDF Version",
+    "url": "https://project-oracle.com/uploads/files/BussPerry_agression_questionnaire_scoring.pdf"
+  }, {
+    "name": "Reference",
+    "url": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.455.5915&rep=rep1&type=pdf"
+  }, {
+    "name": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Buss%E2%80%93Perry_Aggression_Questionnaire"
+  }],
+  "questions": [
+    {
+      "id": "90c7aeb1-f6eb-4161-8687-c11c1d9e7180",
+      "question": "Some of my friends think I am a hothead",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "3a57c886-b5fa-46a1-ba12-786d0200b2f4",
+      "question": "If I have to resort to violence to protect my rights, I will",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "16ee781b-de63-453f-b0c9-4e64136151f6",
+      "question": "When people are especially nice to me, I wonder what they want",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "ccf4afd4-a80b-4d50-81e6-5446033f2ce5",
+      "question": "I tell my friends openly when I disagree with them",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "6f8e2e34-1de8-4989-992d-8a3ab2d865d9",
+      "question": "I have become so mad that I have broken things",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "c62cdab8-d2b3-49f8-ae5e-534e7f50b670",
+      "question": "I can’t help getting into arguments when people disagree with me",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "19b42a34-faf6-4cb8-ba66-4cc99e02e729",
+      "question": "I wonder why sometimes I feel so bitter about things",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "bb3e1e30-e766-49f3-a048-2e50a163edfd",
+      "question": "Once in a while, I can’t control the urge to strike another person",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "048f07f4-7eb2-4089-b987-4a2dc9e47ddd",
+      "question": "I am an even-tempered person",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 5,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 1,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "ac31a4a8-7e7f-489a-bc0e-30bc94cf26a1",
+      "question": "I am suspicious of overly friendly strangers",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "a96a0599-696c-47fa-ac0a-c0273f8cc7f3",
+      "question": "I have threatened people I know",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "a9b3c84f-4a3b-4416-b91a-c7042ac5591f",
+      "question": "I flare up quickly but get over it quickly",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "cea9291e-b5c4-4444-b7d5-9a79802df453",
+      "question": "Given enough provocation, I may hit another person",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "47f25e08-32b7-4673-a0ec-3680b3ad70ae",
+      "question": "When people annoy me, I may tell them what I think of them",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "171464a3-b7e6-4963-bd10-441052801311",
+      "question": "I am sometimes eaten up with jealousy",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "7ae0af55-2e4f-4deb-a8e5-7d433b0ef55a",
+      "question": "I can think of no good reason for ever hitting a person",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 5,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 1,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "4ffbd953-a276-49fe-9454-dca31d758b26",
+      "question": "At times I feel I have gotten a raw deal out of life",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "b95b9b04-40b5-4248-91a9-6203f2010d6d",
+      "question": "I have trouble controlling my temper",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "fa06402e-0018-4194-9077-70ea8f6f3f3e",
+      "question": "When frustrated, I let my irritation show",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "1209fad8-17a4-41cd-a3aa-ecede50d9baa",
+      "question": "I sometimes feel that people are laughing at me behind my back",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "9319b8ef-be5e-4618-bb37-773248d48d5f",
+      "question": "I often find myself disagreeing with people",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "b1a4ba07-fcea-48ef-ae95-554c50af4153",
+      "question": "If somebody hits me, I hit back",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "f8a047bc-4596-43ef-a1bc-9fba2db24157",
+      "question": "I sometimes feel like a powder keg ready to explode",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "27737d95-d52f-44a1-9677-d58110a017f3",
+      "question": "Other people always seem to get the breaks",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "d8a555ad-9417-4c1a-a51b-e53e088c566e",
+      "question": "There are people who pushed me so far that we came to blows",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "39b82eb2-afc3-4913-b704-e320a360ac3f",
+      "question": "I know that “friends” talk about me behind my back",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "f808b1de-00b2-4029-a1f9-bf24837847c0",
+      "question": "My friends say that I’m somewhat argumentative",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "34a5a8f5-327e-44b3-bf96-bce9beb9b1c8",
+      "question": "Sometimes I fly off the handle for no good reason",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    },
+    {
+      "id": "0ddfe52e-667b-49c1-b0a2-78ff19f7a734",
+      "question": "I get into fights a little more than the average person",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Extremely uncharacteristic"
+        },
+        {
+          "value": 2,
+          "label": "Somewhat uncharacteristic"
+        },
+        {
+          "value": 3,
+          "label": "Neither uncharacteristic nor characteristic"
+        },
+        {
+          "value": 4,
+          "label": "Somewhat characteristic"
+        },
+        {
+          "value": 5,
+          "label": "Extremely characteristic"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "71532ce5-e1d3-4591-bfef-c6012957c68d",
+      "name": "Physical aggression",
+      "description": null,
+      "questions": [
+        "3a57c886-b5fa-46a1-ba12-786d0200b2f4",
+        "6f8e2e34-1de8-4989-992d-8a3ab2d865d9",
+        "bb3e1e30-e766-49f3-a048-2e50a163edfd",
+        "a96a0599-696c-47fa-ac0a-c0273f8cc7f3",
+        "cea9291e-b5c4-4444-b7d5-9a79802df453",
+        "7ae0af55-2e4f-4deb-a8e5-7d433b0ef55a",
+        "b1a4ba07-fcea-48ef-ae95-554c50af4153",
+        "d8a555ad-9417-4c1a-a51b-e53e088c566e",
+        "0ddfe52e-667b-49c1-b0a2-78ff19f7a734"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "c62497b9-c671-4abe-9ed0-af5b7b5eaf34",
+      "name": "Verbal aggression",
+      "description": null,
+      "questions": [
+        "ccf4afd4-a80b-4d50-81e6-5446033f2ce5",
+        "c62cdab8-d2b3-49f8-ae5e-534e7f50b670",
+        "47f25e08-32b7-4673-a0ec-3680b3ad70ae",
+        "9319b8ef-be5e-4618-bb37-773248d48d5f",
+        "f808b1de-00b2-4029-a1f9-bf24837847c0"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "7a3fa597-bc7e-4c62-aa22-ddd10cadfa5d",
+      "name": "Anger",
+      "description": null,
+      "questions": [
+        "90c7aeb1-f6eb-4161-8687-c11c1d9e7180",
+        "048f07f4-7eb2-4089-b987-4a2dc9e47ddd",
+        "a9b3c84f-4a3b-4416-b91a-c7042ac5591f",
+        "b95b9b04-40b5-4248-91a9-6203f2010d6d",
+        "fa06402e-0018-4194-9077-70ea8f6f3f3e",
+        "f8a047bc-4596-43ef-a1bc-9fba2db24157",
+        "34a5a8f5-327e-44b3-bf96-bce9beb9b1c8"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "5084420b-0ccf-4ecc-83ae-b774da3bb4ac",
+      "name": "Hostility",
+      "description": null,
+      "questions": [
+        "16ee781b-de63-453f-b0c9-4e64136151f6",
+        "19b42a34-faf6-4cb8-ba66-4cc99e02e729",
+        "ac31a4a8-7e7f-489a-bc0e-30bc94cf26a1",
+        "171464a3-b7e6-4963-bd10-441052801311",
+        "4ffbd953-a276-49fe-9454-dca31d758b26",
+        "1209fad8-17a4-41cd-a3aa-ecede50d9baa",
+        "27737d95-d52f-44a1-9677-d58110a017f3",
+        "39b82eb2-afc3-4913-b704-e320a360ac3f"
+      ],
+      "aggregation": "mean"
+    }
+  ]
+}
