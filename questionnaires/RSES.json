@@ -1,0 +1,280 @@
+{
+  "id": "2542c728-293c-4d8e-9645-d39fbe00c255",
+  "logo": null,
+  "name": "Rosenberg self-esteem scale",
+  "short": "RSES",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-04-30T20:36:44+01:00"
+    }
+  ],
+  "description": "The Rosenberg self-esteem scale (RSES) is a self-esteem measure widely used in social-science research. It is a ten-item Likert-type scale with items answered on a four-point scale—from strongly agree to strongly disagree.",
+  "license": "The scale may be used without explicit permission",
+  "attribution": "Rosenberg, M. (1965). Society and the adolescent self-image. Princeton, NJ: Princeton University Press",
+  "links": [{
+    "name": "PDF Version",
+    "url": "https://www.yorku.ca/rokada/psyctest/rosenbrg.pdf"
+  }, {
+    "name": "Reference",
+    "url": "https://www.docdroid.net/Vt9xpBg/society-and-the-adolescent-self-image-morris-rosenberg-1965.pdf"
+  }, {
+    "name": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Rosenberg_self-esteem_scale"
+  }],
+  "questions": [
+    {
+      "id": "676a1cfd-4889-496c-9c2b-e48a2bafaaf5",
+      "question": "On the whole, I am satisfied with myself",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 3,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Disagree"
+        },
+        {
+          "value": 0,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "299f0f5f-8b5c-4686-90bd-3f3a263e099a",
+      "question": "At times, I think I am no good at all",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 1,
+          "label": "Agree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "8a174a48-7347-4800-bdf1-79f03354e7c0",
+      "question": "I feel that I have a number of good qualities",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 3,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Disagree"
+        },
+        {
+          "value": 0,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "86bf759c-0cbe-47ea-95b3-db62fa01712f",
+      "question": "I am able to do things as well as most other people",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 3,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Disagree"
+        },
+        {
+          "value": 0,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "33f6ba14-e183-4714-9075-a3bbdb94888e",
+      "question": "I feel I do not have much to be proud of",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 1,
+          "label": "Agree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "6e22a3c6-dfb2-4f2b-bd80-1c31bfcddb67",
+      "question": "I certainly feel useless at times",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 1,
+          "label": "Agree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "7fecebc9-be4c-4791-adbb-8fafdea4607c",
+      "question": "I feel that I’m a person of worth, at least on an equal plane with others",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 3,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Disagree"
+        },
+        {
+          "value": 0,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "cb2a94c8-05a4-482d-a474-30f5a89aa956",
+      "question": "I wish I could have more respect for myself",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 1,
+          "label": "Agree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "ff6d2198-ca73-4ee6-9323-0360fed75d4f",
+      "question": "All in all, I am inclined to feel that I am a failure",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 0,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 1,
+          "label": "Agree"
+        },
+        {
+          "value": 2,
+          "label": "Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Strongly Disagree"
+        }
+      ]
+    },
+    {
+      "id": "1fc51ad3-09fd-4fd4-a02d-6977a9e2ceb5",
+      "question": "I take a positive attitude toward myself",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 3,
+          "label": "Strongly Agree"
+        },
+        {
+          "value": 2,
+          "label": "Agree"
+        },
+        {
+          "value": 1,
+          "label": "Disagree"
+        },
+        {
+          "value": 0,
+          "label": "Strongly Disagree"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "0bb3125f-c3f2-49df-93bd-505d54f2ca19",
+      "name": "Total",
+      "questions": [
+        "676a1cfd-4889-496c-9c2b-e48a2bafaaf5",
+        "299f0f5f-8b5c-4686-90bd-3f3a263e099a",
+        "8a174a48-7347-4800-bdf1-79f03354e7c0",
+        "86bf759c-0cbe-47ea-95b3-db62fa01712f",
+        "33f6ba14-e183-4714-9075-a3bbdb94888e",
+        "6e22a3c6-dfb2-4f2b-bd80-1c31bfcddb67",
+        "7fecebc9-be4c-4791-adbb-8fafdea4607c",
+        "cb2a94c8-05a4-482d-a474-30f5a89aa956",
+        "ff6d2198-ca73-4ee6-9323-0360fed75d4f",
+        "1fc51ad3-09fd-4fd4-a02d-6977a9e2ceb5"
+      ],
+      "aggregation": "sum"
+    }
+  ]
+}
