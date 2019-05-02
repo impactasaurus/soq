@@ -1,0 +1,1353 @@
+{
+  "id": "877aa707-0569-4109-86f1-f94206fe3ed7",
+  "logo": null,
+  "name": "Multidimensional Students’ Life Satisfaction Scale",
+  "short": "MSLSS",
+  "version": "1.0.0",
+  "changelog": [
+    {
+      "version": "1.0.0",
+      "changes": [
+        "initial version"
+      ],
+      "timestamp": "2019-05-02T16:25:09+01:00"
+    }
+  ],
+  "description": "The Multidimensional Students’ Life Satisfaction Scale (MSLSS) is designed to provide a profile of children’s life satisfaction across key domains. The 40-item MSLSS is completed by children and young people and captures information on five domains: family, friends, school, living environment, self.",
+  "license": "The MSLSS is not copyrighted and can be used for free and without permission.",
+  "attribution": "Huebner, E.S. (1991). Initial development of the Students’ Life Satisfaction Scale. School Psychology International, 12, 231-243.",
+  "links": [{
+    "name": "Reference",
+    "url": "https://doi.org/10.1177%2F0143034391123010"
+  }, {
+    "name": "Introductory Reference",
+    "url": "https://doi.org/10.1007/978-94-015-9970-2_5"
+  }, {
+    "name": "Paper version",
+    "url": "https://project-oracle.com/uploads/files/MSLSS_Multidimensional_Student_Life_Satisfaction_Scale.docx"
+  }],
+  "questions": [
+    {
+      "id": "b6a4f0d6-2826-46c1-bb2f-f80433756603",
+      "question": "I enjoy being at home with my family",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "a2de955c-9956-4c2f-9cb3-7c22fe16c8d4",
+      "question": "My family gets along well together",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "a14369c5-2ccc-4f0b-bd89-327e5d6e17f2",
+      "question": "I like spending time with my parents",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "f57e14be-7584-4e8e-8ad0-dc94152e28b1",
+      "question": "My parents and I doing fun things together",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "ae258775-2817-45a7-8907-2d2e10cdbc34",
+      "question": "My family is better than most",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "a5a716a1-4e54-4717-b37c-fbcc8c90c619",
+      "question": "Members of my family talk nicely to one another",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "b9abf6e1-8d92-4487-8190-87fe42737999",
+      "question": "My parents treat me fairly",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "17fae934-0283-4d5a-8292-7d6d05925c41",
+      "question": "My friends treat me well",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "141499e9-8f08-4124-a673-24044f853d6b",
+      "question": "My friends are nice to me",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "e6eb7d49-ee59-42c0-9085-07aee4fb8aec",
+      "question": "I wish I had different friends",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "15d741dd-845f-4c8d-a82b-a18ce5a3360f",
+      "question": "My friends are mean to me",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "27042e2a-02b7-497f-8522-8ee9279c2570",
+      "question": "My friends are great",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "21a5a821-6a5d-4bf4-a3ca-95ce15a7c38c",
+      "question": "I have a bad time with my friends",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "5c228559-be67-459d-beeb-8ca432c29fc4",
+      "question": "I have a lot of fun with my friends",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "dddee7d8-0d76-4d86-92b7-27d04a155f6a",
+      "question": "I have enough friends",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "aadb2f4f-ad6a-48e4-98d4-3d06cf8f606a",
+      "question": "My friends will help me if I need it",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "4ac089d7-e973-4df3-aa47-2f1270d7a8fb",
+      "question": "I look forward to going to school",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "7174987d-fe5f-41ca-9380-1c302dc54dd2",
+      "question": "I like being in school",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "5a08f1c8-be32-45af-b9cc-c8b28e441f78",
+      "question": "School is interesting",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "81cb9eb0-c6b5-4112-8dfd-85b001ff4fc8",
+      "question": "I wish I didn’t have to go to school",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "c1380839-f845-46cb-8a8a-c18ea7af2d78",
+      "question": "There are many things about school I don’t like",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "6444ef9b-a7c2-4712-bbfc-6c09719cd888",
+      "question": "I enjoy school activities",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "bba48a7c-27a7-432a-9f22-d85ddf557fe8",
+      "question": "I learn a lot at school",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "01a41a1b-b610-4cd7-b681-75052fb0e1c9",
+      "question": "I feel bad at school",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "7417667e-0403-4ddf-9266-5da2426db726",
+      "question": "I like where I live",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "fa4d6ed5-c4a6-4e32-8a6b-9e8a26234e97",
+      "question": "I wish there were different people in my neighborhood",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "1d37af2f-6e61-442f-9c5b-908947e7e46a",
+      "question": "I wish I lived in a different house",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "906de194-ad76-43d5-8c36-6dba6675152d",
+      "question": "I wish I lived somewhere else",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "668bea27-a1c1-4ea7-acea-e7a02b6b623d",
+      "question": "I like my neighborhood",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "9d69b483-4a4b-44fa-bd2a-347a8904108d",
+      "question": "I like my neighbors",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "229945e3-e5ad-4921-80fd-fe9e2b80afa9",
+      "question": "This town is filled with mean people",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 6,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 1,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "e80f54e2-ff11-4ce6-bfd1-cad9ff26ed1b",
+      "question": "My family’s house is nice",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "60369c7b-6709-463c-b2c5-0c6f3ef233c0",
+      "question": "There are lots of fun things to do where I live",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "0e938cd5-c388-4fd1-8637-356a77b14aa2",
+      "question": "I think I am good looking",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "555a9655-4073-4c25-b673-e96973646fd5",
+      "question": "I am fun to be around",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "2a6ad04a-bffa-4f78-bf25-7e4f90b35d5b",
+      "question": "I am a nice person",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "4ad54893-ceaa-4e51-96a9-6a5a4ba6a3be",
+      "question": "Most people like me",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "4b640ff6-0efe-4504-9eeb-e5f7ddd7ce25",
+      "question": "There are lots of things I can do well",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "cc3f0104-aeec-4646-8e9b-e254d4470328",
+      "question": "I like to try new things",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    },
+    {
+      "id": "fa8e8063-866a-4684-91d0-829edbca27e0",
+      "question": "I like myself",
+      "type": "likert",
+      "scale": [
+        {
+          "value": 1,
+          "label": "Strongly Disagree"
+        },
+        {
+          "value": 2,
+          "label": "Moderately Disagree"
+        },
+        {
+          "value": 3,
+          "label": "Slightly Disagree"
+        },
+        {
+          "value": 4,
+          "label": "Slightly"
+        },
+        {
+          "value": 5,
+          "label": "Moderately Agree"
+        },
+        {
+          "value": 6,
+          "label": "Strongly Agree"
+        }
+      ]
+    }
+  ],
+  "scorings": [
+    {
+      "id": "35569ae4-8913-4019-9bc9-39bde2bb2335",
+      "name": "Family",
+      "description": null,
+      "questions": [
+        "b6a4f0d6-2826-46c1-bb2f-f80433756603",
+        "a2de955c-9956-4c2f-9cb3-7c22fe16c8d4",
+        "a14369c5-2ccc-4f0b-bd89-327e5d6e17f2",
+        "f57e14be-7584-4e8e-8ad0-dc94152e28b1",
+        "ae258775-2817-45a7-8907-2d2e10cdbc34",
+        "a5a716a1-4e54-4717-b37c-fbcc8c90c619",
+        "b9abf6e1-8d92-4487-8190-87fe42737999"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "f16ed7ae-9c95-4ec6-8556-28fd99394fc1",
+      "name": "Friends",
+      "description": null,
+      "questions": [
+        "141499e9-8f08-4124-a673-24044f853d6b",
+        "e6eb7d49-ee59-42c0-9085-07aee4fb8aec",
+        "15d741dd-845f-4c8d-a82b-a18ce5a3360f",
+        "27042e2a-02b7-497f-8522-8ee9279c2570",
+        "21a5a821-6a5d-4bf4-a3ca-95ce15a7c38c",
+        "5c228559-be67-459d-beeb-8ca432c29fc4",
+        "dddee7d8-0d76-4d86-92b7-27d04a155f6a",
+        "aadb2f4f-ad6a-48e4-98d4-3d06cf8f606a",
+        "17fae934-0283-4d5a-8292-7d6d05925c41"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "bf7c978d-325d-4ffc-bdd6-16d4830c7e26",
+      "name": "School",
+      "description": null,
+      "questions": [
+        "4ac089d7-e973-4df3-aa47-2f1270d7a8fb",
+        "7174987d-fe5f-41ca-9380-1c302dc54dd2",
+        "5a08f1c8-be32-45af-b9cc-c8b28e441f78",
+        "81cb9eb0-c6b5-4112-8dfd-85b001ff4fc8",
+        "c1380839-f845-46cb-8a8a-c18ea7af2d78",
+        "6444ef9b-a7c2-4712-bbfc-6c09719cd888",
+        "bba48a7c-27a7-432a-9f22-d85ddf557fe8",
+        "01a41a1b-b610-4cd7-b681-75052fb0e1c9"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "3fdaf106-733a-4612-9d63-27d383737340",
+      "name": "Living Environment",
+      "description": null,
+      "questions": [
+        "7417667e-0403-4ddf-9266-5da2426db726",
+        "fa4d6ed5-c4a6-4e32-8a6b-9e8a26234e97",
+        "1d37af2f-6e61-442f-9c5b-908947e7e46a",
+        "906de194-ad76-43d5-8c36-6dba6675152d",
+        "668bea27-a1c1-4ea7-acea-e7a02b6b623d",
+        "9d69b483-4a4b-44fa-bd2a-347a8904108d",
+        "229945e3-e5ad-4921-80fd-fe9e2b80afa9",
+        "e80f54e2-ff11-4ce6-bfd1-cad9ff26ed1b",
+        "60369c7b-6709-463c-b2c5-0c6f3ef233c0"
+      ],
+      "aggregation": "mean"
+    },
+    {
+      "id": "0d51b704-d7e7-43ce-b895-55c0c72ab2e4",
+      "name": "Self",
+      "description": null,
+      "questions": [
+        "0e938cd5-c388-4fd1-8637-356a77b14aa2",
+        "555a9655-4073-4c25-b673-e96973646fd5",
+        "2a6ad04a-bffa-4f78-bf25-7e4f90b35d5b",
+        "4ad54893-ceaa-4e51-96a9-6a5a4ba6a3be",
+        "4b640ff6-0efe-4504-9eeb-e5f7ddd7ce25",
+        "cc3f0104-aeec-4646-8e9b-e254d4470328",
+        "fa8e8063-866a-4684-91d0-829edbca27e0"
+      ],
+      "aggregation": "mean"
+    }
+  ]
+}
