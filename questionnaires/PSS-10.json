@@ -15,16 +15,22 @@
   "description": "Assesses the degree to which people perceive their lives as stressful. High levels of stress are associated with poor self-reported health, elevated blood pressure, depression, and susceptibility to infection. Subjects indicate how often they have found their lives unpredictable, uncontrollable, and overloaded in the last month.",
   "links": [{
     "name": "Website",
-    "url": "http://www.psy.cmu.edu/~scohen/"
+    "url": "https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/"
   }, {
     "name": "Normative data",
-    "url": "http://www.psy.cmu.edu/~scohen/Whos_Stressed_JASP_2012.pdf"
+    "url": "https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/abstracts/pdf/whos_stressed_jasp_2012.pdf"
   }, {
     "name": "Reliability and validity",
-    "url": "http://www.psy.cmu.edu/~scohen/globalmeas83.pdf"
+    "url": "https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/publications/scalesmeasurements/pdfs/globalmeas83.pdf"
+  }, {
+    "name": "Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Perceived_Stress_Scale"
   }, {
     "name": "Translations",
-    "url": "http://www.psy.cmu.edu/~scohen/"
+    "url": "https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/"
+  }, {
+    "name": "License",
+    "url": "https://www.cmu.edu/dietrich/psychology/stress-immunity-disease-lab/scales/"
   }],
   "instructions": "The questions in this scale ask you about your feelings and thoughts during the last month. In each case, please indicate how often you felt or thought a certain way.",
   "questions": [{
