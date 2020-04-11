@@ -1,19 +1,16 @@
-[[constraint]]
-  name = "github.com/apex/gateway"
-  version = "1.1.1"
+ignored = ["github.com/impactasaurus/soq/tools"]
 
 [[constraint]]
-  name = "github.com/gorilla/mux"
-  version = "1.6.2"
+  name = "github.com/99designs/gqlgen"
+  version = "v0.6.0"
 
 [[constraint]]
-  name = "github.com/kelseyhightower/envconfig"
-  version = "1.3.0"
+  name = "github.com/vektah/gqlparser"
+  revision = "f119686bf1d4d1a68c7ed6afe35f183625443c41"
 
-[[constraint]]
-  name = "github.com/rs/cors"
-  version = "1.6.0"
+
 
 [prune]
   go-tests = true
   unused-packages = true
+
