@@ -1,13 +1,12 @@
 # This is based on https://github.com/mernst/plume-lib/blob/master/bin/trigger-travis.sh
 # It triggers a rebuild of the soft outcomes project
+# the only requirement is a TRAVIS_ACCESS_TOKEN env var, the token needs permissions to trigger soft outcome builds
 
 TRAVIS_URL=travis-ci.org
 BRANCH=master
-
 USER=impactasaurus
 REPO=softoutcomes
 TOKEN=$TRAVIS_ACCESS_TOKEN
-
 
 if [ -n "$TRAVIS_REPO_SLUG" ] ; then
     MESSAGE=",\"message\": \"Triggered by upstream build of $TRAVIS_REPO_SLUG commit "`git rev-parse --short HEAD`"\""
