@@ -26,6 +26,8 @@ deploy:
     on:
       repo: impactasaurus/soq
       branch: master
+after_deploy:
+  - ./trigger-soft-outcome-build.sh
 notifications:
     email:
         on_failure: always
