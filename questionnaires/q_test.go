@@ -126,7 +126,7 @@ func testLinks(t *testing.T, qs soq.Questionnaire) {
 		}
 		// work round sites which block non browser looking traffic
 		req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36")
-		resp, err := client.Do(req)
+		resp, err := http.DefaultClient.Do(req)
 		if err != nil {
 			t.Fatalf("error encountered confirming link %s: %s", l.URL, err.Error())
 		}
