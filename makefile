@@ -5,6 +5,5 @@ test:
 
 .PHONY: build
 build:
-	rm -rf build_output
-	docker build --target vendor -t soq-builder .
+	docker build --target source -t soq-builder .
 	docker run -v `pwd`/build_output/:/output/ -e "GOOS=linux" -e "GOARCH=amd64" soq-builder go build -o /output/lamdba ./cmd/lambda

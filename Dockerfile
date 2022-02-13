@@ -1,11 +1,11 @@
 FROM golang:1.17 as source
 
 WORKDIR /go/src/github.com/impactasaurus/soq
-COPY . .
 
-FROM source as vendor
-
+COPY go.mod go.sum ./
 RUN go mod download
+
+COPY . .
 
 FROM vendor as runner
 
