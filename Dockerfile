@@ -1,14 +1,13 @@
-FROM golang:1.12.0
+FROM golang:1.17 as source
 
-CMD /go/bin/http
 WORKDIR /go/src/github.com/impactasaurus/soq
-
-RUN go get -u github.com/golang/dep/cmd/dep
-COPY Gopkg.* ./
-RUN dep ensure -vendor-only
-
-COPY questionnaires /questionnaires
-
 COPY . .
-RUN go install github.com/impactasaurus/soq/cmd/http
 
+FROM source as vendor
+
+RUN go mod download
+
+FROM vendor as runner
+
+RUN go install github.com/impactasaurus/soq/cmd/http
+CMD /go/bin/http

@@ -14,3 +14,4 @@ vendor/*/
 
 .idea
 *.coverprofile
+build_output
