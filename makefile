@@ -6,4 +6,4 @@ test:
 .PHONY: build
 build:
 	docker build --target source -t soq-builder .
-	docker run -v `pwd`/build_output/:/output/ -e "GOOS=linux" -e "GOARCH=amd64" soq-builder go build -o /output/lamdba ./cmd/lambda
+	docker run -v ${PWD}/build_output/:/output/ -e "GOOS=linux" -e "GOARCH=amd64" soq-builder go build -o /output/lamdba ./cmd/lambda

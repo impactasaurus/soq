@@ -25,6 +25,7 @@ jobs:
         with:
           name: bin
           path: ./build_output/lambda
+          if-no-files-found: error
   deploy:
     name: Deploy App
     if: github.ref == 'refs/heads/master'
