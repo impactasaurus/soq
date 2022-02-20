@@ -2,8 +2,10 @@ vendor/*
 .dockerignore
 .gitignore
 .travis.yml
+.github/*
 *.md
 *.coverprofile
 docker-compose*
 Dockerfile*
 makefile
+build_output

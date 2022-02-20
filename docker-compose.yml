@@ -3,4 +3,4 @@ soq:
   ports:
     - "8084:80"
   environment:
-    - PATH_QUESTIONNAIRES=/questionnaires
+    - PATH_QUESTIONNAIRES=./questionnaires

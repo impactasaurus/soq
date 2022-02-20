@@ -120,19 +120,24 @@ func testQuestions(t *testing.T, qs soq.Questionnaire) {
 
 func testLinks(t *testing.T, qs soq.Questionnaire) {
 	for _, l := range qs.Links {
-		req, err := http.NewRequest("GET", l.URL, nil)
-		if err != nil {
-			t.Fatalf("error encountered confirming link %s: %s", l.URL, err.Error())
-		}
-		// work round sites which block non browser looking traffic
-		req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36")
-		resp, err := http.DefaultClient.Do(req)
-		if err != nil {
-			t.Fatalf("error encountered confirming link %s: %s", l.URL, err.Error())
-		}
-		resp.Body.Close()
-		if (resp.StatusCode < 200 || resp.StatusCode >= 300) && resp.StatusCode != 416 {
-			t.Errorf("unexpected status code confirming link %s: %d", l.URL, resp.StatusCode)
-		}
+		t.Run(l.Name, func(t *testing.T) {
+			req, err := http.NewRequest("GET", l.URL, nil)
+			if err != nil {
+				t.Fatalf("error encountered confirming link %s: %s", l.URL, err.Error())
+			}
+			// work round sites which block non browser looking traffic
+			req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36")
+			resp, err := http.DefaultClient.Do(req)
+			if err != nil {
+				t.Fatalf("error encountered confirming link %s: %s", l.URL, err.Error())
+			}
+			resp.Body.Close()
+			if (resp.StatusCode < 200 || resp.StatusCode >= 300) && resp.StatusCode != 416 {
+				if resp.StatusCode == 503 && resp.Header.Get("Server") == "cloudflare" {
+					t.Skip("Cloudflare detected: 503")
+				}
+				t.Errorf("unexpected status code confirming link %s: %d", l.URL, resp.StatusCode)
+			}
+		})
 	}
 }
