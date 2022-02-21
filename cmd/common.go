@@ -16,7 +16,7 @@ import (
 func MustSetup() Network {
 	cfg := MustGetConfiguration()
 
-	qq, err := questionnaires.LoadDirectory(cfg.Path.Questionnaires)
+	qq, err := questionnaires.LoadAll()
 	if err != nil {
 		log.Fatal(err)
 	}

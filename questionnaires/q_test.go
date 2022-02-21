@@ -12,7 +12,7 @@ import (
 )
 
 func TestQuestionnaires(t *testing.T) {
-	qq, err := questionnaires.LoadDirectory(".")
+	qq, err := questionnaires.LoadAll()
 	if err != nil {
 		t.Fatal(err)
 	}
