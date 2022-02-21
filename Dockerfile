@@ -7,7 +7,7 @@ RUN go mod download
 
 COPY . .
 
-FROM vendor as runner
+FROM source as runner
 
 RUN go install github.com/impactasaurus/soq/cmd/http
 CMD /go/bin/http

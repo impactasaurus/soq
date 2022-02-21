@@ -8,4 +8,4 @@ vendor/*
 docker-compose*
 Dockerfile*
 makefile
-build_output
+.build_output

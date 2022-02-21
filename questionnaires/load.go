@@ -1,17 +1,19 @@
 package questionnaires
 
 import (
+	"embed"
 	"encoding/json"
-	"os"
-
 	"fmt"
-	"path/filepath"
 
 	"github.com/impactasaurus/soq"
+	"github.com/pkg/errors"
 )
 
-func Load(path string) (soq.Questionnaire, error) {
-	f, err := os.Open(path)
+//go:embed *.json
+var qFS embed.FS
+
+func Load(name string) (soq.Questionnaire, error) {
+	f, err := qFS.Open(name)
 	if err != nil {
 		return soq.Questionnaire{}, err
 	}
@@ -23,30 +25,23 @@ func Load(path string) (soq.Questionnaire, error) {
 	return q, err
 }
 
-func LoadDirectory(dir string) ([]soq.Questionnaire, error) {
-	files := make([]string, 0)
-	err := filepath.Walk(dir, func(path string, info os.FileInfo, err error) error {
-		if filepath.Ext(path) == ".json" {
-			files = append(files, path)
-		}
-		return nil
-	})
+func LoadAll() ([]soq.Questionnaire, error) {
+	files, err := qFS.ReadDir(".")
 	if err != nil {
 		return nil, err
 	}
 	if len(files) == 0 {
-		return nil, fmt.Errorf("found no files at %s\n", dir)
+		return nil, errors.New("found no questionnaires")
 	}
 	out := make([]soq.Questionnaire, len(files))
 	for idx, path := range files {
-		fmt.Printf("loading %s...\n", path)
-		q, err := Load(path)
+		q, err := Load(path.Name())
 		if err != nil {
 			return nil, err
 		}
 		out[idx] = q
 	}
 
-	fmt.Println("questionnaires loaded")
+	fmt.Printf("%d questionnaires loaded\n", len(files))
 	return out, nil
 }
